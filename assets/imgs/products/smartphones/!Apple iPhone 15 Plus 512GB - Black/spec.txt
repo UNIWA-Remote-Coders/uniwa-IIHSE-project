@@ -1,0 +1,128 @@
+
+Γενικά
+Κατασκευαστής:
+APPLE
+Περιγραφή προϊόντος:
+Apple iPhone 15 Plus 512GB - Black
+Σειρά:
+iPhone
+Μοντέλο:
+iPhone 15 Plus
+Έτος κυκλοφορίας:
+2023
+Λειτουργικό σύστημα:
+iOS 17
+Χρώμα:
+Black
+Υλικό (Backplate):
+Corning-made glass
+Υλικό (Frame):
+Αλουμίνιο
+
+Οθόνη
+Μέγεθος οθόνης:
+6.7"
+Ανάλυση οθόνης:
+Full HD+ (1290 x 2796)
+Τύπος οθόνης:
+Super Retina XDR
+Φωτεινότητα:
+1600 nits
+Προστασία Οθόνης:
+Ceramic Shield glass
+Τεχνολογία Βίντεο:
+HDR10, Dolby Vision
+Screen to Body Ratio:
+85% - 89.9%
+
+Επεξεργαστής και GPU
+Μάρκα επεξεργαστή:
+Apple
+Μοντέλο Επεξεργαστή:
+A16 Bionic
+Αριθμός Πυρήνων Eπεξεργαστή:
+Εξαπύρηνος
+Ταχύτητα Επεξεργαστή:
+2x3.46 GHz Everest + 4x2.02 GHz Sawtooth
+GPU:
+Apple 5-core
+
+Αποθηκευτικός Χώρος και Μνήμη
+Χωρητικότητα:
+512 GB
+Υποστήριξη εξωτερικής μνήμης:
+Δεν υποστηρίζεται
+
+Κάμερα
+Φακοί κύριας κάμερας:
+Dual
+Κάμερα:
+48MP/12MP
+Λεπτομέριες κύριας κάμερας:
+48 MP f/1.6 26mm (wide) + 12 MP f/1.6 52mm (2x telephoto) + 12 MP f/2.4 13mm 120˚ (ultrawide)
+Λειτουργίες λήψης κύριας κάμερας:
+QuickTake video, HDR video recording with Dolby Vision, Digital zoom up to 6x
+Φάκοι Selfie κάμερας:
+Single
+Selfie κάμερα:
+12 MP f/1.9 23mm (wide)
+Λειτουργίες λήψης Selfie κάμερας:
+HDR video recording with Dolby Vision, Cinematic mode up to 4K HDR at 30 fps
+Ανάλυση βίντεο:
+4K@24/25/30/60fps
+
+Συνδεσιμότητα
+Δίκτυο δεδομένων:
+5G
+Υποδοχές SIM:
+Dual
+Τύπος SIM:
+eSIM, Nano-SIM
+Θύρα USB:
+Type-C 2.0
+Υποστήριξη NFC:
+Διαθέτει
+Έκδοση Bluetooth:
+5.3
+Ασύρματη επικοινωνία:
+802.11 a/b/g/n/ac/6e/7
+Τοποθεσία:
+GPS, GLONASS, Galileo, QZSS, BeiDou
+
+Δυνατότητες και Λειτουργίες
+Δαχτυλικό αποτύπωμα:
+Δε διαθέτει
+Αναγνώριση προσώπου:
+Face ID
+Υποστήριξη voice assistant:
+Siri
+Αισθητήρες:
+Επιταχυνσιόμετρο, Γυροσκόπιο, Μαγνητόμετρο, Εγγύτητας
+Ανθεκτικότητα:
+IP68 - Ανθεκτικό στη σκόνη/νερό (έως 1.5m για 30')
+
+Μπαταρία
+Μπαταρία:
+4383 mAh
+Υποστήριξη γρήγορης φόρτισης:
+Υποστηρίζεται (50% σε 30')
+Υποστήριξη ασύρματης φόρτισης:
+MagSafe (15W) // Qi (7.5W)
+Ισχύς:
+20W
+
+Ήχος
+Αριθμός ηχείων:
+x2
+
+Διαστάσεις και Βάρος
+Διαστάσεις (ΠxΒxΥ):
+160.9 x 77.8 x 7.8 mm
+Βάρος:
+201 g
+
+Εγγύηση - Πιστοποιήσεις
+Εγγύηση:
+24 μήνες
+
+https://www.public.gr/product/tilefonia/kinita-smartphones/apple-iphone-15-plus-512gb--black/1850652

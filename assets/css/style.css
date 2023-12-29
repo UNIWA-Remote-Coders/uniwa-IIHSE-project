@@ -1,0 +1,438 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+.nav-buttons{
+    margin-left:40%;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+body{
+    font-family:'Poppins', sans-serif ;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+h6{
+    color: #707070;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: #707070;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 900;
+    outline: none;
+    border:none;
+    background-color: #1d1d1d;
+    color:aliceblue;
+    padding: 13px 30px;
+    text-transform: pointer;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: rgb(198, 171, 162);
+}
+
+hr{
+    width: 30px;
+    height: 3px !important;
+    opacity: 1 !important;
+    background-color: black;
+}
+
+.navbar{
+    font-size: 16px;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    top:0;
+    left:0;
+    box-shadow: 0 5px 10px rgb(90, 90, 90);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color:black
+    transition: 0.4s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar i:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbari:hover{
+ color:rgb(138, 13, 13)
+}
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 0.7px;
+    transition: 0.4s ease;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
+@media only screen and (max-width:990px){
+
+    .nav-buttons{
+        margin: 10px;
+    }
+    .nav-buttons ul{
+        margin: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .nav-buttons ul .fas{
+        margin: 20px 5px 10px 20px;
+        list-style-type: none; /* na vgei i koykida prin to kalathaki */
+    }
+}
+
+#home{
+    background-image: url('../imgs/1.jpeg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position-x: 250px;
+    background-position-y: 80px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#home span{
+    color:black
+}
+
+#new .one img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#new .one{
+    position: relative;
+}
+
+#new .one .details{
+    position: absolute;
+    top:0;
+    left:0;
+    color: burlywood;
+    font-weight: bold;
+    transition: 0.4s ease;
+    opacity: 0.5;
+    background-color:rgb(1,1,1);
+    width: 100%;
+    height: 100%;
+}
+
+#new .one .details:hover{
+    background-color: cornsilk;
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+}
+
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+}
+
+/*Product*/
+.product{
+    cursor:pointer;
+    margin-bottom: 2rem;
+}
+
+.product img{
+    transition: 0.3 all;;
+}
+
+.product:hover img{
+    opacity: 0.7;
+}
+
+#featured .product img{
+    width: 75%;
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.star{
+    padding: 10px 0;
+}
+
+.star i{
+    font-size: 0.9rem;
+    color: goldenrod;
+}
+
+#banner{
+    background-image: url('../imgs/christ1.jpg');;
+}
+
+#offers .product img{
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer{
+    background-color: #111;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration:none ;
+    padding:10px ;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+
+/*Hover Effects on Social Media Icons*/
+.socialIcons a:hover{
+    background-color:#111 ;
+    transition: 0,5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    color: white;
+    margin:20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity:1 ;
+}
+
+.footerBottom{
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p{
+    color: white;
+}
+
+@media (max-widht:700px){
+    .footerNav ul{
+        flex-direction:colum;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align:center ;
+        margin:10px;
+    }
+}
+
+/*About Us*/
+.about-container{
+    text-align: center;
+}
+
+.header{
+    padding-top: 30px;
+    color: #444;
+    font-size: 20px;
+    margin:auto;
+    line-height: 50px;
+}
+
+.sub-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teams{
+    margin: 10px;
+    padding: 22px;
+    max-width: 30%;
+    cursor: pointer;
+    transition:0.4s ;
+    box-sizing: border-box;
+}
+
+.teams:hover{
+    background: #ddd;
+    border-radius: 12px;
+}
+
+.teams img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+}
+
+.name{
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.desig{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.about{
+    margin: 20px 0;
+    font-weight: lighter;
+    color: #292929;
+}
+
+.social-links{
+    margin: 14px;
+    color: #1d1d1d;
+}
+
+.social-links a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    transition: 0.4s;
+    color: #1d1d1d;
+}
+
+.social-links a:hover{
+    transform: scale(1.5);
+}
+
+.social-links a i{
+    color: #444;
+}
+@media screen and (max-width:600px){
+    .teams{
+        max-width: 100%;
+    }
+}
+
+.small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col{
+    flex-basis: 25%;
+    cursor: pointer;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.single-product input:focus{
+    outline: none;
+}
+
+.single-product .buy-btn{
+    background-color: #000000;
+    opacity: 1;
+    transition: 0.4s all;
+}
+
+.single-product .buy-btn:hover{
+    background-color: #585757;
+}
