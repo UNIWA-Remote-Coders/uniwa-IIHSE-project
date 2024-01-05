@@ -620,3 +620,11 @@ th:last-child{
     color: #fff;
     background-color: #000;
 }
+
+#smartphones .product img{
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

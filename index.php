@@ -38,7 +38,7 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="single_product.html">Smartphone</a></li>
+                      <li><a class="dropdown-item" href="smartphones.html">Smartphone</a></li>
                       <li><a class="dropdown-item" href="#">Handsfree</a></li>
                       <li><a class="dropdown-item" href="#">Tablets</a></li>
                       <li><a class="dropdown-item" href="#">Smartwatch</a></li>
@@ -131,59 +131,27 @@
                 <p>Here you can check out our featured products</p>
             </div>
             <div class="row mx-auto container-fluid">
+
+            <?php include('server/get_featured_products.php'); ?>
+
+
+            <?php while($row= $featured_products->fetch_assoc()) { ?>
+
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/featured1.png"/>
+                    <img class="img-fluid mb-3" src="assets/imgs/<?php echo $row['product_image']; ?>"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h5 class="p-name">Apple iPhone 15 Pro Max 1TB - Blue Titanium</h5>
-                    <h4 class="p-price">€2018.99</h4>
+                    <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                    <h4 class="p-price">€ <?php echo $row['product_price']; ?></h4>
                     <button class="buy-btn">Buy Now</button>
                     
                 </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/featured2.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Samsung Galaxy Z Fold5 5G 1TB - Phantom Black</h5>
-                    <h4 class="p-price">€2339.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/featured3.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Xiaomi 13 5G 256GB Dual Sim - Black</h5>
-                    <h4 class="p-price">€999.99</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/featured4.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Huawei Mate X3 512GB Dual Sim - Dark Green</h5>
-                    <h4 class="p-price">€2199.00</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
+                
+                <?php } ?>
             </div>
           </section>
 
@@ -206,7 +174,7 @@
             </div>
             <div class="row mx-auto container-fluid">
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offer1.png"/>
+                    <img class="img-fluid mb-3" src="assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/offer1.png"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -221,7 +189,7 @@
                     
                 </div>
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offer2.png"/>
+                    <img class="img-fluid mb-3" src="assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/offer2.png"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -236,7 +204,7 @@
                     
                 </div>
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offer3.png"/>
+                    <img class="img-fluid mb-3" src="assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/offer3.png"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -251,7 +219,7 @@
                     
                 </div>
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offer4.png"/>
+                    <img class="img-fluid mb-3" src="assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/offer4.png"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
