@@ -39,9 +39,9 @@
 
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="smartphones.html">Smartphone</a></li>
-                      <li><a class="dropdown-item" href="#">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="#">Tablets</a></li>
-                      <li><a class="dropdown-item" href="#">Smartwatch</a></li>
+                      <li><a class="dropdown-item" href="handsfree.html">Handsfree</a></li>
+                      <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
+                      <li><a class="dropdown-item" href="smartwatches.html">Smartwatch</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>

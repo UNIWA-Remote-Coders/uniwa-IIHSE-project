@@ -628,3 +628,27 @@ th:last-child{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#handsfree .product img{
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tablets .product img{
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#smartwatches .product img{
+    width: 50%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
