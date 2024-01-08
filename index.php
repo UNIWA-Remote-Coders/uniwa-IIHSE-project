@@ -138,7 +138,7 @@
             <?php while($row= $featured_products->fetch_assoc()) { ?>
 
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/<?php echo $row['product_image']; ?>"/>
+                    <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -173,8 +173,14 @@
                 <p>Check here the gifts for your beloveds</p>
             </div>
             <div class="row mx-auto container-fluid">
+
+            <?php include('server/get_offered_products.php'); ?>
+
+            <?php while($row= $offered_products->fetch_assoc()) { ?>
+
+
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/offer1.png"/>
+                    <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -182,57 +188,15 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <h5 class="p-name">Bluetooth Beats Powerbeats Pro - <br> Black</h5>
+                    <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                     <p><del>€299.00</del></p>
-                    <h4 class="p-price">€209.30</h4>
+                    <h4 class="p-price">€<?php echo $row['product_price']; ?></h4>
                     <button class="buy-btn">Buy Now</button>
                     
                 </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/offer2.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray</h5>
-                    <p><del>€829.00</del></p>
-                    <h4 class="p-price">€580.30</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/offer3.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Apple iPad Pro 12.9" 2022 (6th Gen) WiFi - 256GB Silver Grey</h5>
-                    <p><del>€1618.99</del></p>
-                    <h4 class="p-price">€1133.29</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <img class="img-fluid mb-3" src="assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/offer4.png"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name">Smartphone Huawei Mate 50 Pro 256GB - Silver</h5>
-                    <p><del>€888.99</del></p>
-                    <h4 class="p-price">€622.29</h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
-                </div>
+
+                <?php } ?>
+
             </div>
           </section>
 
