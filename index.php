@@ -38,7 +38,7 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="smartphones.html">Smartphone</a></li>
+                      <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
                       <li><a class="dropdown-item" href="handsfree.html">Handsfree</a></li>
                       <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
                       <li><a class="dropdown-item" href="smartwatches.html">Smartwatch</a></li>
@@ -174,9 +174,16 @@
             </div>
             <div class="row mx-auto container-fluid">
 
+            
+
             <?php include('server/get_offered_products.php'); ?>
 
-            <?php while($row= $offered_products->fetch_assoc()) { ?>
+            <?php
+            $count = 0;
+            
+            while(($row= $offered_products->fetch_assoc()) && $count < 4) { 
+                $count++;
+                ?>
 
 
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
