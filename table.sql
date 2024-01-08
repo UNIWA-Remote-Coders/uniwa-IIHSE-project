@@ -1,13 +1,13 @@
 -- Create products table if not exists
 CREATE TABLE IF NOT EXISTS `products`(
     `product_id` int(11) NOT NULL AUTO_INCREMENT,
-    `product_name` varchar(100) NOT NULL,
-    `product_category` varchar(100) NOT NULL,
-    `product_description`  varchar(255) NOT NULL,
-    `product_image` varchar(255) NOT NULL,
-    `product_image2` varchar(255) NOT NULL,
-    `product_image3` varchar(255) NOT NULL,
-    `product_image4` varchar(255) NOT NULL,
+    `product_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_category` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_description` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_image2` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_image3` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_image4` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_price` double(6,2) NOT NULL,/*9999.99*/
     `product_special_offer` integer(2) NOT NULL,
     `product_color` varchar(100) NOT NULL,
@@ -32,8 +32,8 @@ CREATE TABLE IF NOT EXISTS `order_items`(
     `item_id` int(11) NOT NULL AUTO_INCREMENT,
     `order_id` int(11) NOT NULL,
     `product_id` varchar(255) NOT NULL,
-    `product_name` varchar(255) NOT NULL,
-    `product_image` varchar(255) NOT NULL,
+    `product_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `user_id` int(11) NOT NULL,
     `oreder_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (`item_id`)
@@ -51,14 +51,14 @@ CREATE TABLE IF NOT EXISTS `users`(
 
 
 -- Insert products into DB
-INSERT INTO `products` VALUES (NULL, 'Apple iPhone 15 Pro Max 1TB - Blue Titanium', 'Mobile Phones', 'High-end iPhone with 1TB storage in Blue Titanium color.', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/featured1.png', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/2.jpg', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/3.jpg', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/4.jpg', 2018.99, 0, 'Blue Titanium');
-INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Z Fold5 5G 1TB - Phantom Black', 'Mobile Phones', 'Cutting-edge Samsung Galaxy Fold with 5G, 1TB storage in Phantom Black color.', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/featured2.png', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/1.jpg', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/2.jpg', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/3.jpg', 2339.00, 0, 'Phantom Black');
-INSERT INTO `products` VALUES (NULL, 'Xiaomi 13 5G 256GB Dual Sim - Black', 'Mobile Phones', 'Xiaomi 13 with 5G, 256GB storage, Dual Sim in Black color.', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/featured3.png', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/1.jpg', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/2.jpg', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/4.jpg', 999.99, 0, 'Black');
-INSERT INTO `products` VALUES (NULL, 'Huawei Mate X3 512GB Dual Sim - Dark Green', 'Mobile Phones', 'Powerful Huawei Mate X3 with 512GB storage, Dual Sim in Dark Green color.', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/featured4.png', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/1.jpg', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/2.jpg', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/3.jpg', 2199.00, 0, 'Dark Green');
-INSERT INTO `products` VALUES (NULL, 'Bluetooth Beats Powerbeats Pro - Black', 'Audio Accessories', 'High-quality Bluetooth Beats Powerbeats Pro in Black color.', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/offer1.png', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/2.jpg', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/5.jpg', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/6.jpg', 209.30, 0, 'Black');
-INSERT INTO `products` VALUES (NULL, 'Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray', 'Wearable Technology', 'Advanced Smartwatch Garmin Fenix 7X Pro Solar Edition in Slate Gray color.', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/offer2.png', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/2.jpg', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/3.jpg', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/5.jpg', 580.30, 0, 'Slate Gray');
-INSERT INTO `products` VALUES (NULL, 'Apple iPad Pro 12.9" 2022 (6th Gen) WiFi - 256GB Silver Grey', 'Tablets', 'Latest Apple iPad Pro 12.9" 2022 (6th Gen) WiFi with 256GB storage in Silver Grey color.', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/offer3.png', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/1.jpg', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/4.jpg', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/2.jpg', 1133.29, 0, 'Silver Grey');
-INSERT INTO `products` VALUES (NULL, 'Smartphone Huawei Mate 50 Pro 256GB - Silver', 'Mobile Phones', 'High-performance Huawei Mate 50 Pro with 256GB storage in Silver color.', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/offer4.png', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/2.jpg', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/4.jpg', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/5.jpg', 622.29, 0, 'Silver');
+INSERT INTO `products` VALUES (NULL, 'Apple iPhone 15 Pro Max 1TB - Blue Titanium', 'Mobile Phones', 'High-end iPhone with 1TB storage in Blue Titanium color.', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/featured1.png', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/2.jpeg', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/3.jpeg', 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/4.jpeg', 2018.99, 0, 'Blue Titanium');
+INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Z Fold5 5G 1TB - Phantom Black', 'Mobile Phones', 'Cutting-edge Samsung Galaxy Fold with 5G, 1TB storage in Phantom Black color.', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/featured2.png', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/1.jpeg', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/2.jpeg', 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/3.jpeg', 2339.00, 0, 'Phantom Black');
+INSERT INTO `products` VALUES (NULL, 'Xiaomi 13 5G 256GB Dual Sim - Black', 'Mobile Phones', 'Xiaomi 13 with 5G, 256GB storage, Dual Sim in Black color.', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/featured3.png', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/1.jpeg', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/2.jpeg', 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/4.jpeg', 999.99, 0, 'Black');
+INSERT INTO `products` VALUES (NULL, 'Huawei Mate X3 512GB Dual Sim - Dark Green', 'Mobile Phones', 'Powerful Huawei Mate X3 with 512GB storage, Dual Sim in Dark Green color.', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/featured4.png', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/1.jpeg', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/2.jpeg', 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/3.jpeg', 2199.00, 0, 'Dark Green');
+INSERT INTO `products` VALUES (NULL, 'Bluetooth Beats Powerbeats Pro - Black', 'Audio Accessories', 'High-quality Bluetooth Beats Powerbeats Pro in Black color.', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/offer1.png', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/2.jpeg', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/5.jpeg', 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/6.jpeg', 209.30, 0, 'Black');
+INSERT INTO `products` VALUES (NULL, 'Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray', 'Wearable Technology', 'Advanced Smartwatch Garmin Fenix 7X Pro Solar Edition in Slate Gray color.', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/offer2.png', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/2.jpeg', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/3.jpeg', 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/5.jpeg', 580.30, 0, 'Slate Gray');
+INSERT INTO `products` VALUES (NULL, 'Apple iPad Pro 12.9" 2022 (6th Gen) WiFi - 256GB Silver Grey', 'Tablets', 'Latest Apple iPad Pro 12.9" 2022 (6th Gen) WiFi with 256GB storage in Silver Grey color.', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/offer3.png', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/1.jpeg', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/4.jpeg', 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/2.jpeg', 1133.29, 0, 'Silver Grey');
+INSERT INTO `products` VALUES (NULL, 'Smartphone Huawei Mate 50 Pro 256GB - Silver', 'Mobile Phones', 'High-performance Huawei Mate 50 Pro with 256GB storage in Silver color.', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/offer4.png', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/2.jpeg', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/4.jpeg', 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/5.jpeg', 622.29, 0, 'Silver');
 
 INSERT INTO `products` VALUES (NULL, 'Apple iPad Air 2019 10.5 με WiFi (3GB64GB) gold', 'Tablet', 'Apple iPad Air 2019 64GB and 3GB RAM, Camera 8MP, color Gold.', 'assets/imgs/offers/Apple iPad Air 2019 10.5 με WiFi (3GB64GB) gold/1.jpeg', 'assets/imgs/offers/Apple iPad Air 2019 10.5 με WiFi (3GB64GB) gold/2.jpeg', 'assets/imgs/offers/Apple iPad Air 2019 10.5 με WiFi (3GB64GB) gold/3.jpeg', 'assets/imgs/offers/Apple iPad Air 2019 10.5 με WiFi (3GB64GB) gold/4.jpeg', 587.00, 0, 'Gold');
 INSERT INTO `products` VALUES (NULL, 'Lenovo Tab P12 Pro 12.6 με WiFi & 5G (8GB256GB) Storm Grey', 'Tablet', 'Lenovo P12 Pro 12.6 with WiFi & 5G, 256GB and 8GB RAM, color Storm Grey', 'assets/imgs/offers/Lenovo Tab P12 Pro 12.6 με WiFi & 5G (8GB256GB) Storm Grey/2.jpeg', 'assets/imgs/offers/Lenovo Tab P12 Pro 12.6 με WiFi & 5G (8GB256GB) Storm Grey/1.jpeg', 'assets/imgs/offers/Lenovo Tab P12 Pro 12.6 με WiFi & 5G (8GB256GB) Storm Grey/3.jpeg', 'assets/imgs/offers/Lenovo Tab P12 Pro 12.6 με WiFi & 5G (8GB256GB) Storm Grey/4.jpeg', 828.43, 0, 'Storm Grey');
@@ -234,12 +234,3 @@ INSERT INTO `products` VALUES (NULL, '!Apple iPhone 13 512GB - Midnight', 'Smart
 'assets/imgs/offers/!Apple iPhone 13 512GB - Midnight/2.jpeg', 
 'assets/imgs/offers/!Apple iPhone 13 512GB - Midnight/3.jpeg', 
 'assets/imgs/offers/!Apple iPhone 13 512GB - Midnight/4.jpeg', 1088.99, 0, 'Midnight');
-
-
-
-
-
-
-
-
-
