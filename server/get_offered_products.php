@@ -3,7 +3,7 @@
 include('connection.php');
 
 
-$stmt = $conn->prepare("SELECT * FROM products LIMIT 4");
+$stmt = $conn->prepare("SELECT * FROM products where product_image like '%offer%' ");
 
 $stmt->execute();
 

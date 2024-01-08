@@ -189,8 +189,8 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                    <p><del>€299.00</del></p>
-                    <h4 class="p-price">€<?php echo $row['product_price']; ?></h4>
+                    <p><del>€<?php echo $row['product_price']; ?></del></p>
+                    <h4 class="p-price">€<?php echo $row['product_price']*70/100; ?></h4>
                     <button class="buy-btn">Buy Now</button>
                     
                 </div>
