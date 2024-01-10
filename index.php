@@ -132,10 +132,12 @@
             </div>
             <div class="row mx-auto container-fluid">
 
+
             <?php include('server/get_featured_products.php'); ?>
 
 
             <?php while($row= $featured_products->fetch_assoc()) { ?>
+
 
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
                     <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
@@ -147,10 +149,13 @@
                     </div>
                     <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                     <h4 class="p-price">€ <?php echo $row['product_price']; ?></h4>
-                    <button class="buy-btn">Buy Now</button>
-                    
+                   
+                    <form action="single_product.php" method="get">
+                        <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                    </form>        
                 </div>
                 
+
                 <?php } ?>
             </div>
           </section>

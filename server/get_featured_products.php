@@ -12,6 +12,4 @@ $featured_products = $stmt->get_result();//[]
 
 
 
-
-
 ?>
