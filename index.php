@@ -38,10 +38,10 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
-                      <li><a class="dropdown-item" href="handsfree.html">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
-                      <li><a class="dropdown-item" href="smartwatches.html">Smartwatch</a></li>
+                      <li><a class="dropdown-item" href="smartphones.php">Smartphones</a></li>
+                      <li><a class="dropdown-item" href="handsfree.php">Handsfree</a></li>
+                      <li><a class="dropdown-item" href="tablets.php">Tablets</a></li>
+                      <li><a class="dropdown-item" href="smartwatches.php">Smartwatch</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>

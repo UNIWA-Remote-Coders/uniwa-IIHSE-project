@@ -39,9 +39,9 @@
 
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="#">Smartphones</a></li>
-                      <li><a class="dropdown-item" href="handsfree.html">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
-                      <li><a class="dropdown-item" href="smartwatches.html">Smartwatches</a></li>
+                      <li><a class="dropdown-item" href="handsfree.php">Handsfree</a></li>
+                      <li><a class="dropdown-item" href="tablets.php">Tablets</a></li>
+                      <li><a class="dropdown-item" href="smartwatches.php">Smartwatches</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -95,6 +95,33 @@
 
   <br> <br>
 
+  <?php include('server/get_products.php'); ?>
+    
+  <div class="row mx-auto container-fluid">
+
+      <?php
+      while(($row= $smartphones->fetch_assoc())) { 
+      ?>
+
+
+          <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+              <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
+              <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+              <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+              <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
+              <button class="buy-btn">Add to Cart</button>
+          </div>
+      <?php 
+      } 
+      ?>
+  </div>
+
+<!--
   <div class="row mx-auto container-fluid">
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
         <img class="img-fluid mb-3" src="assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/featured1.png"/>
@@ -382,9 +409,8 @@
       <h4 class="p-price">€999.99</h4>
       <button class="buy-btn">Buy Now</button>
     </div>
-
-
-  </div>
+ </div>
+-->
 
   <div>
 

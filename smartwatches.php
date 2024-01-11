@@ -38,9 +38,9 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
-                      <li><a class="dropdown-item" href="handsfree.html">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
+                      <li><a class="dropdown-item" href="smartphones.php">Smartphones</a></li>
+                      <li><a class="dropdown-item" href="handsfree.php">Handsfree</a></li>
+                      <li><a class="dropdown-item" href="tablets.php">Tablets</a></li>
                       <li><a class="dropdown-item" href="#">Smartwatches</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
@@ -102,7 +102,7 @@
 
     <br> <br>
 
-    <?php include('server/get_smartwatches.php'); ?>
+    <?php include('server/get_products.php'); ?>
     
     <div class="row mx-auto container-fluid">
 

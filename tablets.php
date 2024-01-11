@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title> Handsfree </title>
+        <title> Tablets </title>
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
@@ -38,10 +38,10 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="smartphones.html">Smartphones</a></li>
-                      <li><a class="dropdown-item" href="#">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="tablets.html">Tablets</a></li>
-                      <li><a class="dropdown-item" href="smartwatches.html">Smartwatches</a></li>
+                      <li><a class="dropdown-item" href="smartphones.php">Smartphones</a></li>
+                      <li><a class="dropdown-item" href="handsfree.php">Handsfree</a></li>
+                      <li><a class="dropdown-item" href="#">Tablets</a></li>
+                      <li><a class="dropdown-item" href="smartwatches.php">Smartwatches</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
@@ -71,10 +71,10 @@
 
           <br><br><br>
 
-          <!--Handsfree-->
- <section id="handsfree" class="my-5 pb-5">
+          <!--Tablets-->
+ <section id="tablets" class="my-5 pb-5">
     <div class="container text-center mt-5 py-5">
-        <h3>Our Handsfree</h3>
+        <h3>Our Tablets</h3>
         <hr class="mx-auto">
         <p>Here you can check out our featured products</p>
     </div>
@@ -92,241 +92,278 @@
           </ul>
         </nav>
       
-    </div>
+      </div>
     
-    <br> <br>
+      <br> <br>
 
+    <?php include('server/get_products.php'); ?>
+    
+    <div class="row mx-auto container-fluid">
+  
+        <?php
+        while(($row= $tablets->fetch_assoc())) { 
+        ?>
+  
+  
+            <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        <?php 
+        } 
+        ?>
+    </div>
+
+<!--    
 
     <div class="row mx-auto container-fluid">
       <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Beats Powerbeats Pro In-ear Bluetooth Handsfree/1.jpeg"/>
+          <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Apple iPad Pro 2022 11 με WiFi (16GB1TB) Space Gray/1.jpeg"/>
           <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
           </div>
-          <h5 class="p-name">Beats Powerbeats Pro In-ear Bluetooth Handsfree</h5>
-          <h4 class="p-price">€282.56</h4>
+          <h5 class="p-name">Apple iPad Pro 2022 11 με WiFi (16GB1TB) Space Gray</h5>
+          <h4 class="p-price">€1899.32</h4>
           <button class="buy-btn">Buy Now</button>
       </div>
 
       <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Huawei FreeBuds Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Apple iPad Pro 2021 12.9 με WiFi & 5G (16GB2TB) Space Grey/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Huawei FreeBuds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€302.64</h4>
+        <h5 class="p-name">Apple iPad Pro 2021 12.9 με WiFi & 5G (16GB2TB) Space Grey</h5>
+        <h4 class="p-price">€2250.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EQ In-ear Bluetooth Handsfree Nordic Ice/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Apple iPad Pro 2022 12.9 με WiFi (16GB1TB) Silver/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EQ In-ear Bluetooth Handsfree Nordic Ice</h5>
-        <h4 class="p-price">€419.00</h4>
+        <h5 class="p-name">Apple iPad Pro 2022 12.9 με WiFi (16GB1TB) Silver</h5>
+        <h4 class="p-price">€2604.80</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Gold Tone/5.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Lenovo Tab P11 Pro With Keyboard Pack And Precision Pen 2 (ZA7D0067IT) 11.5 με WiFi & 4G (6GB128GB) Slate Grey/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Gold Tone</h5>
-        <h4 class="p-price">€319.00</h4>
+        <h5 class="p-name">Lenovo Tab P11 Pro With Keyboard Pack And Precision Pen 2 (ZA7D0067IT) 11.5 με WiFi & 4G (6GB128GB) Slate Grey</h5>
+        <h4 class="p-price">€533.90</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Anthracite Oxygen/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Lenovo Tab P11 Pro (2nd Gen) 11.2 με WiFi (8GB256GBLenovo Precision Pen 3 & Keyboard Pack ) Storm Grey/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Anthracite Oxygen</h5>
-        <h4 class="p-price">€319.00</h4>
+        <h5 class="p-name">Lenovo Tab P11 Pro (2nd Gen) 11.2 με WiFi (8GB256GBLenovo Precision Pen 3 & Keyboard Pack ) Storm Grey</h5>
+        <h4 class="p-price">€663.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Meters Linx Set In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Microsoft Surface Pro 7 12.3 Tablet με WiFi (8GB128GB) Platinum/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Meters Linx Set In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€330.00</h4>
+        <h5 class="p-name">Microsoft Surface Pro 7 12.3 Tablet με WiFi (8GB128GB) Platinum</h5>
+        <h4 class="p-price">€699.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics 60+ UC (USB-A) In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Lenovo Yoga Tab 13 13 με WiFi (8GB128GB) Shadow Black/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Plantronics 60+ UC (USB-A) In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€345.00</h4>
+        <h5 class="p-name">Lenovo Yoga Tab 13 13 με WiFi (8GB128GB) Shadow Black</h5>
+        <h4 class="p-price">€679.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Denon PerL Pro In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Xoro MegaPAD 2154 V4 21.5 Tablet με WiFi (2GB16GB)/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Denon PerL Pro In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€349.00</h4>
+        <h5 class="p-name">Xoro MegaPAD 2154 V4 21.5 Tablet με WiFi (2GB16GB)</h5>
+        <h4 class="p-price">€850.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Lenovo Tab P12 Pro 12.6 με WiFi (8GB256GBwith Keyboard & Pen) Storm Grey/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€349.90</h4>
+        <h5 class="p-name">Lenovo Tab P12 Pro 12.6 με WiFi (8GB256GBwith Keyboard & Pen) Storm Grey</h5>
+        <h4 class="p-price">€949.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Samsung Galaxy Buds Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S8+ 12.4 με WiFi & 5G (8GB256GB) Pink Gold/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Samsung Galaxy Buds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€353.50</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S8+ 12.4 με WiFi & 5G (8GB256GB) Pink Gold</h5>
+        <h4 class="p-price">€1168.40</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose QuietComfort Ultra Earbuds Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S7+ 12.4 με WiFi (6GB128GB) Mystic Silver/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bose QuietComfort Ultra Earbuds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€416.34</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S7+ 12.4 με WiFi (6GB128GB) Mystic Silver</h5>
+        <h4 class="p-price">€1165.10</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose QuietComfort Earbud Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S8 Ultra 14.6 με WiFi (8GB256GB) Graphite/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bose QuietComfort Earbud Bluetooth Handsfree</h5>
-        <h4 class="p-price">€416.41</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S8 Ultra 14.6 με WiFi (8GB256GB) Graphite</h5>
+        <h4 class="p-price">€1230.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics Voyager Free 60+ UC In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S8+ Enterprise Edition 12.4 με WiFi & 5G (8GB128GB) Graphite/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Plantronics Voyager Free 60+ UC In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€374.95</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S8+ Enterprise Edition 12.4 με WiFi & 5G (8GB128GB) Graphite</h5>
+        <h4 class="p-price">€1292.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose SoundSport Free In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S9 Ultra 14.6 με WiFi & 5G (12GB512GB) Beige/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bose SoundSport Free In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€390.94</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S9 Ultra 14.6 με WiFi & 5G (12GB512GB) Beige</h5>
+        <h4 class="p-price">€1430.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics Voyager Free 60+ UC (USB-ATeams) In-ear Bluetooth Handsfree/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Samsung Galaxy Tab S8+ 12.4 με WiFi & 5G (8GB128GB) Pink Gold/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Plantronics Voyager Free 60+ UC (USB-ATeams) In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€397.90</h4>
+        <h5 class="p-name">Samsung Galaxy Tab S8+ 12.4 με WiFi & 5G (8GB128GB) Pink Gold</h5>
+        <h4 class="p-price">€1431.84</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree white/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Microsoft Surface Pro 9 13 Tablet με WiFi (16GB512GB) Graphite/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree white</h5>
-        <h4 class="p-price">€398.00</h4>
+        <h5 class="p-name">Microsoft Surface Pro 9 13 Tablet με WiFi (16GB512GB) Graphite</h5>
+        <h4 class="p-price">€2398.00</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree black/1.jpeg"/>
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Apple iPad Pro 2021 11 με WiFi & 5G (16GB2TB) Space Grey/1.jpeg"/>
         <div class="star">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
         </div>
-        <h5 class="p-name">Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree black</h5>
-        <h4 class="p-price">€398.00</h4>
+        <h5 class="p-name">Apple iPad Pro 2021 11 με WiFi & 5G (16GB2TB) Space Grey</h5>
+        <h4 class="p-price">€2604.50</h4>
         <button class="buy-btn">Buy Now</button>
     </div>
 
-
-
-
+    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+        <img class="img-fluid mb-3" src="assets/imgs/products/tablets/Asus Zenbook 17 Fold 17.3 Tablet με WiFi (16GB1TB) Tech Black/1.jpeg"/>
+        <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <h5 class="p-name">Asus Zenbook 17 Fold 17.3 Tablet με WiFi (16GB1TB) Tech Black</h5>
+        <h4 class="p-price">€3743.99</h4>
+        <button class="buy-btn">Buy Now</button>
+    </div>
 
     </div>
+
+-->
 
     <div>
-        
     <!--bar gia allagh selidas -->
     <nav area-lable="page navigation example">
       <ul class="pagination mt-5">
@@ -337,6 +374,7 @@
           <li class="page-item"><a class="page-link" href="#">Next</a></li>
       </ul>
     </nav>
+ 
     
     </div>
 </section>
