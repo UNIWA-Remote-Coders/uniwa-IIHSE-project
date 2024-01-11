@@ -115,7 +115,9 @@
                 </div>
                 <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                 <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
-                <button class="buy-btn">Add to Cart</button>
+                <form action="single_product.php" method="get">
+                    <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                </form>
             </div>
         <?php 
         } 

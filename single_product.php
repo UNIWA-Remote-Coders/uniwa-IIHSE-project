@@ -98,18 +98,18 @@ else { //no product id
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="smartphones.html"
+                  <a class="dropdown-item" href="smartphones.php"
                     >Smartphones</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="handsfree.html">Handsfree</a>
+                  <a class="dropdown-item" href="handsfree.php">Handsfree</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="tablets.html">Tablets</a>
+                  <a class="dropdown-item" href="tablets.php">Tablets</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="smartwatches.html"
+                  <a class="dropdown-item" href="smartwatches.php"
                     >Smartwatches</a
                   >
                 </li>
