@@ -16,6 +16,9 @@ if (isset($_GET['product_id'])) {
 
 }
 
+else { //no product id
+  header('location: index.php');
+}
 
 ?>
 
