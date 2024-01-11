@@ -70,33 +70,65 @@
 
           <br><br><br>
 
+        <!--    END OF NAVBAR   -->
+
+
+
 
  <!--Smartwatches-->
  <section id="smartwatches" class="my-5 pb-5">
     
 
-  <div class="container text-center mt-5 py-5">
-      <h3>Our Smartwatches</h3>
-      <hr class="mx-auto">
-      <p>Here you can check out our featured products</p>
-  </div>
+    <div class="container text-center mt-5 py-5">
+        <h3>Our Smartwatches</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our featured products</p>
+    </div>
 
-  <div>
+    <div>
 
-    <!--bar gia allagh selidas -->
-    <nav area-lable="page navigation example">
-      <ul class="pagination mt-5">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
-  
-  </div>
+        <!--bar gia allagh selidas -->
+        <nav area-lable="page navigation example">
+        <ul class="pagination mt-5">
+            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+        </ul>
+        </nav>
+    
+    </div>
 
-  <br> <br>
+    <br> <br>
+
+    <?php include('server/get_smartwatches.php'); ?>
+    
+    <div class="row mx-auto container-fluid">
+
+        <?php
+        while(($row= $smartwatches->fetch_assoc())) { 
+        ?>
+
+
+            <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
+                <button class="buy-btn">Add to Cart</button>
+            </div>
+        <?php 
+        } 
+        ?>
+    </div>
+
+<!--
 
   <div class="row mx-auto container-fluid">
     <div class="product text-center col-lg-3 col-md-4 col-sm-12">
@@ -335,7 +367,7 @@
 
 
   </div>
-
+-->
     <div>
 
       <!--bar gia allagh selidas -->

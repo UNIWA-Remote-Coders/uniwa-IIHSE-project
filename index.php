@@ -203,7 +203,9 @@
                     <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                     <p><del>€<?php echo $row['product_price']; ?></del></p>
                     <h4 class="p-price">€<?php echo $row['product_price']*70/100; ?></h4>
-                    <button class="buy-btn">Buy Now</button>
+                    <form action="single_product.php" method="get">
+                        <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                    </form>  
                     
                 </div>
 
