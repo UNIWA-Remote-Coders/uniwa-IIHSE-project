@@ -122,6 +122,11 @@ hr{
     }
 }
 
+#error-msg{
+    font-style: italic;
+    color:red;
+}
+
 #home{
     background-image: url('../imgs/1.jpeg');
     width: 100%;

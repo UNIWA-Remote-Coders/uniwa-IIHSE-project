@@ -13,11 +13,11 @@
 
       if($password !== $confirm_password) {
         $error = "Password is not matched!";
-        header('location: registration.php?error=Password is not matched!');
+        //header('location: registration.php?error=Password is not matched!');
       }
-      else if(strlen($password<6)){
+      else if(strlen($password)<6){
         $error = "Password must be at least 6 characters!";
-        header('location: registration.php?error=Password must be at least 6 characters!');
+        //header('location: registration.php?error=Password must be at least 6 characters!');
       }
       else {
         $stmt1=$conn->prepare("SELECT count(*) FROM users where user_email=?");
@@ -28,7 +28,8 @@
         $stmt1->fetch();
 
         if($num_rows!=0) {
-          header('location: registration.php?error=User e-mail is already exists!');
+          $error = "User e-mail is already exists!";
+          //header('location: registration.php?error=User e-mail is already exists!');
         }
         else {
           $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address, user_password) VALUES (?, ?, ?, ?)");
@@ -40,7 +41,8 @@
             header('location: index.php?registration=You are Registered Successfully');
           }
           else {
-            header('location: registration.php?error=Does not create account at this time');
+            $error = "Does not create account at this time";
+            //header('location: registration.php?error=Does not create account at this time');
           }
         }
 
@@ -251,9 +253,9 @@
             />
           </div>
           <div class="form-group">
-              <i id="error-msg">
+              <p id="error-msg">
                 <?php echo $error; ?>
-              </i>
+              </p>
           </div>
           <div class="form-group">
             <a class="nav-link" href="login.html"
