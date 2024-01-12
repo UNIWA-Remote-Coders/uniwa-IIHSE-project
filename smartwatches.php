@@ -112,23 +112,28 @@
 
 
             <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                <form action="single_product.php" method="get">
-                    <!--<input class="img-fluid mb-3" type="image" src="<?php echo $row['product_image']; ?>" alt="submit" name="product_id" value="<?php echo $row['product_id']; ?>"/>
-                    <button class="buy-img-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">
-                        <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>" alt="buttonpng" border="0"/>
-                    </button>-->
-                    <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                    <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
                 
+                <!-- test code for button img
+                <button class="img-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>" width=100% height=100%> 
+                    <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>" alt="buttonpng" border="0" width=100% height=100%/>
+                </button>
+                <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
+                -->
+
+                <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a> <!--OK!-->
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
+
+                <form action="single_product.php" method="get">
                     <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
-                </form>    
+                </form> 
+
             </div>
         <?php 
         } 
