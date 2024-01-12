@@ -1,15 +1,15 @@
 <?php
     session_start();
-    include('./server/connection/php');
+    include('./server/connection.php');
 
     if(isset($_POST['register'])) {
       $name = $_POST['name'];
       $email = $_POST['email'];
       $address = $_POST['address'];
       $password = $_POST['password'];
-      $confirmpassword = $_POST['confirmpassword'];
+      $confirm_password = $_POST['confirm_password'];
 
-      if($password != $confirmpassword) {
+      if($password !== $confirm_password) {
         header('location: registration.php?error=Password is not matched!');
       }
       else if(strlen($password<6)){
@@ -23,17 +23,17 @@
         $stmt1->store_result();
         $stmt1->fetch();
 
-        if($num_rows!=0) {
-          header('location: registration.php?error=User Email is already exists!');
+        if($num_rows!==0) {
+          header('location: registration.php?error=User e-mail is already exists!');
         }
         else {
-          $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address_ user_password) VALUES (?, ?, ?, ?)");
+          $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address, user_password) VALUES (?, ?, ?, ?)");
           $stmt->bind_param('ssss', $name, $email, $address, $password);
           if ($stmt->execute()) {
             $_SESSION['user_email'] = $email;
             $_SESSION['user_name'] = $name;
             $_SESSION['logged_in'] = true;
-            header('location: index.php?reistration=You Registered Successfully');
+            header('location: index.php?registration=You are Registered Successfully');
           }
           else {
             header('location: registration.php?error=Does not create account at this time');
@@ -46,8 +46,6 @@
       header('location: index.php');
       exit;
     }
-
-
 ?>
 
 
@@ -179,7 +177,7 @@
       <div class="mx-auto container">
 
         <!-- start of form tag -->
-        <form id="register-form" action='./registration.php' method='POST'>
+        <form id="register-form" action="./registration.php" method="POST">
 
           <div class="form-group">
             <label>Name</label>
@@ -231,7 +229,7 @@
               type="password"
               class="form-control"
               id="register-confirm-password"
-              name="confirm-password"
+              name="confirm_password"
               placeholder="Confirm Password"
               required
             />
@@ -241,6 +239,7 @@
               type="submit"
               class="btn"
               id="register-btn"
+              name="register"
               value="Register"
             />
           </div>
