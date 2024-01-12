@@ -169,15 +169,15 @@
         </div>
       </div>
     </nav>
-    <br /><br />
 
-    <!--Register-->
+    <!--Registration-->
     <section class="my-5 py-5" id="register">
       <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Registration</h2>
         <hr class="mx-auto" />
       </div>
       <div class="mx-auto container">
+
         <!-- start of form tag -->
         <form id="register-form" action='./registration.php' method='POST'>
 
@@ -199,7 +199,18 @@
               class="form-control"
               id="register-email"
               name="email"
-              placeholder="login-email"
+              placeholder="Login-email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Address</label>
+            <input
+              type="text"
+              class="form-control"
+              id="register-address"
+              name="address"
+              placeholder="Address"
               required
             />
           </div>
