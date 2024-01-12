@@ -1,3 +1,17 @@
+<?php
+
+
+
+
+
+
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,9 +116,7 @@
             </li>
           </ul>
 
-          <a class="nav-link" href="cart.html"
-            ><i class="fa fa-shopping-cart" aria-hidden="true"></i
-          ></a>
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           <a class="nav-link" href="login.html"><i class="fas fa-user"></i></a>
 
           <!-- Search
@@ -118,74 +130,55 @@
     </nav>
     <br /><br />
 
-    <!--Register-->
-    <section class="my-5 py-5">
-      <div class="container text-center mt-3 pt-5">
-        <h2 class="form-weight-bold">Register</h2>
-        <hr class="mx-auto" />
+    <!--Cart-->
+    <section class="cart container my-5 py-5">
+      <div class="container mt-5">
+        <h2 class="font-weight-bolde">Your Cart</h2>
+        <hr />
       </div>
-      <div class="mx-auto container">
-        <form id="register-form">
-          <div class="form-group">
-            <label>Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="register-name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input
-              type="text"
-              class="form-control"
-              id="register-email"
-              name="email"
-              placeholder="login-email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="register-password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Confirm Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="register-confirm-password"
-              name="confirm-password"
-              placeholder="Confirm Password"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="submit"
-              class="btn"
-              id="register-btn"
-              value="Register"
-            />
-          </div>
-          <div class="form-group">
-            <a class="nav-link" href="login.html"
-              ><i id="loging-url" class="btn"
-                >Don you have an account? Login
-              </i></a
-            >
-          </div>
-        </form>
+
+      <table class="mt-5 pt-5">
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="product-info">
+              <img src="assets/imgs/11.jpeg" />
+              <div>
+                <p>iPhone</p>
+                <small><span>€</span>155</small>
+                <br />
+                <a class="remove-btn" href="#">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td>
+            <input type="number" value="1" />
+            <a class="edit-btn">Edit</a>
+          </td>
+          <td>
+            <span>€</span>
+            <span class="product-price">155</span>
+          </td>
+        </tr>
+      </table>
+      <div class="cart-total">
+        <table>
+          <tr>
+            <td>Subtotal</td>
+            <td>€155</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>€155</td>
+          </tr>
+        </table>
+      </div>
+      <div class="checkout-container">
+        <button class="btn checkout-btn">Checkout</button>
       </div>
     </section>
 

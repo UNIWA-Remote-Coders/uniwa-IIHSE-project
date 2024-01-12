@@ -41,10 +41,12 @@ CREATE TABLE IF NOT EXISTS `order_items`(
 
 -- Create users table if not exists
 CREATE TABLE IF NOT EXISTS `users`(
-    `user_id` int(11) NOT NULL AUTO_INCREMENT,
-    `user_name` varchar(100) NOT NULL,
-    `user_email` varchar(100) NOT NULL,
-    `user_password` varchar(100) NOT NULL,
+    `user_id` int(50) NOT NULL AUTO_INCREMENT,
+    `user_name` varchar(50) NOT NULL,
+    `user_email` varchar(50) NOT NULL,
+    `user_address` text NOT NULL,
+    `user_password` varchar(50) NOT NULL,
+    `date` timestamp,
     PRIMARY KEY (`user_id`),
     UNIQUE KEY `UX_Constraint` (`user_email`)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;

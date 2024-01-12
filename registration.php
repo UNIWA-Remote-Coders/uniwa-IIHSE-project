@@ -1,3 +1,56 @@
+<?php
+    session_start();
+    include('./server/connection/php');
+
+    if(isset($_POST['register'])) {
+      $name = $_POST['name'];
+      $email = $_POST['email'];
+      $address = $_POST['address'];
+      $password = $_POST['password'];
+      $confirmpassword = $_POST['confirmpassword'];
+
+      if($password != $confirmpassword) {
+        header('location: registration.php?error=Password is not matched!');
+      }
+      else if(strlen($password<6)){
+        header('location: registration.php?error=Password must be at least 6 characters!');
+      }
+      else {
+        $stmt1=$conn->prepare("SELECT count(*) FROM users where user_email=?");
+        $stmt1->bind_param('s', $email);
+        $stmt1->execute();
+        $stmt1->bind_result($num_rows);
+        $stmt1->store_result();
+        $stmt1->fetch();
+
+        if($num_rows!=0) {
+          header('location: registration.php?error=User Email is already exists!');
+        }
+        else {
+          $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address_ user_password) VALUES (?, ?, ?, ?)");
+          $stmt->bind_param('ssss', $name, $email, $address, $password);
+          if ($stmt->execute()) {
+            $_SESSION['user_email'] = $email;
+            $_SESSION['user_name'] = $name;
+            $_SESSION['logged_in'] = true;
+            header('location: index.php?reistration=You Registered Successfully');
+          }
+          else {
+            header('location: registration.php?error=Does not create account at this time');
+          }
+        }
+
+      }
+    }
+    else if (isset($_SESSION['loggen_in'])) {
+      header('location: index.php');
+      exit;
+    }
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -102,7 +155,9 @@
             </li>
           </ul>
 
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <a class="nav-link" href="cart.html"
+            ><i class="fa fa-shopping-cart" aria-hidden="true"></i
+          ></a>
           <a class="nav-link" href="login.html"><i class="fas fa-user"></i></a>
 
           <!-- Search
@@ -116,55 +171,78 @@
     </nav>
     <br /><br />
 
-    <!--Cart-->
-    <section class="cart container my-5 py-5">
-      <div class="container mt-5">
-        <h2 class="font-weight-bolde">Your Cart</h2>
-        <hr />
+    <!--Register-->
+    <section class="my-5 py-5" id="register">
+      <div class="container text-center mt-3 pt-5">
+        <h2 class="form-weight-bold">Registration</h2>
+        <hr class="mx-auto" />
       </div>
+      <div class="mx-auto container">
+        <!-- start of form tag -->
+        <form id="register-form" action='./registration.php' method='POST'>
 
-      <table class="mt-5 pt-5">
-        <tr>
-          <th>Product</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-        </tr>
-        <tr>
-          <td>
-            <div class="product-info">
-              <img src="assets/imgs/11.jpeg" />
-              <div>
-                <p>iPhone</p>
-                <small><span>€</span>155</small>
-                <br />
-                <a class="remove-btn" href="#">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" value="1" />
-            <a class="edit-btn">Edit</a>
-          </td>
-          <td>
-            <span>€</span>
-            <span class="product-price">155</span>
-          </td>
-        </tr>
-      </table>
-      <div class="cart-total">
-        <table>
-          <tr>
-            <td>Subtotal</td>
-            <td>€155</td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>€155</td>
-          </tr>
-        </table>
-      </div>
-      <div class="checkout-container">
-        <button class="btn checkout-btn">Checkout</button>
+          <div class="form-group">
+            <label>Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="register-name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="register-email"
+              name="email"
+              placeholder="login-email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="register-password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="register-confirm-password"
+              name="confirm-password"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="submit"
+              class="btn"
+              id="register-btn"
+              value="Register"
+            />
+          </div>
+          <div class="form-group">
+            <a class="nav-link" href="login.html"
+              ><i id="loging-url" class="btn"
+                >Don you have an account? Login
+              </i></a
+            >
+          </div>
+
+        </form>
+
       </div>
     </section>
 
