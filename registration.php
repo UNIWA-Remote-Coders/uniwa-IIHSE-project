@@ -2,6 +2,8 @@
     session_start();
     include('./server/connection.php');
 
+    $error = "";
+
     if(isset($_POST['register'])) {
       $name = $_POST['name'];
       $email = $_POST['email'];
@@ -10,9 +12,11 @@
       $confirm_password = $_POST['confirm_password'];
 
       if($password !== $confirm_password) {
+        $error = "Password is not matched!";
         header('location: registration.php?error=Password is not matched!');
       }
       else if(strlen($password<6)){
+        $error = "Password must be at least 6 characters!";
         header('location: registration.php?error=Password must be at least 6 characters!');
       }
       else {
@@ -23,7 +27,7 @@
         $stmt1->store_result();
         $stmt1->fetch();
 
-        if($num_rows!==0) {
+        if($num_rows!=0) {
           header('location: registration.php?error=User e-mail is already exists!');
         }
         else {
@@ -169,6 +173,9 @@
     </nav>
 
     <!--Registration-->
+    <i id="error-msg">
+                <?php echo $error; ?>
+              </i>
     <section class="my-5 py-5" id="register">
       <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Registration</h2>
@@ -244,9 +251,14 @@
             />
           </div>
           <div class="form-group">
+              <i id="error-msg">
+                <?php echo $error; ?>
+              </i>
+          </div>
+          <div class="form-group">
             <a class="nav-link" href="login.html"
               ><i id="loging-url" class="btn"
-                >Don you have an account? Login
+                >Do you have an account? Login
               </i></a
             >
           </div>
