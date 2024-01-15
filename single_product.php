@@ -125,10 +125,10 @@ else { //no product id
             </li>
           </ul>
 
-          <a class="nav-link" href="cart.html"
+          <a class="nav-link" href="cart.php"
             ><i class="fa fa-shopping-cart" aria-hidden="true"></i
           ></a>
-          <a class="nav-link" href="login.html"><i class="fas fa-user"></i></a>
+          <a class="nav-link" href="login.php"><i class="fas fa-user"></i></a>
 
           <!-- Search
                 <form class="d-flex" role="search">

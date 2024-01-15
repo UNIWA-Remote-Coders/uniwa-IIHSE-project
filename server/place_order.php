@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include('./server/connection.php');
+include('./connection.php');
 
 if(isset($_POST['place_order'])) {
 
@@ -52,7 +52,7 @@ if(isset($_POST['place_order'])) {
 
 
     //6. inform user whether everything is fine or there is a problem
-    header('location: payment.php?order_status="order placed successfully"');
+    header('location: ../payment.php?order_status=order placed successfully');
 }
 
 

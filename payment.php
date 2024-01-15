@@ -1,66 +1,9 @@
 <?php
-    session_start();
-    include('./server/connection.php');
 
-    //$error = "";
+  session_start();
+  //include('./server/connection.php');
 
-    if(isset($_POST['register'])) {
-      $name = $_POST['name'];
-      $email = $_POST['email'];
-      $address = $_POST['address'];
-      $password = $_POST['password'];
-      $confirm_password = $_POST['confirm_password'];
-
-      if($password !== $confirm_password) {
-        //$error = "Password is not matched!";
-        header('location: registration.php?error=Passwords do not match!');
-      }
-      else if(strlen($password)<6){
-        //$error = "Password must be at least 6 characters!";
-        header('location: registration.php?error=Password must be at least 6 characters!');
-      }
-      else {
-        $stmt1=$conn->prepare("SELECT count(*) FROM users where user_email=?");
-        $stmt1->bind_param('s', $email);
-        $stmt1->execute();
-        $stmt1->bind_result($num_rows);
-        $stmt1->store_result();
-        $stmt1->fetch();
-
-        if($num_rows!=0) {
-          //$error = "User e-mail is already exists!";
-          header('location: registration.php?error=User e-mail is already exists!');
-        }
-        else {
-          //create a new user
-          $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address, user_password) VALUES (?, ?, ?, ?)");
-          $stmt->bind_param('ssss', $name, $email, $address, $password);
-
-          //if account was created successfully
-          if ($stmt->execute()) {
-            $_SESSION['user_email'] = $email;
-            $_SESSION['user_name'] = $name;
-            $_SESSION['logged_in'] = true;
-            header('location: account.php?registration=You registered successfully');
-          }
-          //account could not be created
-          else {
-            //$error = "Does not create account at this time";
-            header('location: registration.php?error=Could not create an account at the moment');
-          }
-        }
-
-      }
-    }
-    else if (isset($_SESSION['loggen_in'])) {
-      header('location: index.php');
-      exit;
-    }
-    /*else {
-      header('location: registration.php?error=Please fill in the form');
-    }*/
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -139,18 +82,18 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="smartphones.html"
+                  <a class="dropdown-item" href="smartphones.php"
                     >Smartphones</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="handsfree.html">Handsfree</a>
+                  <a class="dropdown-item" href="handsfree.php">Handsfree</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="tablets.html">Tablets</a>
+                  <a class="dropdown-item" href="tablets.php">Tablets</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="smartwatches.html"
+                  <a class="dropdown-item" href="smartwatches.php"
                     >Smartwatches</a
                   >
                 </li>
@@ -181,100 +124,16 @@
       </div>
     </nav>
 
-    <!--Registration-->
-    <br>
-    <section class="my-5 py-5" id="register">
+    <!--Payment-->
+    <section class="my-5 py-5">
       <div class="container text-center mt-3 pt-5">
-        <h2 class="form-weight-bold">Registration</h2>
+        <h2 class="form-weight-bold">Check Out</h2>
         <hr class="mx-auto" />
       </div>
-      <div class="mx-auto container">
-
-        <!-- start of form tag -->
-        <form id="register-form" action="./registration.php" method="POST">
-
-          <div class="form-group">
-            <label>Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="register-name"
-              name="name"
-              placeholder="Name"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input
-              type="text"
-              class="form-control"
-              id="register-email"
-              name="email"
-              placeholder="Login-email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Address</label>
-            <input
-              type="text"
-              class="form-control"
-              id="register-address"
-              name="address"
-              placeholder="Address"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="register-password"
-              name="password"
-              placeholder="Password"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label>Confirm Password</label>
-            <input
-              type="password"
-              class="form-control"
-              id="register-confirm-password"
-              name="confirm_password"
-              placeholder="Confirm Password"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input
-              type="submit"
-              class="btn"
-              id="register-btn"
-              name="register"
-              value="Register"
-            />
-          </div>
-          <div class="form-group">
-              <p id="error-msg">
-                <?php 
-                  if(isset($_GET['error'])) { 
-                    echo $_GET['error']; 
-                  } 
-                ?>
-              </p>
-          </div>
-          <div class="form-group">
-            <a class="nav-link" href="login.php"
-              ><i id="loging-url" class="btn"
-                >Do you have an account? Login
-              </i></a
-            >
-          </div>
-
-        </form>
+      <div class="mx-auto container text-center">
+        <p><?php echo $_GET['order_status'];?></p>
+        <p>Total Payment: <?php echo $_SESSION['total'];?></p>
+        <input class="btn btn-primary" value="Pay Now" type="Submit"/>
 
       </div>
     </section>
