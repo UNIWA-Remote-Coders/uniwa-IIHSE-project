@@ -1,3 +1,40 @@
+<?php
+  session_start();
+  include('./server/connection.php');
+
+  if(isset($_POST['login_btn'])) {
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $stmt = $conn->prepare("SELECT user_id, user_name, user_email, user_password FROM users WHERE user_email=? AND user_password=? LIMIT 1");
+    $stmt->bind_param('ss', $email, $password);
+
+    if($stmt->execute()){
+
+      $stmt->bind_result($user_id, $user_name, $user_email, $user_password);
+      $stmt->store_result();
+
+      if($stmt->num_rows()==1){
+
+        $stmt->fetch();
+        $_SESSION['user_id']=$user_id;
+        $_SESSION['user_name']=$user_name;
+        $_SESSION['user_email']=$user_email;
+        $_SESSION['user_password']=$user_password;
+        $_SESSION['logged_in']=true;
+        header('location: account.php ? message = loggen in Successfully');
+      }
+      else {
+        header('location: login.php ? error = Could not verify');
+      }
+    }
+    else {
+      header('location: login.php ? error = something went wrong');
+    }
+  }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -75,18 +112,18 @@
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="smartphones.html"
+                  <a class="dropdown-item" href="smartphones.php"
                     >Smartphones</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item" href="handsfree.html">Handsfree</a>
+                  <a class="dropdown-item" href="handsfree.php">Handsfree</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="tablets.html">Tablets</a>
+                  <a class="dropdown-item" href="tablets.php">Tablets</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="smartwatches.html"
+                  <a class="dropdown-item" href="smartwatches.php"
                     >Smartwatches</a
                   >
                 </li>
@@ -102,10 +139,10 @@
             </li>
           </ul>
 
-          <a class="nav-link" href="cart.html"
+          <a class="nav-link" href="cart.php"
             ><i class="fa fa-shopping-cart" aria-hidden="true"></i
           ></a>
-          <a class="nav-link" href="login.html"><i class="fas fa-user"></i></a>
+          <i class="fas fa-user"></i>
 
           <!-- Search
                 <form class="d-flex" role="search">
@@ -118,56 +155,47 @@
     </nav>
     <br /><br />
 
-    <!--Account-->
+    <!--Login-->
     <section class="my-5 py-5">
-      <div class="row container mx-auto">
-        <div class="text-center mt-3 pt-5 col-lg-6 col-md-12 col-sm-12">
-          <h3 class="font-weight-bold">Account info</h3>
-          <hr class="mx-auto" />
-          <div class="account-info">
-            <p>Name: <span>Maria</span></p>
-            <p>Email: <span>maria_koliou@outlook.com</span></p>
-            <p><a href="" id="orders-btn">Your orders</a></p>
-            <p><a href="" id="logout-btn">Logout</a></p>
+      <div class="container text-center mt-3 pt-5">
+        <h2 class="form-weight-bold">Login</h2>
+        <hr class="mx-auto" />
+      </div>
+      <div class="mx-auto container">
+        <form id="login-form" action="login.php" method="POST">
+          <div class="form-group">
+            <label>Email</label>
+            <input
+              type="text"
+              class="form-control"
+              id="login-email"
+              name="email"
+              placeholder="login-email"
+              required
+            />
           </div>
-        </div>
-
-        <div class="col-lg-6 col-md-12 col-sm-12">
-          <form id="account-form">
-            <h3>Change Password</h3>
-            <hr class="mx-auto" />
-            <div class="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="account-password"
-                name="password"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label>Confirm Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="account-password-confirm"
-                name="confirmPassword"
-                placeholder="Password"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <input
-                type="submit"
-                value="Change Password"
-                class="btn"
-                id="change-pass-btn"
-              />
-            </div>
-          </form>
-        </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="login-password"
+              name="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <input type="submit" class="btn" id="login-btn" name="login_btn" value="Login" />
+          </div>
+          <div class="form-group">
+            <a class="nav-link" href="registration.php">
+              <i id="register-url" class="btn"
+                >Don't have account? Register
+              </i></a
+            >
+          </div>
+        </form>
       </div>
     </section>
 
