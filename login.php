@@ -13,6 +13,7 @@
     $stmt = $conn->prepare("SELECT user_id, user_name, user_email, user_password FROM users WHERE user_email=? AND user_password=? LIMIT 1");
     $stmt->bind_param('ss', $email, $password);
 
+
     if($stmt->execute()){
 
       $stmt->bind_result($user_id, $user_name, $user_email, $user_password);
