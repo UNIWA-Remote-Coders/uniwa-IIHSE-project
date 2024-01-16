@@ -3,6 +3,7 @@
   session_start();
   include('./server/connection.php');
 
+  //check if user is not logged in
   if(!isset($_SESSION['logged_in'])) {
     header('location: login.php');
     exit;
@@ -18,6 +19,7 @@
     }
   }
 
+  //change the password from user and update users table
   if(isset($_POST['change_password'])) {
     $password = $_POST['password'];
     $confirm_password = $_POST['confirmPassword'];
@@ -42,7 +44,7 @@
   }
 
   //get orders
-  if(isset($_SESSION['loggen_in'])) {
+  if(isset($_SESSION['logged_in'])) {
 
     $user_id = $_SESSION['user_id'];
     $stmt = $conn->prepare("SELECT * FROM orders WHERE user_id=?");
