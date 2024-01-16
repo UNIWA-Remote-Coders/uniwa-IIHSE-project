@@ -279,7 +279,7 @@
         <table class="mt-5 pt-5">
 
           <tr>
-            <th>Oreder id</th>
+            <th>Order id</th>
             <th>Order cost</th>
             <th>Order status</th>
             <th>Order Date</th>
@@ -305,8 +305,11 @@
                   </td>
 
                   <td>
-                    <form class="btn order-details-btn" type="submit" value="details">
-                  </td>
+                    <form method="POST" action="order_details.php">
+                      <input type="hidden" value="<?php echo $row['order_status'];?>" name="order_status"/>
+                      <input type="hidden" value="<?php echo $row['order_id'];?>" name="order_id"/>
+                      <input class="btn order-details-btn" name="order_details_btn" type="submit" value="details"/>
+                    </form>
                 </tr>
           <?php } ?>
 

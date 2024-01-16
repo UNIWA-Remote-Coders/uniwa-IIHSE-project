@@ -557,6 +557,11 @@ th:last-child{
     /* padding: 10px 20px; */
 }
 
+.orders .order-details-btn{
+    color:#ddd;
+    background-color: #fb774b;
+}
+
 .orders td img{
     width: 80px;
     height: 80px;
