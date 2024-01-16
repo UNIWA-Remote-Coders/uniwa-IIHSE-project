@@ -45,10 +45,10 @@
   if(isset($_SESSION['loggen_in'])) {
 
     $user_id = $_SESSION['user_id'];
-    $stmt = $conn->prepare("SELECT * FROM oders WHERE user_id=?");
+    $stmt = $conn->prepare("SELECT * FROM orders WHERE user_id=?");
     $stmt->bind_param('i', $user_id);
     $stmt->execute();
-    $featured_products = $stmt->get_result();//[]
+    $orders = $stmt->get_result();
   }
 
 ?>
@@ -283,17 +283,13 @@
             <th>Order cost</th>
             <th>Order status</th>
             <th>Order Date</th>
+            <th>Order details</th>
           </tr>
 
           <?php while($row = $orders->fetch_assoc()) { ?>
                 <tr>
                   <td>
-                    <div class="product-info">
-                      <!-- <img src="assets/imgs/featured1.jpg"/> -->
-                      <div>
-                        <p class="mt-3"><?php echo $row['order_id'];?></p>
-                      </div>
-                    </div>
+                      <span><?php echo $row['order_id'];?></span>
                   </td>
       
                   <td>
@@ -303,9 +299,13 @@
                   <td>
                     <span><?php echo $row['order_status'];?>/span>
                   </td>
-                  
+
                   <td>
                     <span><?php echo $row['order_date'];?>/span>
+                  </td>
+
+                  <td>
+                    <form class="btn order-details-btn" type="submit" value="details">
                   </td>
                 </tr>
           <?php } ?>
