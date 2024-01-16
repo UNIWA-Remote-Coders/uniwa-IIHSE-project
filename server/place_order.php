@@ -11,10 +11,10 @@ if(isset($_POST['place_order'])) {
     $phone = $_POST['phone'];
     $city = $_POST['city'];
     $address = $_POST['address'];
-    $order_cost = $_POST['total'];
-    $order_status = $_POST['on_hold'];
-    $user_id = 1;
-    $order_date = $_POST['Y-m-d H:i:s'];
+    $order_cost = $SESSION['total'];
+    $order_status = "on_hold";
+    $user_id = $_SESSION['user_id'];
+    $order_date = date('Y-m-d H:i:s');
 
     $stmt = $conn->prepare("INSERT INTO orders (order_cost, order_status, user_id, user_phone, user_city, user_address, order_date) VALUES (?, ?, ?, ?, ?, ?, ?)");
 
@@ -54,8 +54,5 @@ if(isset($_POST['place_order'])) {
     //6. inform user whether everything is fine or there is a problem
     header('location: ../payment.php?order_status=order placed successfully');
 }
-
-
-
 
 ?>

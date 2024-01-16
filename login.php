@@ -2,6 +2,11 @@
   session_start();
   include('./server/connection.php');
 
+  if(isset($_SESSION['loggen_in'])){
+    header('location: account.php');
+    exit;
+  }
+
   if(isset($_POST['login_btn'])) {
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -16,19 +21,21 @@
       if($stmt->num_rows()==1){
 
         $stmt->fetch();
+
         $_SESSION['user_id']=$user_id;
         $_SESSION['user_name']=$user_name;
         $_SESSION['user_email']=$user_email;
         $_SESSION['user_password']=$user_password;
         $_SESSION['logged_in']=true;
-        header('location: account.php ? message = loggen in Successfully');
+
+        header('location: account.php?success_msg=You have logged in successfully');
       }
       else {
-        header('location: login.php ? error = Could not verify');
+        header('location: login.php?error=Could not verify your account');
       }
     }
     else {
-      header('location: login.php ? error = something went wrong');
+      header('location: login.php?error=Something went wrong');
     }
   }
 
@@ -187,6 +194,15 @@
           </div>
           <div class="form-group">
             <input type="submit" class="btn" id="login-btn" name="login_btn" value="Login" />
+          </div>
+          <div class="form-group">
+              <p id="error-msg">
+                <?php 
+                  if(isset($_GET['error'])) { 
+                    echo $_GET['error']; 
+                  } 
+                ?>
+              </p>
           </div>
           <div class="form-group">
             <a class="nav-link" href="registration.php">

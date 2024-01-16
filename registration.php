@@ -41,7 +41,7 @@
             $_SESSION['user_email'] = $email;
             $_SESSION['user_name'] = $name;
             $_SESSION['logged_in'] = true;
-            header('location: account.php?registration=You registered successfully');
+            header('location: account.php?success_msg=You registered successfully');
           }
           //account could not be created
           else {
@@ -52,8 +52,9 @@
 
       }
     }
+    //if user has already registered, then take user to account page
     else if (isset($_SESSION['loggen_in'])) {
-      header('location: index.php');
+      header('location: account.php');
       exit;
     }
     /*else {

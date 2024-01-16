@@ -127,6 +127,12 @@ hr{
     color:red;
 }
 
+#confirm-msg{
+    font-style: italic;
+    color:green;
+}
+
+
 #home{
     background-image: url('../imgs/1.jpeg');
     width: 100%;
