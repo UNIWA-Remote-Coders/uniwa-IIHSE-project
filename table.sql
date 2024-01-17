@@ -32,10 +32,12 @@ CREATE TABLE IF NOT EXISTS `order_items`(
     `item_id` int(11) NOT NULL AUTO_INCREMENT,
     `order_id` int(11) NOT NULL,
     `product_id` varchar(255) NOT NULL,
-    `product_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-    `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_name` varchar(255) NOT NULL,
+    `product_image` varchar(255) NOT NULL,
+    `product_price` DECIMAL(6,2) NOT NULL,
+    `product_quantity` INT NOT NULL,
     `user_id` int(11) NOT NULL,
-    `oreder_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `order_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (`item_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

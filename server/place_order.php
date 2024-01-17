@@ -16,7 +16,8 @@ if(isset($_POST['place_order'])) {
     $user_id = $_SESSION['user_id'];
     $order_date = date('Y-m-d H:i:s');
 
-    $stmt = $conn->prepare("INSERT INTO orders (order_cost, order_status, user_id, user_phone, user_city, user_address, order_date) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO orders (order_cost, order_status, user_id, user_phone, user_city, user_address, order_date) 
+                            VALUES (?, ?, ?, ?, ?, ?, ?)");
 
     $stmt->bind_param('isiisss', $order_cost, $order_status, $user_id, $phone, $city, $address, $order_date);
 
@@ -37,9 +38,10 @@ if(isset($_POST['place_order'])) {
 
         //4. store each single item in oder_items db
         // ta erwtimatika einai perissotera
-        $stmt1 = $conn->prepare("INSERT INTO orders_items (order_id, product_id, product_name, product_image, user_id, ordered_date) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+        $stmt1 = $conn->prepare("INSERT INTO orders_items (order_id, product_id, product_name, product_image, product_price, product_quantity, user_id, ordered_date) 
+                                VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
-        $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price, $product_quantity);
+        $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price,  $product_quantity, $user_id, $ordered_date);
 
         $stmt1->execute();
 

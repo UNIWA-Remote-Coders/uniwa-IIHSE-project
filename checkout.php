@@ -139,7 +139,7 @@
         <hr class="mx-auto" />
       </div>
       <div class="mx-auto container">
-        <form id="checkout-form">
+        <form id="checkout-form" method="POST" action="server/place_order.php">
           <div class="form-group checkout-small-element">
             <label>Name</label>
             <input
@@ -202,6 +202,7 @@
               class="btn"
               id="checkout-btn"
               value="Checkout"
+              name="place_order"
             />
           </div>
         </form>

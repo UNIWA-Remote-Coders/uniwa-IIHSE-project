@@ -27,6 +27,7 @@
         //product has already been added
         else {
           echo '<script>alert("Products was already to cart");</script>';
+          //echo '<script>window.location="index.php";</script>';
         }
       }
       //if this is the first item
@@ -79,14 +80,14 @@
         $product_array['product_quantity'] = $product_quantity;
 
         //return array back its place
-        $_SESSION['cart'][$product_id] = $product_id
+        $_SESSION['cart'][$product_id] = $product_id;
 
         //calculate total
         calculateTotalCart();
 
       }
       else {
-        header('location: index.php');
+        //header('location: index.php');
       }
 
       function calculateTotalCart() {
@@ -108,15 +109,7 @@
       }
 
 
-
-
-
-
-
-
 ?>
-
-
 
 
 <!DOCTYPE html>
@@ -240,7 +233,7 @@
     <!--Cart-->
     <section class="cart container my-5 py-5">
       <div class="container mt-5">
-        <h2 class="font-weight-bolde">Your Cart</h2>
+        <h2 class="font-weight-bold">Your Cart</h2>
         <hr />
       </div>
 
@@ -250,42 +243,59 @@
           <th>Quantity</th>
           <th>Subtotal</th>
         </tr>
-        <tr>
-          <td>
-            <div class="product-info">
-              <img src="assets/imgs/11.jpeg" />
-              <div>
-                <p>iPhone</p>
-                <small><span>€</span>155</small>
-                <br />
-                <a class="remove-btn" href="#">Remove</a>
+
+        <?php foreach($_SESSION['cart'] as $key => $value) { ?>
+        
+          <tr>
+
+            <td>
+              <div class="product-info">
+                <img src="<?php echo $value['product_image']; ?>" />
+                <div>
+                  <p><?php echo $value['product_name']; ?></p>
+                  <small><span><?php echo $value['product_price']; ?>€</span></small>  
+                  <br>
+                  <form method="POST" action="cart.php">
+                    <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
+                    <input type="submit" name="remove_product" class="remove-btn" value="remove" />
+                  </form>
+                </div>
               </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" value="1" />
-            <a class="edit-btn">Edit</a>
-          </td>
-          <td>
-            <span>€</span>
-            <span class="product-price">155</span>
-          </td>
-        </tr>
+            </td>
+
+            <td>
+              <form method="POST" action="cart.php">
+                <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
+                <input type="hidden" name="product_quantity" value="<?php echo $value['product_id']; ?>" />
+                <input type="submit" name="edit-btn" value="edit" name="edit_quantity"/>
+              </form>
+            </td>
+
+            <td>
+              <span class="product-price"><?php echo $value['product_quantity'] * $value['product_price']; ?>€</span>
+            </td>
+
+          </tr>
+
+        <?php } ?>
       </table>
+
       <div class="cart-total">
         <table>
-          <tr>
+          <!-- <tr>
             <td>Subtotal</td>
             <td>€155</td>
-          </tr>
+          </tr> -->
           <tr>
             <td>Total</td>
-            <td>€155</td>
+            <td><?php echo $_SESSION['total']; ?></td>
           </tr>
         </table>
       </div>
       <div class="checkout-container">
-        <button class="btn checkout-btn">Checkout</button>
+        <form method="POST" action="checkout">
+          <input type="submit" class="btn checkout-btn" value="Checkout" name="checkout"/>
+        </form>
       </div>
     </section>
 
