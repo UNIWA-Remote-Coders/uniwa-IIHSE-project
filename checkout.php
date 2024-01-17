@@ -196,14 +196,14 @@
             />
           </div>
           <div class="form-group checkout-btn-container">
-            <p>Total amount: <?php echo $_SESSION['total']; ?></p>
-            <input
-              type="submit"
-              class="btn"
-              id="checkout-btn"
-              value="Checkout"
-              name="place_order"
-            />
+              <p>Total amount: <?php echo $_SESSION['total']; ?></p>
+              <input
+                type="submit"
+                class="btn"
+                id="checkout-btn"
+                value="Place Order"
+                name="place_order"
+              />
           </div>
         </form>
       </div>

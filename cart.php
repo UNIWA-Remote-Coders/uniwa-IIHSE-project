@@ -58,7 +58,7 @@
       
       
       }
-      // remove product from cart
+      //remove product from cart
       else if(isset($_POST['remove_product'])) {
 
         $product_id = $_POST['product_id'];
@@ -67,6 +67,7 @@
         //calculate total
         calculateTotalCart();
       }
+      //edit product quantity
       else if (isset($_POST['edit_quantity'])) {
 
         //we get id and quantity from form
@@ -266,8 +267,8 @@
             <td>
               <form method="POST" action="cart.php">
                 <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
-                <input type="hidden" name="product_quantity" value="<?php echo $value['product_id']; ?>" />
-                <input type="submit" name="edit-btn" value="edit" name="edit_quantity"/>
+                <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" />
+                <input type="submit" class="edit-btn" value="edit" name="edit_quantity"/>
               </form>
             </td>
 
@@ -293,8 +294,8 @@
         </table>
       </div>
       <div class="checkout-container">
-        <form method="POST" action="checkout">
-          <input type="submit" class="btn checkout-btn" value="Checkout" name="checkout"/>
+        <form method="POST" action="checkout.php">
+          <input type="submit" class="checkout-btn" value="Checkout" name="checkout"/>
         </form>
       </div>
     </section>
