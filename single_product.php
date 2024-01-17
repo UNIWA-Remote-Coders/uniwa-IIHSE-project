@@ -148,8 +148,6 @@ else { //no product id
     <section class="container single-product my-5 pt-5">
       <div class="row mt-5">
 
-        <?php while($row = $product->fetch_assoc()){ ?>
-
         <div class="col-lg-5 col-md-6 col-sm-12">
           <img
             class="img-fluid w-100 pb-1"
@@ -187,17 +185,22 @@ else { //no product id
         </div>
 
         <div class="col-lg-6 col-md-12 col-sm-12">
-          <h6>Smartphones</h6>
-          <h3 class="py-4"><?php echo $row['product_name']; ?></h3>
+          <h6><?php echo $row['product_image']; ?></h6>
+          <h3 class="py-4"><?php echo $row['product_description']; ?></h3>
           <h2>$<?php echo $row['product_price']; ?></h2>
-          <form method="POST" action="cart.php">
-            <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"/>
-            <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"/>
-            <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"/>
-            
-              <input type="number" name="product_quantity" value="1" />
-              <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>
-          </form>
+
+          <?php while($row = $product->fetch_assoc()){ ?>
+
+            <form method="POST" action="cart.php">
+              <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"/>
+              <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"/>
+              <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"/>
+              
+                <input type="number" name="product_quantity" value="1" />
+                <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>
+            </form>
+
+          <?php } ?>
 
           <h4 class="mt-5 mb-5">Τεχνικά χαρακτηριστικά:</h4>
           <!-- XREIAZOMASTE NA EISAGOUME DESCRIPTION GIA TA PROIONTA MAS STO DB -->
@@ -226,7 +229,7 @@ else { //no product id
         </div>
 
         </form>
-        <?php } ?>
+      
       </div>
     </section>
 

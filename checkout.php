@@ -1,3 +1,18 @@
+<?php
+  session_start();
+
+
+  if (!empty($_SESSION['cart']) && isset($_POST['checkout'])) {
+      //let user in
+
+  }    //send user to user page
+  else {
+      header('location: index.php');
+
+  }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -181,6 +196,7 @@
             />
           </div>
           <div class="form-group checkout-btn-container">
+            <p>Total amount: <?php echo $_SESSION['total']; ?></p>
             <input
               type="submit"
               class="btn"
