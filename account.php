@@ -298,45 +298,49 @@
           <h2 class="font-weight-bold text-center">Your Orders</h2>
           <hr class="mx-auto">
         </div>
-        <table class="mt-5 pt-5">
+        <div class="row justify-content-center">
+        
+          <table class="mt-5 pt-5">
 
-          <tr>
-            <th>Order ID</th>
-            <th>Order Cost</th>
-            <th>Order Status</th>
-            <th>Order Date</th>
-            <th>Order Details</th>
-          </tr>
+            <tr>
+              <th>Order ID</th>
+              <th>Order Cost</th>
+              <th>Order Status</th>
+              <th>Order Date</th>
+              <th>Order Details</th>
+            </tr>
 
-          <?php while($row = $orders->fetch_assoc()) { ?>
-                <tr>
-                  <td>
-                      <span><?php echo $row['order_id'];?></span>
-                  </td>
-      
-                  <td>
-                    <span><?php echo $row['order_cost'];?></span>
-                  </td>
+            <?php while($row = $orders->fetch_assoc()) { ?>
+                  <tr>
+                    <td>
+                        <span><?php echo $row['order_id'];?></span>
+                    </td>
+        
+                    <td>
+                      <span><?php echo $row['order_cost'];?></span>
+                    </td>
 
-                  <td>
-                    <span><?php echo $row['order_status'];?></span>
-                  </td>
+                    <td>
+                      <span><?php echo $row['order_status'];?></span>
+                    </td>
 
-                  <td>
-                    <span><?php echo $row['order_date'];?></span>
-                  </td>
+                    <td>
+                      <span><?php echo $row['order_date'];?></span>
+                    </td>
 
-                  <td>
-                    <form method="POST" action="order_details.php">
-                      <input type="hidden" value="<?php echo $row['order_status'];?>" name="order_status"/>
-                      <input type="hidden" value="<?php echo $row['order_id'];?>" name="order_id"/>
-                      <input class="btn order-details-btn" name="order_details_btn" type="submit" value="details"/>
-                    </form>
-                </tr>
-          <?php } ?>
+                    <td>
+                      <form method="POST" action="order_details.php">
+                        <input type="hidden" value="<?php echo $row['order_status'];?>" name="order_status"/>
+                        <input type="hidden" value="<?php echo $row['order_id'];?>" name="order_id"/>
+                        <input class="btn order-details-btn" name="order_details_btn" type="submit" value="details"/>
+                      </form>
+                  </tr>
+            <?php } ?>
 
 
-        </table>
+          </table>
+          
+        </div>
     </section>
 
 

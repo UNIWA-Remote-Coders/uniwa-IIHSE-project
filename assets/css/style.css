@@ -556,10 +556,11 @@ th:last-child{
 }
 
 .orders th{
-    padding: 5px 20px;
+    padding: 5px 50px;
     color:#fff;
     background-color: #fb774b;
-    /* text-align: left; */
+    text-align: center; 
+    justify-content: center;
 }
 
 .orders th:nth-child(2){
@@ -568,6 +569,7 @@ th:last-child{
 }
 
 .orders td{
+    text-align: center;
     /* padding: 10px 20px; */
 }
 
