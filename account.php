@@ -14,6 +14,7 @@
       unset($_SESSION['logged_in']);
       unset($_SESSION['user_email']);
       unset($_SESSION['user_name']);
+      unset($_SESSION['user_password']);
       header('location: login.php');
       exit;
     }
@@ -21,24 +22,32 @@
 
   //change the password from user and update users table
   if(isset($_POST['change_password'])) {
+    $current_password = $_POST['currentpassword'];
     $password = $_POST['password'];
     $confirm_password = $_POST['confirmPassword'];
     $user_email = $_SESSION['user_email'];
 
-    if($password !== $confirm_password) {
+    if($current_password != $_SESSION['user_password']) {
+      header('location: account.php?error=Current password is wrong!');
+    }
+    else if($password !== $confirm_password) {
       header('location: account.php?error=Passwords do not match!');
+    }
+    else if($current_password == $password) {
+      header('location: account.php?error=You cannot set the same password!');
     }
     else if(strlen($password)<6) {
       header('location: account.php?error=Password must be at least 6 characters!');
     }
     else {
       $stmt = $conn->prepare("UPDATE users SET user_password=? WHERE user_email=?");
-      $stmt->bind_param('ss', md5($password), $user_email);
+      $stmt->bind_param('ss', /*md5($password)*/$password, $user_email);
       if($stmt->execute()) {
-        header('location: account.php?message=Password has been updated successfully');
+        $_SESSION['user_password'] = $password;
+        header('location: account.php?message=New password has been updated successfully');
       }
       else {
-        header('location: account.php?error=Could not update password');
+        header('location: account.php?error=Could not update new password');
       }
     }
   }
@@ -219,7 +228,18 @@
             <h3>Change Password</h3>
             <hr class="mx-auto" />
             <div class="form-group">
-              <label>Password</label>
+              <label>Current Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="current-account-password"
+                name="currentpassword"
+                placeholder="Password"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>New Password</label>
               <input
                 type="password"
                 class="form-control"
@@ -230,7 +250,7 @@
               />
             </div>
             <div class="form-group">
-              <label>Confirm Password</label>
+              <label>Confirm New Password</label>
               <input
                 type="password"
                 class="form-control"
@@ -275,7 +295,7 @@
     <!--Orders-->
     <section id="orders" class="orders container my-5 py-3">
         <div class="container mt-2">
-          <h2 class="font-weight-bold text-center">Yor Orders</h2>
+          <h2 class="font-weight-bold text-center">Your Orders</h2>
           <hr class="mx-auto">
         </div>
         <table class="mt-5 pt-5">
