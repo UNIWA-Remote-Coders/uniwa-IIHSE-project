@@ -1,8 +1,8 @@
 <?php
     /*
-        not paid
-        shipped
-        delivered
+        "not paid"
+        "shipped"
+        "delivered"
     */
     session_start();
     include('./server/connection.php');
@@ -10,7 +10,7 @@
     if(isset($_POST['order_details_btn']) && isset($_POST['order_id'])) {
             
         $order_id = $_POST['order_id'];
-        $order_stauts = $_POST['order_status'];
+        $order_status = $_POST['order_status'];
         $stmt = $conn->prepare("SELECT * FROM order_items WHERE order_id=?");
         $stmt->bind_param('i', $order_id);
         $stmt->execute();
@@ -169,7 +169,7 @@
                 </td>
 
                 <td>
-                <   span><?php echo $row['product_price']; ?>€</span>
+                  <span><?php echo $row['product_price']; ?>€</span>
                 </td>
 
                 <td>

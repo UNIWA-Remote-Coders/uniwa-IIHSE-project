@@ -3,6 +3,10 @@
 session_start();
 include('./connection.php');
 
+if (!isset($_SESSION['user_id'])) {
+    header('location: ../login.php');
+}
+
 if(isset($_POST['place_order'])) {
 
     //1. get user info and store it in db
@@ -11,7 +15,7 @@ if(isset($_POST['place_order'])) {
     $phone = $_POST['phone'];
     $city = $_POST['city'];
     $address = $_POST['address'];
-    $order_cost = $SESSION['total'];
+    $order_cost = $_SESSION['total'];
     $order_status = "not paid";
     $user_id = $_SESSION['user_id'];
     $order_date = date('Y-m-d H:i:s');
@@ -29,7 +33,7 @@ if(isset($_POST['place_order'])) {
     //3. get products from cart (from session)
     foreach($_SESSION['cart'] as $key => $value) {
 
-        $product = $SESSION['cart'][$key];
+        $product = $_SESSION['cart'][$key];
         $product_id = $product['product_id'];
         $product_name = $product['product_name'];
         $product_image = $product['product_image'];
@@ -37,11 +41,10 @@ if(isset($_POST['place_order'])) {
         $product_quantity = $product['product_quantity'];
 
         //4. store each single item in oder_items db
-        // ta erwtimatika einai perissotera
-        $stmt1 = $conn->prepare("INSERT INTO orders_items (order_id, product_id, product_name, product_image, product_price, product_quantity, user_id, ordered_date) 
+        $stmt1 = $conn->prepare("INSERT INTO order_items (order_id, product_id, product_name, product_image, product_price, product_quantity, user_id, order_date) 
                                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
-        $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price,  $product_quantity, $user_id, $ordered_date);
+        $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price,  $product_quantity, $user_id, $order_date);
 
         $stmt1->execute();
 

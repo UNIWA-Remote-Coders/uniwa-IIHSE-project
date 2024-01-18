@@ -149,9 +149,9 @@
                         <i class="fas fa-star"></i>
                     </div>
                     <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                    <h4 class="p-price">€ <?php echo $row['product_price']; ?></h4>
+                    <h4 class="p-price"><?php echo $row['product_price']; ?>€</h4>
                    
-                    <form action="single_product.php" method="get">
+                    <form action="single_product.php" method="GET">
                         <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
                     </form>        
                 </div>

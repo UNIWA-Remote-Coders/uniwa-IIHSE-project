@@ -281,11 +281,11 @@
         <table class="mt-5 pt-5">
 
           <tr>
-            <th>Order id</th>
-            <th>Order cost</th>
-            <th>Order status</th>
+            <th>Order ID</th>
+            <th>Order Cost</th>
+            <th>Order Status</th>
             <th>Order Date</th>
-            <th>Order details</th>
+            <th>Order Details</th>
           </tr>
 
           <?php while($row = $orders->fetch_assoc()) { ?>
@@ -295,15 +295,15 @@
                   </td>
       
                   <td>
-                    <span><?php echo $row['order_cost'];?>/span>
+                    <span><?php echo $row['order_cost'];?></span>
                   </td>
 
                   <td>
-                    <span><?php echo $row['order_status'];?>/span>
+                    <span><?php echo $row['order_status'];?></span>
                   </td>
 
                   <td>
-                    <span><?php echo $row['order_date'];?>/span>
+                    <span><?php echo $row['order_date'];?></span>
                   </td>
 
                   <td>

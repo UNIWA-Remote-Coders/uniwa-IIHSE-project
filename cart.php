@@ -8,7 +8,7 @@
     // <input type="number" name="product_quantity" value="1" />
     // <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>*/
 
-    if(isset($_POST['add_to_cart'])) {
+    if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) {
       
       //if user has already added a product to cart
       if(isset($_SESSION['cart'])) {
@@ -34,7 +34,7 @@
         }
         //product has already been added
         else {
-          echo '<script>alert("Products was already to cart");</script>';
+          echo '<script>alert("Product was already to cart");</script>';
           //echo '<script>window.location="index.php";</script>';
         }
       }
