@@ -18,4 +18,4 @@ $stmt_hf = $conn->prepare("SELECT * FROM products where product_category = 'Hand
 $stmt_hf->execute();
 $handsfree = $stmt_hf->get_result();
 
-?>
+?>	
