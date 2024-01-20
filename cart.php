@@ -93,7 +93,7 @@
         calculateTotalCart();
 
       }
-      else {
+      else if (!$_SESSION['cart']){
         echo '<script>alert("Empty cart!!");</script>';
         //header('location: index.php');
       }

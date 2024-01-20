@@ -188,8 +188,8 @@ else { //no product id
 
         <div class="col-lg-6 col-md-12 col-sm-12">
           
-          <h6><?php echo $row['product_name']; ?></h6>
-          <h3 class="py-4"><?php echo $row['product_description']; ?></h3>
+          <h3><?php echo $row['product_name']; ?></h3>
+          <!-- <h3 class="py-4"><?php echo $row['product_description']; ?></h3> -->
           <h2><?php echo $row['product_price']; ?>€</h2>
 
             <form method="POST" action="cart.php">
@@ -202,10 +202,13 @@ else { //no product id
             </form>
 
 
+            <h6><?php echo $row['product_description']; ?></h6>
+
+
           <!-- XREIAZOMASTE NA EISAGOUME DESCRIPTION GIA TA PROIONTA MAS STO DB -->
-          <!-- <h4 class="mt-5 mb-5">Τεχνικά χαρακτηριστικά:</h4>
+           <!-- <h4 class="mt-5 mb-5">Τεχνικά χαρακτηριστικά:</h4>
           <span
-            >Η Apple παρουσιάζει τα iPhone 12 προσφέροντας πρωτοποριακές
+            >Η Apple παρουσιάζει τα iPhone 12 <ul> <li> προσφέροντας πρωτοποριακές
             καινοτομίες σε κάμερα και τσιπ με μεγάλη διάρκεια ζωής της
             μπαταρίας. Το νέο iPhone 12 έρχεται για να ξεπεράσει την προηγούμενη
             σειρά iPhone αλλά και τον ανταγωνισμό, με νέα αναβαθμισμένη OLED
@@ -223,8 +226,9 @@ else { //no product id
             πάντα τον έλεγχο των πληροφοριών σου. Για παράδειγμα, όταν
             περιηγείσαι στο διαδίκτυο, το Safari εμποδίζει με έξυπνο τρόπο την
             παρακολούθηση από ανιχνευτές και δείχνει όσους παρεμποδίστηκαν στην
-            Αναφορά Απόρρητου. Και πολλά, πολλά ακόμη.
-          </span> -->
+            Αναφορά Απόρρητου. Και πολλά, πολλά ακόμη.</ul>
+          </span>  -->
+          
 
         </div>
 
@@ -366,7 +370,7 @@ else { //no product id
 
 
 
-          <!--<h4> Γενικά <h4>
+          <h4> Γενικά <h4>
                         <h6>Κατασκευαστής: APPLE</h6>
                         <h6>Περιγραφή προϊόντος: Apple iPhone 12 5G 128GB - Black</h6>
                         <h6>Σειρά: iPhone</h6>
@@ -435,4 +439,4 @@ else { //no product id
                         
                         <h5>Εγγύηση - Πιστοποιήσεις</h5>
                         <h6>Εγγύηση: 24 μήνες</h6>
-                    </h4>-->
+                    </h4>
