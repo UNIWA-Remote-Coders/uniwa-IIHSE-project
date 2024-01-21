@@ -1,16 +1,9 @@
-Χαρακτηριστικά
-Χαρακτηριστικά
-ΕίδοςIn-ear
-Χρόνος Λειτουργίας8 hrs
-Λειτουργία με Θήκη Φόρτισης20 hrs
-Χωρίς ΚαλώδιοΝαι
-Διπλό ΑκουστικόΝαι
-ΧρώμαΜαύρο
-Επιπλέον Χαρακτηριστικά
-Multipoint PairingΌχι
-Θήκη ΦόρτισηςΝαι
-Αντοχή στον ΙδρώταΝαι
-Active Noise CancellationΝαι
-Γρήγορη ΦόρτισηΌχι
-Μείωση Θορύβου ΜικροφώνουΌχι
-Φωνητικός ΈλεγχοςΌχι
+Descriptions:
+<ul>
+<li>Operating Time 8 hours</li>
+<li>Operating with Charging Case 20 hours</li>
+<li>Bluetooth 5.2</li>
+<li>Active Noise Cancellation</li>
+<li>Sweat Resistance with IP57</li>
+<li>Wireless Charging</li>
+</ul>

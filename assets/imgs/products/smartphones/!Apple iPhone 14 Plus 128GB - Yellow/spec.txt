@@ -1,131 +1,30 @@
-Τεχνικά χαρακτηριστικά
+Descriptions:
+<ul>
+<li>2022 Model</li>
+<li>Super Retina XDR 6.7" Display</li>
+<li>NFC Support</li>
+<li>A15 Bionic chip</li>
+<li>12MP/4K 60fps Dual Camera</li>
+<li>4323 mAh Battery (50% in 30 min)</li>
+</ul>
+<br>
 
-Γενικά
-Κατασκευαστής:
-APPLE
-Περιγραφή προϊόντος:
-Apple iPhone 14 Plus 128GB - Yellow
-Σειρά:
-iPhone
-Μοντέλο:
-iPhone 14 Plus
-Έτος κυκλοφορίας:
-2023
-Λειτουργικό σύστημα:
-iOS 16
-Χρώμα:
-Yellow
-Υλικό (Backplate):
-Corning-made glass
-Υλικό (Frame):
-Αλουμίνιο
+Improved low-light photos with the new dual-camera system. Ceramic shield to protect the screen from scratches and drops. Action Mode for steady video. Crash Detection, a new safety feature, calls for help when you can't.<br>
 
-Οθόνη
-Μέγεθος οθόνης:
-6.7"
-Ανάλυση οθόνης:
-Full HD+ (1170 x 2532)
-Τύπος οθόνης:
-Super Retina XDR
-Φωτεινότητα:
-1200 nits
-Τεχνολογία Βίντεο:
-HDR10, Dolby Vision
-Screen to Body Ratio:
-85% - 89.9%
 
-Επεξεργαστής και GPU
-Μάρκα επεξεργαστή:
-Apple
-Μοντέλο Επεξεργαστή:
-A15 Bionic
-Αριθμός Πυρήνων Eπεξεργαστή:
-Εξαπύρηνος
-Ταχύτητα Επεξεργαστή:
-2x3.23 GHz Avalanche + 4x1.82 GHz Blizzard
-GPU:
-Apple GPU
+Super Retina XDR OLED Display<br>
 
-Αποθηκευτικός Χώρος και Μνήμη
-Μνήμη RAM:
-6 GB
-Χωρητικότητα:
-128 GB
-Υποστήριξη εξωτερικής μνήμης:
-Δεν υποστηρίζεται
+A 6.7-inch Super Retina XDR OLED display with high resolution and colour accuracy make everything look sharp and true to life. It also offers high contrast for bright whites and true blacks.<br>
 
-Κάμερα
-Φακοί κύριας κάμερας:
-Dual
-Κάμερα:
-12MP/12MP
-Λεπτομέριες κύριας κάμερας:
-12 MP f/1.5 (wide) + 12 MP f/2.4 (ultrawide)
-Λειτουργίες λήψης κύριας κάμερας:
-Dual-LED dual-tone flash, HDR, dual pixel PDAF, sensor-shift OIS
-Φάκοι Selfie κάμερας:
-Single
-Selfie κάμερα:
-12 MP f/1.9 23mm (wide)
-Λειτουργίες λήψης Selfie κάμερας:
-HDR, Cinematic mode, PDAF
-Ανάλυση βίντεο:
-4K@24/25/30/60fps
 
-Συνδεσιμότητα
-Δίκτυο δεδομένων:
-5G
-Υποδοχές SIM:
-Single
-Τύπος SIM:
-Nano-SIM, eSIM
-Θύρα USB:
-Lightning
-Θύρα ακουστικών:
-Δε διαθέτει
-Υποστήριξη NFC:
-Διαθέτει
-Έκδοση Bluetooth:
-5.3
-Ασύρματη επικοινωνία:
-802.11 a/b/g/n/ac/6
-Τοποθεσία:
-GPS, GLONASS, GALILEO, BDS, QZSS
+(Its display has rounded corners that follow a beautifully curved design while maintaining the proportions of a typical rectangle. When measured as a standard rectangular shape, the screen is 6.66 inches diagonally.)<br>
 
-Δυνατότητες και Λειτουργίες
-Δαχτυλικό αποτύπωμα:
-Δε διαθέτει
-Αναγνώριση προσώπου:
-Face ID
-Υποστήριξη voice assistant:
-Siri
-Αισθητήρες:
-Επιταχυνσιόμετρο, Γυροσκόπιο, Εγγύτητας, Πυξίδα, Βαρόμετρο, Υποστήριξη Ultra Wideband (UWB)
-Ανθεκτικότητα:
-IP68 - Ανθεκτικό στη σκόνη/νερό (έως 6m για 30')
-Ραδιόφωνο:
-Δε διαθέτει
 
-Μπαταρία
-Μπαταρία:
-4323 mAh
-Υποστήριξη γρήγορης φόρτισης:
-Υποστηρίζεται (50% σε 30')
-Υποστήριξη ασύρματης φόρτισης:
-MagSafe (15W) // Qi (7.5W)
+A15 Bionic<br>
 
-Ήχος
-Αριθμός ηχείων:
-x2
+The A15 Bionic processor, with a 5-core GPU, powers all the latest features and makes intense gaming graphics and AR apps feel extremely fluid.<br>
 
-Διαστάσεις και Βάρος
-Διαστάσεις (ΠxΒxΥ):
-160.8 x 78.1 x 7.8 mm
-Βάρος:
-203 g
 
-Εγγύηση - Πιστοποιήσεις
-Εγγύηση:
-24 μήνες
+26 hours of video playback<br>
 
-https://www.public.gr/product/tilefonia/kinita-smartphones/apple-iphone-14-plus-128gb--yellow/1791982
+All-day battery life with up to 26 hours of video playback.<br>

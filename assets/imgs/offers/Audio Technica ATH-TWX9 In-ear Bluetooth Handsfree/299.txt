@@ -1,16 +1,13 @@
-Χαρακτηριστικά
-Χαρακτηριστικά
-ΕίδοςIn-ear
-Χρόνος Λειτουργίας6 hrs
-Χωρίς ΚαλώδιοΝαι
-Διπλό ΑκουστικόΝαι
-ΧρώμαΜαύρο
-Επιπλέον Χαρακτηριστικά
-Multipoint PairingΝαι
-Θήκη ΦόρτισηςΝαι
-Αντοχή στον ΙδρώταΝαι
-Active Noise CancellationΝαι
-Γρήγορη ΦόρτισηΝαι
-Μείωση Θορύβου ΜικροφώνουΝαι
-Φωνητικός ΈλεγχοςΝαι
-Smart Assistant (Built-in)Alexa, Google Assistant
+Descriptions:
+<ul>
+<li>Operating Time 6 hours</li>
+<li>Charging Time 3.5 hours</li>
+<li>Sweat Resistance with IPX4</li>
+<li>Bluetooth 5.2</li>
+<li>Active Noise Cancellation</li>
+<li>Wireless Charging</li>
+</ul>
+
+The Audio Technica ATH-TWX9 headphones are designed for anyone looking for a pair of headphones with reliable sound quality and comfortable fit. They are ideal for listening to music, videos, games, and for use in phone calls or other platforms. They are suitable for people who travel frequently, as they are relatively small and lightweight. Finally, the ATH-TWX9 are also suitable for use in the gym, as they have a durable construction and IPX4 waterproof technology for protection against sweat and water.<br><br>
+
+The TWS ATH-TWX9 offer the freedom to customize your audio space for an advanced sound experience. These headphones create an immersive sound experience and feature digital hybrid noise cancellation technology. With unique features such as UV deep sterilization, 360 Reality Audio for realistic 3D soundscapes, and Snapdragon Sound™ platform for higher quality music, videos, and calls, the ATH-TWX9 stand out from the rest as the best true wireless headphones.

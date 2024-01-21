@@ -1,115 +1,13 @@
-Τεχνικά χαρακτηριστικά
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Touch screen</li>
+<li>Battery life up to 60 hours</li>
+<li>GPS, Bluetooth</li>
+<li>Suitable for swimming</li>
+</ul>
+<br>
 
-Γενικά
-Κατασκευαστής:
-SUUNTO
-Μοντέλο:
-Suunto Vertical
-Περιγραφή προϊόντος:
-Smartwatch Suunto Vertical 49mm - Titanium Solar Forest
-Χρώμα:
-Μαύρο
-Έτος κυκλοφορίας:
-2023
-Εγγύηση:
-24 μήνες
-Η συσκευασία περιλαμβάνει:
-Suunto Vertical 49mm - Titanium Solar Forest, Καλώδιο φόρτισης, Φυλλάδιο οδηγιών
+Combining Finnish design with high-quality materials such as sapphire crystal and titanium, the Suunto Vertical Stainless offers proven durability and is certified by world-class athletes.<br><br>
 
-Οθόνη
-Μέγεθος οθόνης:
-1.4"
-Ανάλυση οθόνης:
-280 x 280
-Τύπος οθόνης:
-MIP
-Φωτεινότητα:
-Αυτόματη φωτεινότητα
-Σχήμα οθόνης:
-Στρογγυλό
-
-Τεχνικά Χαρακτηριστικά
-Συμβατό με:
-Google Android, Apple iOS
-Ανθεκτικότητα:
-Αντοχή σε πτώση και γρατζουνιές // Οθόνη με Sapphire crystal | Στεφάνη από τιτάνιο
-Αδιάβροχο:
-Ανθεκτικό στο νερό (100m)
-Μικρόφωνο:
-Δε διαθέτει
-Εφαρμογή:
-Suunto app
-
-Συνδεσιμότητα
-Wi-Fi:
-Δε διαθέτει
-Υποστήριξη Bluetooth:
-Διαθέτει
-Υποστήριξη NFC:
-Δε διαθέτει
-GPS:
-GPS, GLONASS, GALILEO, QZSS, BEIDOU
-Κάρτα SIM:
-Δε διαθέτει
-
-Δυνατότητες και Λειτουργίες
-Βηματομετρητής:
-Διαθέτει
-Παλμογράφος:
-Διαθέτει
-Καταγραφέας ύπνου:
-Διαθέτει
-Μέτρηση οξυγόνου στο αίμα:
-Διαθέτει
-Παρακολούθηση έμμηνου κύκλου:
-Δε διαθέτει
-Μέτρηση άγχους:
-Διαθέτει
-Υπενθύμιση ενεργής δραστηριότητας:
-Δε διαθέτει
-Θερμόμετρο:
-Δε διαθέτει
-Πυξίδα:
-Διαθέτει
-Eιδοποιήσεις:
-Εφαρμογές, Κλήσεις, Μηνύματα
-
-Εφαρμογές
-Αποστολή μηνυμάτων:
-Αποστολή προκαθορισμένων απαντήσεων σε εισερχόμενα μηνύματα (μόνο Android)
-Κλήσεις:
-Δε διαθέτει
-Μουσική:
-Έλεγχος μουσικής του smartphone
-Χάρτες:
-Διαθέτει
-Κατάστημα εφαρμογών:
-SuuntoPlus Store
-
-Μπαταρία
-Μπαταρία:
-Επαναφορτιζόμενη ιόντων λιθίου
-Αυτονομία Μπαταρίας:
-Λειτουργία ρολογιού: Έως 1 έτος | Με παρακολούθηση 24/7 και ειδοποιήσεις: Έως 60 ημέρες
-
-Διαστάσεις και Βάρος
-Διαστάσεις (ΠxΒxΥ):
-49 x 49 x 13.6 mm
-Βάρος:
-74 g
-Διάμετρος κάσας:
-49mm
-
-Extra Χαρακτηριστικά
-Υλικό κατασκευής:
-Τιτάνιο βαθμού 5 (στεφάνη) / Sapphire crystal (οθόνη) / Πολυαμίδιο ενισχυμένο με υαλονήματα (κάσα)
-Υλικό λουριού:
-Σιλικόνη
-Χρώμα λουριού:
-Πράσινο
-Αποσπώμενο λουράκι:
-Διαθέτει
-Πρόσθετα χαρακτηριστικά:
-Προσαρμόσιμα Watchfaces, Δυνατότητα κλειδώματος της οθόνης κατά τη διάρκεια της προπόνησης, Αυτόματες ενημερώσεις λογισμικού, Καθοδήγηση σε πραγματικό χρόνο κατά τη διάρκεια της προπόνησης, Always-on οθόνη, Ηλιακή φόρτιση
-
-https://www.public.gr/product/wearables-gadgets/smartwatches/smartwatch-suunto-vertical-49mm--titanium-solar-forest/MRK3006668
+Put an end to compromises with free navigation maps that work offline, weather forecasting, compass, altimeter barometric measurements, and notifications for potential storms. These features help you know the prevailing conditions at all times during your adventures, workouts, or races.

@@ -1,15 +1,14 @@
-Χαρακτηριστικά
-Χαρακτηριστικά
-ΕίδοςIn-ear
-Χρόνος Λειτουργίας10 hrs
-Χωρίς ΚαλώδιοΝαι
-Διπλό ΑκουστικόΝαι
-ΧρώμαΓκρι
-Επιπλέον Χαρακτηριστικά
-Multipoint PairingΝαι
-Θήκη ΦόρτισηςΌχι
-Αντοχή στον ΙδρώταΝαι
-Active Noise CancellationΝαι
-Γρήγορη ΦόρτισηΝαι
-Μείωση Θορύβου ΜικροφώνουΝαι
-Φωνητικός ΈλεγχοςΌχι
+Descriptions:
+<ul>
+<li>Operating Time 10 hours</li>
+<li>Charging Time 2.5 hours</li>
+<li>Bluetooth: 5.0</li>
+<li>Sweatproof</li>
+<li>Active Noise Cancellation</li>
+<li>Fast Charging</li>
+</ul>
+<br><br>
+
+The Logitech Zone True headphones are designed for professionals who need to communicate in various work environments, such as offices, conference rooms, and retail stores. These headphones feature advanced noise cancellation functions and allow the user to communicate with clear sound even in crowded environments. Additionally, the Logitech Zone True provides comfort and flexibility as they can be connected to both wireless and wired systems, while also featuring touch sensors for easy control of sound and calls.<br><br>
+Crystal clear sound, excellent connectivity, and reliability
+Bring your personal style to video conferences with the Zone True Wireless Bluetooth headphones. The certified microphone with noise-cancellation technology, ANC technology, and exciting sound are perfect for crowded workspaces. Connect your computer and smartphone simultaneously and then customize and control the headphones with the Logi Tune app.

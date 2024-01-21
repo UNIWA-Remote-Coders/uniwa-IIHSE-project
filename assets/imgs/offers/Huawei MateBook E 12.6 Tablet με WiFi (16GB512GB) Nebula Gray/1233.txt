@@ -1,31 +1,13 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαWindows
-Έτος Κυκλοφορίας2022
-ΧρώμαΓκρι
-Βάρος709 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM16 GB
-Χωρητικότητα512 GB
-Πυρήνες ΕπεξεργαστήQuad-Core
-Ταχύτητα Βασικού Επεξεργαστή1,8 GHz
-Οθόνη
-Μέγεθος Οθόνης12,6 "
-Ανάλυση Οθόνης2560 x 1600 pixels
-ΤύποςOLED
-Ευκρίνεια2K
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας8 MP
-Δίκτυα & Συνδεσιμότητα
-Συνδεσιμότητα3.5mm Jack, Bluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας4430 mAh
-Δυνατότητες & Λειτουργίες
-Δυνατότητες2 in 1 Detachable
-ΑισθητήρεςΔακτυλικό Αποτύπωμα
-Διαστάσεις
-Μήκος184,7 mm
-Πλάτος286,5 mm
-Πάχος7,99 mm
+Descriptions:
+<ul>
+<li>Model 2022</li>
+<li>OLED Display 12.6" 2K 2560 x 1600</li>
+<li>Intel Core i5-1130G7 Processor</li>
+<li>Battery 42Wh</li>
+<li>Fast Charging 65W</li>
+<li>Weight 709 gr</li>
+</ul>
+<br>
+Enjoy the flexibility offered by the Huawei MateBook E, which allows you to use it as a laptop. Immerse yourself in your favorite content with the 12.6" OLED Real Colour FullView display and make video calls easier than ever with the four microphones that support AI Noise Cancellation.<br><br>
+
+The Huawei MateBook E is mainly aimed at people looking for a lightweight, portable, and versatile tablet with a keyboard for professional and everyday use at home or in the office. It is also aimed at people who need a laptop that can be used as a tablet for note-taking and drawing with the use of a stylus. In addition, its sleek design and integrated security technology make it an attractive choice for those who want a premium tablet.

@@ -1,105 +1,14 @@
-Τεχνικά χαρακτηριστικά
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>MIP touchscreen</li>
+<li>Battery life up to 14 days</li>
+<li>NFC, Wi-Fi, GPS, Bluetooth</li>
+<li>Suitable for swimming</li>
 
-Γενικά
-Κατασκευαστής:
-GARMIN
-Μοντέλο:
-Garmin Fenix 7S Pro
-Περιγραφή προϊόντος:
-Smartwatch Garmin fēnix 7S Pro Solar Edition 42mm - Silver
-Χρώμα:
-Ασημί
-Έτος κυκλοφορίας:
-2023
-Εγγύηση:
-24 μήνες
-Η συσκευασία περιλαμβάνει:
-Garmin fēnix 7 Pro, USB-C καλώδιο φόρτισης/δεδομένων, οδηγίες χρήσης
+</ul>
+<br>
 
-Οθόνη
-Μέγεθος οθόνης:
-1.2"
-Ανάλυση οθόνης:
-240 x 240
-Τύπος οθόνης:
-MIP
-Σχήμα οθόνης:
-Στρογγυλό
-
-Τεχνικά Χαρακτηριστικά
-Συμβατό με:
-Google Android, Apple iOS
-Λειτουργικό σύστημα:
-GarminOS
-Χωρητικότητα:
-32 GB
-Αδιάβροχο:
-10 ATM -Αντέχει σε πιέσεις ισοδύναμες με βάθος 100 μέτρων
-Εφαρμογή:
-Garmin Connect, Garmin Explore, Garmin Gold
-
-Συνδεσιμότητα
-Wi-Fi:
-Διαθέτει
-Υποστήριξη Bluetooth:
-Bluetooth
-GPS:
-Ναι
-Ανέπαφες πληρωμές:
-Garmin Pay
-Κάρτα SIM:
-Δε διαθέτει
-
-Δυνατότητες και Λειτουργίες
-Βηματομετρητής:
-Ναι
-Παλμογράφος:
-Ναι
-Καταγραφέας ύπνου:
-Διαθέτει
-SOS έκτακτης ανάγκης:
-Διαθέτει
-Μέτρηση οξυγόνου στο αίμα:
-Διαθέτει
-Ειδοποίηση ακανόνιστου καρδιακού ρυθμού:
-Διαθέτει
-Υπενθύμιση ενεργής δραστηριότητας:
-Διαθέτει
-Πυξίδα:
-Διαθέτει
-Eιδοποιήσεις:
-Email, Μυνήματα, Εφαρμογές
-
-Εφαρμογές
-Μουσική:
-Διαθέτει
-Χάρτες:
-Διαθέτει
-Κατάστημα εφαρμογών:
-Connect IQ Store
-
-Μπαταρία
-Αυτονομία Μπαταρίας:
-11 ημέρες
-
-Διαστάσεις και Βάρος
-Διαστάσεις (ΠxΒxΥ):
-42 x 42 x 14.1 mm
-Βάρος:
-63 g
-Διάμετρος κάσας:
-42 mm
-
-Extra Χαρακτηριστικά
-Υλικό κατασκευής:
-Ανοδείξωτο ατσάλι
-Υλικό λουριού:
-Σιλικόνη
-Χρώμα λουριού:
-Μαύρο
-Αποσπώμενο λουράκι:
-Διαθέτει
-Πρόσθετα χαρακτηριστικά:
-Ηλιακή Φόρτιση, Σύμβουλος Jet Lag, Παρακολούθηση Μετοχών
-
-https://www.public.gr/product/wearables-gadgets/smartwatches/smartwatch-garmin-fenix-7s-pro-solar-edition-42mm--silver/1828334
+Conquer every hour of the day with advanced workout features, 24/7 health and wellness monitoring, and over a month of battery life with the Power Sapphire solar charging lens, all combined in a durable watch frame designed for smaller wrists.<br>
+You have up to 14 days of operation on a smartwatch with 3 hours of solar charging in direct sunlight (50,000 lux) per day, and up to 46 hours of operation with GPS and solar charging (requires continuous use for the entire period under 50,000 lux conditions).<br>
+Variable lens intensities and a red safety light provide you with greater awareness while training in the dark, giving you sufficient illumination when you need it. The lens flashing function can even match your running pace.

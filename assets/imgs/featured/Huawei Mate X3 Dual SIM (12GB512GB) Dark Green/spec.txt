@@ -1,49 +1,20 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Τύπος ΚινητούSmartPhone
-Λειτουργικό ΣύστημαAndroid
-SIMDual
-Έτος Κυκλοφορίας2023
-ΧρώμαΠράσινο
-Βάρος241 gr
-Περιεχόμενα ΣυσκευασίαςΘήκη Προστασίας, Καλώδιο Φόρτισης, Φορτιστής
-Επεξεργαστής & Μνήμη
-Μοντέλο ΕπεξεργαστήSnapdragon 8+ Gen 1
-Ισχύς Βασικού Επεξεργαστή3,2 GHz
-Πυρήνες Επεξεργαστή1+3+4
-RAM12 GB
-Χωρητικότητα512 GB
-Card SlotΝαι
-Οθόνη
-Μέγεθος7,85 "
-Ανάλυση2496 x 2224 pixels
-Ρυθμός Ανανέωσης120 Hz
-ΤύποςOLED
-ΧειρισμόςΟθόνη αφής (Touch screen)
-DefinitionFull HD
-Κάμερα
-Πίσω ΚάμεραΤριπλή
-Φακοί Πίσω ΚάμεραςΕυρυγώνιος 50MP, Τηλεφακός 12MP 5x Οπτικό Zoom, Υπερευρυγώνιος 13MP
-Βίντεο Πίσω Κάμερας1080p 30fps, 1080p 60fps, 4K 30fps, 4K 60fps
-Flash Πίσω ΚάμεραςΝαι
-Φακοί Selfie ΚάμεραςΕυρυγώνιος 8MP
-ΔυνατότητεςHDR
-Δίκτυο & Συνδεσιμότητα
-Δίκτυο Σύνδεσης4G
-ΣυνδεσιμότηταBluetooth, NFC, USB-C, Wi-Fi
-Μπαταρία
-Χωρητικότητα4800 mAh
-ΑποσπώμενηΌχι
-Γρήγορη ΦόρτισηΌχι
-Ισχύς Φόρτισης66 W
-Ασύρματη ΦόρτισηΝαι
-Ισχύς Ασύρματης Φόρτισης50 W
-Τεχνολογία Γρήγορης Φόρτισης-
-Ειδικά Χαρακτηριστικά
-Πιστοποίηση ΠροστασίαςIPX8
-ΑισθητήρεςAccelerometer, Proximity, Αλτίμετρο, Βαρόμετρο, Γυροσκόπιο, Πυξίδα
-Δακτυλικό ΑποτύπωμαΣτο Πλάι
-Διαστάσεις
-Μήκος156,9 mm
-Πλάτος72,4 mm
-Πάχος11,8 mm
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Screen 7.85"/2496 x 2224/120 Hz</li>
+<li>NFC Support</li>
+<li>Processor Snapdragon 8+ Gen 1 4G</li>
+<li>Triple Rear Camera 50MP/4Κ 60 FPS</li>
+<li>Battery 4800 mAh</li>
+
+</ul>
+<br>
+
+The world's first quad-curved foldable smartphone, a future-forward design that ushers in a revolutionary form factor. As sturdy as it is, the phone's four edges are soft-rounded for comfortable handling, enhancing an outstanding feel that lasts over time.<br>
+
+Slimmed Down, Spruced Up<br>
+HUAWEI Mate X3's slim and light foldable design takes full advantage of its new-gen multi-dimensional hinge, ensuring compactness when folded and ultra-thinness when unfolded. To further reduce weight, it uses an ultra-slim design around Type-C component, ultra light and strong aluminium and carbon fibre.<br>
+
+Two Screens to Savour<br>
+
+As the first foldable smartphone to garner two TÜV Rheinland certifications (Colour Accuracy & Precise Colour Projection)⁠, HUAWEI Mate X3 brings true-to-life details right in front of you, supporting 1.07 billion colours and groundbreaking HUAWEI X-True technology. Thanks to its Intelligent Light-Sensitive Display, the screens deliver a consistent viewing experience, whatever the occasion is. The interior screen's anti-reflection layer keeps the view clear, even under direct sunlight.<br>

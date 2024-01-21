@@ -1,31 +1,20 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαAndroid
-Έτος Κυκλοφορίας2021
-ΧρώμαΓκρι
-Βάρος565 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM8 GB
-Χωρητικότητα256 GB
-Πυρήνες ΕπεξεργαστήOcta-Core
-Ταχύτητα Βασικού Επεξεργαστή3,2 GHz
-Οθόνη
-Μέγεθος Οθόνης12,6 "
-Ανάλυση Οθόνης2560 x 1600 pixels
-ΤύποςAMOLED
-Ευκρίνεια2K
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας8 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi + 5G
-Μπαταρία
-Χωρητικότητα Μπαταρίας10200 mAh
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, USB On the Go, Περιλαμβάνει Πενάκι
-ΑισθητήρεςLight Sensor, Αισθητήρας Εγγύτητας, Γυροσκόπιο, Επιταχυνσιόμετρο, Πυξίδα
-Διαστάσεις
-Μήκος285,61 mm
-Πλάτος184,53 mm
-Πάχος5,63 mm
+Descriptions:
+<ul>
+
+<li>AMOLED 2K 12.6" display</li>
+<li>Octa-core processor 3.2GHz</li>
+<li>6GB RAM memory</li>
+<li>13MP rear camera</li>
+<li>Includes Precision Pen 3</li>
+<li>USB Type C to 3.5mm adapter included</li>
+</ul>
+
+Enjoy movies from wherever you want<br>
+Screen<br>
+The Lenovo Tab P12 Pro features a 12.6-inch AMOLED Dolby Vision touchscreen display, narrow Bezels on all sides, 2K resolution, and a refresh rate of 120 Hz. Additionally, with a brightness of up to 600nits, you can use the device even in outdoor spaces.<br>
+
+Sound<br>
+With the four built-in JBL speakers and the help of Dolby Atmos technology, you feel the sound surrounding you.<br>
+
+Gaming without limits<br>
+The combination of a 120Hz refresh rate with the speed provided by WiFi 6 and the Snapdragon 870 processor, gives you the ability to enjoy games with demanding requirements.

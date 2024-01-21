@@ -1,51 +1,16 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Τύπος ΚινητούSmartPhone
-Λειτουργικό ΣύστημαAndroid
-SIMDual
-Έτος Κυκλοφορίας2022
-ΧρώμαΑσημί
-Βάρος209 gr
-Περιεχόμενα ΣυσκευασίαςΚαλώδιο Φόρτισης, Προστασία Οθόνης, Φορτιστής
-Μοντέλο-
-Επεξεργαστής & Μνήμη
-Μοντέλο ΕπεξεργαστήSnapdragon 8+ Gen 1
-Ισχύς Βασικού Επεξεργαστή3,2 GHz
-Πυρήνες Επεξεργαστή1+3+4
-RAM8 GB
-Χωρητικότητα256 GB
-Card SlotΝαι
-Οθόνη
-Μέγεθος6,74 "
-Ανάλυση2616 x 1212 pixels
-Ρυθμός Ανανέωσης120 Hz
-ΤύποςOLED
-ΧειρισμόςΟθόνη αφής (Touch screen)
-DefinitionFull HD
-Κάμερα
-Πίσω ΚάμεραΤριπλή
-Φακοί Πίσω ΚάμεραςΕυρυγώνιος 50MP, Τηλεφακός 64MP 3.5x Οπτικό Zoom, Υπερευρυγώνιος 13MP
-Βίντεο Πίσω Κάμερας1080p 120fps Slow Motion, 1080p 240fps Slow Motion, 1080p 30fps, 1080p 60fps, 4K 30fps, 4K 60fps
-Flash Πίσω ΚάμεραςΝαι
-Φακοί Selfie ΚάμεραςΥπερευρυγώνιος 13MP
-ΔυνατότητεςHDR, Night Mode, Optical Zoom, Slow Motion
-Δίκτυο & Συνδεσιμότητα
-Δίκτυο Σύνδεσης4G
-ΣυνδεσιμότηταBluetooth, NFC, USB-C, Wi-Fi
-Μπαταρία
-Χωρητικότητα4700 mAh
-ΑποσπώμενηΌχι
-Γρήγορη ΦόρτισηΝαι
-Ισχύς Φόρτισης66 W
-Ασύρματη ΦόρτισηΝαι
-Ισχύς Ασύρματης Φόρτισης50 W
-Τεχνολογία Γρήγορης ΦόρτισηςSuperCharge
-Ειδικά Χαρακτηριστικά
-ΠροστασίαDust Resistant, Water Resistant
-Πιστοποίηση ΠροστασίαςIP68
-ΑισθητήρεςAccelerometer, Face ID, Hall, Proximity, Βαρόμετρο, Γυροσκόπιο, Πυξίδα
-Δακτυλικό ΑποτύπωμαΚάτω από την Οθόνη
-Διαστάσεις
-Μήκος162,1 mm
-Πλάτος75,5 mm
-Πάχος8,5 mm
+Descriptions:
+<ul>
+<li>Model 2022</li>
+<li>Screen 6.74"/2616 x 1212/120 Hz</li>
+<li>NFC support</li>
+<li>Processor Snapdragon 8+ Gen 1</li>
+<li>Triple Rear Camera 50MP/4K 60fps</li>
+<li>Battery 4700 mAh Fast Charge 66W</li>
+<ul>
+<br>
+A sense of symmetry, a sophisticated Clous de Paris pattern, 6m water resistance and an XMAGE camera with an ultra-wide variable F1.4 aperture.<br>
+
+Design that becomes an instant classic<br>
+Arm yourself with the smartphone that radiates charm in every way, with its iconic symmetrical shape and the intricate Clous de Paris pyramidal pattern that draws you into the sophisticated camera module.<br>
+Clear as crystal<br>
+Come for the technology, but stay for the view! The 120Hz curved screen and individually calibrated colours make every frame a sight to behold. And the 1440 Hz PWM brightness reduction, which reduces flicker, gives your eyes the breathing room they deserve.

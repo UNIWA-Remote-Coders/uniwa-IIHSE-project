@@ -1,50 +1,28 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Τύπος ΚινητούSmartPhone
-Λειτουργικό ΣύστημαiOS
-SIMSIM + eSIM
-Έτος Κυκλοφορίας2023
-ΧρώμαΜπλε
-Βάρος221 gr
-Περιεχόμενα ΣυσκευασίαςΚαλώδιο Φόρτισης
-ΜοντέλοiPhone 15 Pro
-Επεξεργαστής & Μνήμη
-Μοντέλο ΕπεξεργαστήApple A17 Pro Bionic
-Πυρήνες Επεξεργαστή2+4
-RAM8 GB
-Χωρητικότητα1000 GB
-Card SlotΌχι
-Οθόνη
-Μέγεθος6,7 "
-Ανάλυση2796 x 1290 pixels
-Ρυθμός Ανανέωσης120 Hz
-ΤύποςSuper Retina XDR OLED
-ΧειρισμόςΟθόνη αφής (Touch screen)
-DefinitionFull HD
-Κάμερα
-Πίσω ΚάμεραΤριπλή
-Φακοί Πίσω ΚάμεραςΕυρυγώνιος 48MP, Τηλεφακός 12MP 5x Οπτικό Zoom, Υπερευρυγώνιος 12MP
-Βίντεο Πίσω Κάμερας1080p 30fps, 1080p 60fps, 4K 24fps, 4K 30fps, 4K 60fps
-Flash Πίσω ΚάμεραςΝαι
-Φακοί Selfie ΚάμεραςΕυρυγώνιος 12MP
-ΔυνατότητεςHDR, Night Mode, OIS, Optical Zoom, Slow Motion
-Δίκτυο & Συνδεσιμότητα
-Δίκτυο Σύνδεσης5G
-ΣυνδεσιμότηταBluetooth, NFC, USB-C, Wi-Fi
-Μπαταρία
-Χωρητικότητα4441 mAh
-ΑποσπώμενηΌχι
-Γρήγορη ΦόρτισηΝαι
-Ασύρματη ΦόρτισηΝαι
-Ισχύς Ασύρματης Φόρτισης15 W
-Ειδικά Χαρακτηριστικά
-ΠροστασίαDust Resistant, Water Resistant
-Πιστοποίηση ΠροστασίαςIP68
-ΑισθητήρεςAccelerometer, Face ID, LiDAR Scanner, Light Sensor, Proximity, Βαρόμετρο, Γυροσκόπιο, Πυξίδα
-Δακτυλικό ΑποτύπωμαΜη Διαθέσιμο
-Διαστάσεις
-Μήκος159,9 mm
-Πλάτος76,7 mm
-Πάχος8,25 mm
-Εγγύηση
-Επιμέρους Εγγύηση Κατασκευαστή1 χρόνος σε ολόκληρη την συσκευή, 1 χρόνος στο Καλώδιο δεδομένων/φόρτισης, 1 χρόνος στην Μπαταρία
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Super Retina XDR OLED 6.7" 120Hz</li>
+<li>NFC Support</li>
+<li>New A17 Pro Bionic processor</li>
+<li>Triple rear camera 48MP/4K 60 FPS</li>
+<li>4852 mAh battery (50% in 30min)</li>
+</ul>
+<br>
+
+iPhone, forged from titanium<br>
+
+The iPhone 15 Pro Max is the first iPhone to feature a titanium aerospace-grade design, using the same alloy used by spaceships for missions to Mars.<br>
+
+
+Titanium has one of the best strength-to-weight ratios of any metal, making these Pro models the lightest ever. You will notice the difference from the moment you get one of these.<br>
+
+
+The beautiful, slim brushed finish on the titanium bands is achieved through precision processing, polishing, brushing, and sandblasting.<br>
+
+
+The new contoured edges and slimmest margins ever on the iPhone make it even more comfortable to hold in your hand.<br>
+
+
+The titanium band is connected to a new internal aluminum frame through solid-state diffusion. This is a groundbreaking innovation in the industry, using a thermomechanical process that joins these two metals with incredible strength.
+
+The internal frame is also made from 100% recycled aluminum, which contributes to overall use of recycled materials and helps us achieve our climate goals for 2030.

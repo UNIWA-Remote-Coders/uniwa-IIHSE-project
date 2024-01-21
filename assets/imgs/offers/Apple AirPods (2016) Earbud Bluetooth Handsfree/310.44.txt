@@ -1,18 +1,22 @@
-Χαρακτηριστικά
-Χαρακτηριστικά
-ΕίδοςEarbud
-Χρόνος Λειτουργίας2 hrs
-Χρόνος Αναμονής-
-Λειτουργία με Θήκη Φόρτισης24 hrs
-Χωρίς ΚαλώδιοΝαι
-Διπλό ΑκουστικόΝαι
-ΧρώμαΛευκό
-Επιπλέον Χαρακτηριστικά
-Multipoint PairingΝαι
-Θήκη ΦόρτισηςΝαι
-Αντοχή στον ΙδρώταΌχι
-Active Noise CancellationΌχι
-Γρήγορη ΦόρτισηΝαι
-Μείωση Θορύβου ΜικροφώνουΝαι
-Φωνητικός ΈλεγχοςΝαι
-Smart Assistant (Built-in)Siri
+Descriptions:
+<ul>
+<li>Operating Time 2 hours</li>
+<li>Standby Time 19 hours</li>
+<li>Operation with Charging Case 24 hours</li>
+<li>Fast Charging</li>
+<li>Microphone Noise Reduction</li>
+</ul>
+
+Battery life of more than 24 hours with the charging case.<br>
+
+Ready to use with all devices by removing them from their case.<br>
+
+Automatically activated and always stay connected.<br>
+
+They recognize speech and filter out external noise, focusing on the sound of the voice.<br>
+
+They understand when they are placed in the ears and stop playing when they come out.<br>
+
+Charged in just 15 minutes, they offer up to 3 hours of listening time.<br>
+
+AirPods are compatible with any Bluetooth-enabled device. However, some of their key features do not work on Android devices and generally those that do not have iOS. For example, you can't use Siri, you can't listen from one earpiece only and you can't control their battery. Also, pairing requires a few extra steps.

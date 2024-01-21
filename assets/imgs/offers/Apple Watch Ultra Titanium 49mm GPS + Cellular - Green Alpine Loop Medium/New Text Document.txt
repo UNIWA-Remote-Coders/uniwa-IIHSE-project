@@ -1,65 +1,20 @@
-Τεχνικά χαρακτηριστικά
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>OLED touchscreen</li>
+<li>Battery life up to 36 hours</li>
+<li>NFC, Wi-Fi, GPS, Bluetooth</li>
+<li>Suitable for swimming</li>
+</ul>
 
-Γενικά
-Κατασκευαστής:
-APPLE
-Μοντέλο:
-Apple Watch Ultra
-Χρώμα:
-Ασημί
-Εγγύηση:
-24 μήνες
+The most durable and capable Apple Watch exceeds the limits once again. It features the brand new S9 SiP. A magical new way to use your watch without touching the screen. The brightest display ever from Apple. Now you can choose a case and strap combination that is carbon-neutral.<br>
 
-Οθόνη
-Μέγεθος οθόνης:
-49 mm
-Τύπος οθόνης:
-OLED
-Σχήμα οθόνης:
-Ορθογώνιο
 
-Τεχνικά Χαρακτηριστικά
-Συμβατό με:
-Apple iOS
-Μοντέλο Επεξεργαστή:
-Dual-core
-Αδιάβροχο:
-Ναι
+The Apple Watch Ultra 2 is designed for unparalleled performance. The lightweight titanium case is sturdy and resistant to corrosion, and it is raised to protect the sapphire crystal from impacts on the edges.<br>
 
-Συνδεσιμότητα
-Υποστήριξη Bluetooth:
-Bluetooth 5.0
-GPS:
-Ναι
-Ανέπαφες πληρωμές:
-Ναι
-Κάρτα SIM:
-eSIM
 
-Δυνατότητες και Λειτουργίες
-Βηματομετρητής:
-Διαθέτει
-Παλμογράφος:
-Ναι
-Καταγραφέας ύπνου:
-Ναι
+The largest and brightest display Apple Watch
+With the support of the brand new S9 SiP, the Always-On Retina display has 3000 nits at its peak, making it even more readable in bright sunlight.<br>
 
-Εφαρμογές
-Κλήσεις:
-Υποστηρίζει
-Μουσική:
-Υποστηρίζει
 
-Μπαταρία
-Αυτονομία Μπαταρίας:
-Έως 60 ώρες
-
-Extra Χαρακτηριστικά
-Υλικό κατασκευής:
-Τιτάνιο
-Αποσπώμενο λουράκι:
-Ναι
-Πρόσθετα χαρακτηριστικά:
-Αισθητήρας καρδιακών παλμών,SOS σήμα,GPS,επιταχυνσιόμετρο και γυροσκόπιο,Κλήσεις & Γραπτά Μήνυματα, Ανέπαφες πληρωμές, Push Notification/Διαχείριση μουσικής
-
-https://www.public.gr/product/wearables-gadgets/smartwatches/apple-watch-ultra-titanium-49mm-gps-cellular--green-alpine-loop-medium/1718872
+In low-light conditions, it reduces to 1 nit. Night mode is now automatically activated in the dark. The large display gives you space to customize your view to fit almost any activity. And a new watch face displays dynamic information like altitude, depth, or seconds.<br>

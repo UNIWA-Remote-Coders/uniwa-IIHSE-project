@@ -1,31 +1,12 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαWindows
-Έτος Κυκλοφορίας2017
-ΧρώμαΑσημί
-Βάρος766 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM4 GB
-Χωρητικότητα128 GB
-Πυρήνες ΕπεξεργαστήDual-Core
-Ταχύτητα Βασικού Επεξεργαστή1 GHz
-Οθόνη
-Μέγεθος Οθόνης12,3 "
-Ανάλυση Οθόνης2736 x 1824 pixels
-ΤύποςIPS
-ΕυκρίνειαQHD
-Κάμερα
-Ανάλυση Βασικής Κάμερας8 MP
-Ανάλυση Selfie Κάμερας1 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, Micro USB, 3.5mm Jack
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας-
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, 2 in 1 Detachable
-ΑισθητήρεςΕπιταχυνσιόμετρο, Light Sensor, Γυροσκόπιο
-Διαστάσεις
-Μήκος292 mm
-Πλάτος201 mm
-Πάχος8,5 mm
+Descriptions:<br>
+SCREEN.<br>
+The screen of the Surface Pro 12.3 is the best I have personally seen so far (it is the fourth tablet I have). It has a high resolution (2736 x 1824, with 267 pixels per inch) with a 3:2 aspect ratio, as well as high brightness. At 50% brightness, it covers most lighting situations, even in strong sunlight if you are in the shade. I conducted various tests to see how it looks from the sides, how it looks tilted from above or below. And of course, the best test for me was how it looks when there is sunlight, which was my issue with the previous (last) tablet I had, constantly searching for shaded areas. The test was done with strong sunlight and the sun's rays directly hitting the screen. It's a shame that the description doesn't allow us to upload photos for you to understand what I mean, but I can comfortably see and read everything. This was, after all, the main reason why, after a lot of research, I ended up with this tablet. Adding the following links on 1-9-2018. Note that I not only did not try to hide the reflections and mirror effect of the screen, but I tried to highlight them as best as possible.<br><br>
+
+KEYBOARD.<br>
+Very good! Especially for those like me who have large hands. I didn't measure the dimensions of the keys, but I have the feeling that they must be almost like those of a regular keyboard, just thinner. However, this doesn't create any problems while typing. The Caps Lock and Fn keys have built-in LEDs that light up when active. The base is made of a metal alloy and is quite rigid and compact, so it doesn't create any flexibility or oscillation issues during use, while also being lightweight. The feeling of the keyboard being covered in suede is also very nice. Another thing I liked is the adjustable brightness of the keys in three levels, according to each person's preference, as well as the automatic shutdown after 20 seconds to save battery. Of course, as soon as you touch a key, the letters, symbols, and keys light up. It also provides very good screen protection during transportation. Finally, it weighs only 295 grams.<br><br>
+
+BATTERY.<br>
+Here, Microsoft has done a very good job as well. With some internet browsing and a few videos, it consumes the battery at a rate of approximately 10 to 12% per hour, depending on the brightness setting. Charging takes place at a rate of approximately 33% per hour. However, what annoys me and is unacceptable for a tablet of this price, quality, and reputation is that when it is closed, you cannot see how much longer it will take to reach 100% charge. There is no indication in percentages or any symbol, as other much cheaper tablets have. You simply connect it to power and estimate how much battery is left and how long it will take to fully charge.<br><br>
+
+SOUND.<br>
+The sound is loud and clear, and no matter how noisy the environment is, I can comfortably hear what the tablet is playing. Of course, I am not referring to exceptional cases, such as working next to a compressor or being in a bar with the music at full volume.

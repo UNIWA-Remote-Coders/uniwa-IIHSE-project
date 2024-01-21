@@ -1,137 +1,26 @@
-Τεχνικά χαρακτηριστικά
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Retina OLED Always-On touchscreen display</li>
+<li>Battery life up to 18 hours</li>
+<li>NFC, Wi-Fi, GPS, Bluetooth</li>
+<li>Suitable for swimming</li>
+</ul>
 
-Γενικά
-Κατασκευαστής:
-APPLE
-Μοντέλο:
-Apple Watch Series 9
-Περιγραφή προϊόντος:
-Apple Watch Series 9 Aluminium Midnight GPS 45mm - Midnight Small/Medium
-Χρώμα:
-Μαύρο
-Έτος κυκλοφορίας:
-2023
-Εγγύηση:
-24 μήνες
-Η συσκευασία περιλαμβάνει:
-Apple Watch Series 9, Μαγνητικό καλώδιο φόρτισης USB-C
+The Apple Watch Series 9 is more powerful than ever with the new S9 SiP, which enhances performance and capabilities, a new magical double-tap gesture, a brighter display, faster Siri on the device, now with the ability to access and record health data, precise finding for iPhone, and much more.<br>
 
-Οθόνη
-Μέγεθος οθόνης:
-1.9"
-Ανάλυση οθόνης:
-484 x 396
-Τύπος οθόνης:
-OLED
-Φωτεινότητα:
-2000 nits
-Σχήμα οθόνης:
-Ορθογώνιο
+The Apple Watch Series 9 runs watchOS 10, which offers redesigned apps, the new Smart Stack, new watch faces, new cycling and hiking features, and tools to support mental health.<br>
+S9 SiP<br>
+The custom silicon of Apple makes the Apple Watch Series 9 more capable, intuitive, and faster. The new dual-core CPU features 5.6 billion transistors - 60 percent more than the S8 chip. A new quad-core Neural Engine processes machine learning tasks up to two times faster.<br>
 
-Τεχνικά Χαρακτηριστικά
-Συμβατό με:
-Apple iOS
-Λειτουργικό σύστημα:
-watchOS 10
-Μοντέλο Επεξεργαστή:
-Apple S9
-Χωρητικότητα:
-64 GB
-Ανθεκτικότητα:
-Ion-X strengthened glass
-Αδιάβροχο:
-Ανθεκτικό στο νερό (50m)
-Μικρόφωνο:
-Διαθέτει
-Υποστήριξη voice assistant:
-Siri
-Εφαρμογή:
-Apple Watch
+It enables a range of innovations, including a new gesture - double tap.<br>
 
-Συνδεσιμότητα
-Wi-Fi:
-802.11 b/g/n, dual-band
-Υποστήριξη Bluetooth:
-5.3
-Υποστήριξη NFC:
-Διαθέτει
-GPS:
-GPS, GLONASS, GALILEO, QZSS, BDS
-Ανέπαφες πληρωμές:
-Apple Pay
-Κάρτα SIM:
-Δε διαθέτει
+Double Tap<br>
+Gestures make the Apple Watch even easier to use at any time, especially when your hands are full. Simply double tap your index finger and thumb together to answer a call, open a notification, play and pause music, and much more.<br>
 
-Δυνατότητες και Λειτουργίες
-Βηματομετρητής:
-Διαθέτει
-Παλμογράφος:
-Διαθέτει
-Καταγραφέας ύπνου:
-Διαθέτει
-Ηλεκτροκαρδιογράφημα:
-Διαθέτει
-SOS έκτακτης ανάγκης:
-Διαθέτει
-Μέτρηση οξυγόνου στο αίμα:
-Διαθέτει
-Παρακολούθηση έμμηνου κύκλου:
-Διαθέτει
-Μέτρηση άγχους:
-Διαθέτει
-Ειδοποίηση ακανόνιστου καρδιακού ρυθμού:
-Διαθέτει
-Υπενθύμιση ενεργής δραστηριότητας:
-Διαθέτει
-Θερμόμετρο:
-Διαθέτει
-Ασκήσεις αναπνοής:
-Διαθέτει
-Πυξίδα:
-Διαθέτει
-Ανίχνευση πτώσης:
-Διαθέτει
-Eιδοποιήσεις:
-Εφαρμογές, Κλήσεις, Μηνύματα
+2x brighter display<br>
+The advanced display system of the Series 9 increases the maximum brightness to 2000 nits - double that of the Series 8 - for easier reading in full sunlight conditions. It is also better in low-light conditions, such as in cinemas, as it dims to just 1 nit.<br>
 
-Εφαρμογές
-Αποστολή μηνυμάτων:
-Διαθέτει
-Κλήσεις:
-Διαθέτει
-Μουσική:
-Διαθέτει
-Ημερολόγιο:
-Διαθέτει
-Χάρτες:
-Διαθέτει
-Κατάστημα εφαρμογών:
-App Store
+Siri<br>
+With Series 9, the Siri requests processed by your device are faster and more secure. In addition, Siri dictation is up to 25 percent more accurate. And later this year, you'll be able to ask Siri about your health data, such as how much sleep you got last night. Or use it to track information like your weight or menstrual cycle.
 
-Μπαταρία
-Μπαταρία:
-308 mAh
-Αυτονομία Μπαταρίας:
-Έως 18 ώρες
-Υποστήριξη γρήγορης φόρτισης:
-Διαθέτει
-
-Διαστάσεις και Βάρος
-Διαστάσεις (ΠxΒxΥ):
-45 x 38 x 10.7 mm
-Βάρος:
-38.7 g
-Διάμετρος κάσας:
-45mm
-
-Extra Χαρακτηριστικά
-Υλικό κατασκευής:
-Αλουμίνιο
-Χρώμα λουριού:
-Μαύρο
-Αποσπώμενο λουράκι:
-Διαθέτει
-Πρόσθετα χαρακτηριστικά:
-Double Tap, Αισθητήρας καρδιακών παλμών,SOS σήμα,GPS,επιταχυνσιόμετρο και γυροσκόπιο,Κλήσεις & Γραπτά Μήνυματα, Ανέπαφες πληρωμές, Push Notification/Διαχείριση μουσικής
-
-https://www.public.gr/product/wearables-gadgets/smartwatches/apple-watch-series-9-aluminium-midnight-gps-45mm--midnight-smallmedium/1850699

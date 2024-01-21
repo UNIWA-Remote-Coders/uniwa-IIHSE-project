@@ -1,16 +1,15 @@
-Χαρακτηριστικά
-Χαρακτηριστικά
-ΕίδοςIn-ear
-Χρόνος Λειτουργίας7 hrs
-Λειτουργία με Θήκη Φόρτισης30 hrs
-Χωρίς ΚαλώδιοΝαι
-Διπλό ΑκουστικόΝαι
-ΧρώμαΜαύρο
-Επιπλέον Χαρακτηριστικά
-Multipoint PairingΌχι
-Θήκη ΦόρτισηςΝαι
-Αντοχή στον ΙδρώταΝαι
-Active Noise CancellationΌχι
-Γρήγορη ΦόρτισηΝαι
-Μείωση Θορύβου ΜικροφώνουΝαι
-Φωνητικός ΈλεγχοςΌχι
+Descriptions:
+<ul>
+<li>Operating Time 7 hours</li>
+<li>Operating with Charging Case 30 hours</li>
+<li>Charging Time 2 hours</li>
+<li>Passive Noise Cancelling</li>
+<li>Sweat Resistance with IP57</li>
+<li>Wireless Charging</li>
+</ul>
+
+The Bang & Olufsen Beoplay E8 Sport headphones are designed for people looking for high-quality in-ear headphones for sports and outdoor use. They are designed to withstand sweat, rain, and dust, while providing high-quality sound and comfort. The Beoplay E8 Sport also has shock and drop resistance, making them ideal for people who exercise outdoors or on the go.<br>
+
+Signed sound by Bang & Olufsen<br>
+Enhance your workouts with the powerful and precise sound of the Beoplay E8 Sport, specially tuned for sports. Customize your music experience using BeoSonic* and activate Transparency Mode when you want to hear the world around you. Four built-in microphones ensure crystal-clear clarity wherever you make your calls.<br>
+

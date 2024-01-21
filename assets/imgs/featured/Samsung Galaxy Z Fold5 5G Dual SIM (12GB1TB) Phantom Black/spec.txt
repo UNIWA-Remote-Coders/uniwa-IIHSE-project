@@ -1,50 +1,39 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Τύπος ΚινητούSmartPhone
-Λειτουργικό ΣύστημαAndroid
-SIMDual
-Έτος Κυκλοφορίας2023
-ΧρώμαΜαύρο
-Βάρος253 gr
-Περιεχόμενα ΣυσκευασίαςΚαλώδιο Φόρτισης
-Επεξεργαστής & Μνήμη
-Μοντέλο ΕπεξεργαστήSnapdragon 8 Gen 2 for Galaxy
-Ισχύς Βασικού Επεξεργαστή3,36 GHz
-Πυρήνες Επεξεργαστή1+2+2+3
-RAM12 GB
-Χωρητικότητα1000 GB
-Card SlotΌχι
-Οθόνη
-Μέγεθος7,6 "
-Ανάλυση2176 x 1812 pixels
-Ρυθμός Ανανέωσης120 Hz
-ΤύποςDynamic AMOLED 2X
-ΧειρισμόςΟθόνη αφής (Touch screen)
-DefinitionFull HD
-Κάμερα
-Πίσω ΚάμεραΤριπλή
-Φακοί Πίσω ΚάμεραςΕυρυγώνιος 50MP, Τηλεφακός 10MP 3x Οπτικό Zoom, Υπερευρυγώνιος 12MP
-Βίντεο Πίσω Κάμερας1080p 240fps Slow Motion, 1080p 60fps, 4K 60fps, 720P 960fps Slow Motion, 8K 24fps
-Flash Πίσω ΚάμεραςΝαι
-Φακοί Selfie ΚάμεραςUnder Display Camera 4MP, Ευρυγώνιος 10MP
-ΔυνατότητεςHDR, Slow Motion
-Δίκτυο & Συνδεσιμότητα
-Δίκτυο Σύνδεσης5G
-ΣυνδεσιμότηταBluetooth, NFC, USB-C, Wi-Fi
-Μπαταρία
-Χωρητικότητα4400 mAh
-ΑποσπώμενηΌχι
-Γρήγορη ΦόρτισηΝαι
-Ισχύς Φόρτισης25 W
-Ασύρματη ΦόρτισηΝαι
-Ισχύς Ασύρματης Φόρτισης15 W
-Τεχνολογία Γρήγορης ΦόρτισηςQuick Charge 2.0
-Ειδικά Χαρακτηριστικά
-ΠροστασίαWater Resistant
-Πιστοποίηση ΠροστασίαςIPX8
-ΑισθητήρεςAccelerometer, Hall, Light Sensor, Proximity, Βαρόμετρο, Γυροσκόπιο
-Δακτυλικό ΑποτύπωμαΣτο Πλάι
-Διαστάσεις
-Μήκος129,9 mm
-Πλάτος154,9 mm
-Πάχος6,1 mm
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Screen 7.6"/2176 x 1812/120 Hz</li>
+<li>NFC Support</li>
+<li>Snapdragon 8 Gen 2 Processor</li>
+<li>Triple Rear Camera 50MP/8K 24 fps</li>
+<li>Battery 4400mAh (50% in 30min)</li>
+</ul>
+<br>
+
+With an innovative shape factor enhanced by the new Flex Hinge for a balanced design and professional camera capabilities with the unique FlexCam, the Galaxy Z series offers unparalleled experiences in foldable devices.<br>
+
+Take the big screen with you
+Unfold an amazing, immersive 7.6" display redesigned to offer you gaming like never before, cinematic viewing, and enhanced productivity.<br>
+
+
+
+Keep it bright, even in the sunlight
+Enjoy a cinematic experience on the bright main screen 7.6" without direct sunlight ruining the view<br>
+
+
+
+Multiple applications. One screen.<br>
+
+Multi-window view takes your multitasking to the next level. Keep three windows open on one screen so you can stream, shop, browse, and play more.<br>
+
+
+
+The product line can accommodate up to twelve applications simultaneously, allowing you to seamlessly switch between your favorites.<br>
+
+
+
+Large screen, meet the thinnest S Pen.<br>
+
+Precision meets portability with the S Pen capability on the Galaxy Z Fold5. Write directly on the large screen and make your work even easier. Additionally, use Samsung Notes for a canvas that syncs across all Galaxy devices.<br>
+
+
+The S Pen is sold separately, compatible only with the main screen. Requires S Pen Fold Edition or S Pen Pro.<br>

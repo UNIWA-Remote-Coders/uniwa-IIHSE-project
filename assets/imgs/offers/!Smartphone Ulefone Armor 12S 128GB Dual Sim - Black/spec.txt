@@ -1,115 +1,35 @@
-Τεχνικά χαρακτηριστικά
+"X" Design
+The idea "X" representing exploration, technology, and the future evolved from the "fishbone" and integrated into the sides of the phone and the speaker grille, Ulefone's cutting-edge new design philosophy.
+Quite slim<br>
 
-Γενικά
-Κατασκευαστής:
-ULEFONE
-Περιγραφή προϊόντος:
-Smartphone Ulefone Armor 12S 128GB Dual Sim - Black
-Μοντέλο:
-12S
-Έτος κυκλοφορίας:
-2021
-Λειτουργικό σύστημα:
-Android 12
-Χρώμα:
-Black
-Υλικό (Backplate):
-Πλαστικό
-Υλικό (Frame):
-Πλαστικό
+As a durable phone equipped with a large battery and stable performance, the Armor 12S offers a lightweight feel in the hand, just like popular smartphones. And it balances strong performance and long-lasting battery life, making the phone quite slim.<br>
 
-Οθόνη
-Μέγεθος οθόνης:
-6.52"
-Ανάλυση οθόνης:
-HD+ (1600 x 720)
-Τύπος οθόνης:
-IPS
-Screen to Body Ratio:
-Κάτω από 79.9%
+Great durability<br>
 
-Επεξεργαστής και GPU
-Μάρκα επεξεργαστή:
-MediaTek
-Μοντέλο Επεξεργαστή:
-Helio G99
-Αριθμός Πυρήνων Eπεξεργαστή:
-Οκταπύρηνος
-Ταχύτητα Επεξεργαστή:
-2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55
-GPU:
-Mali-G57 MC2
+Passed the strict MIL-STD-810H standard and IP68/IP69K protection, the Armor 12S is not afraid of tough situations, with drop resistance up to 1.5m height and waterproof for 30 minutes up to 1.5m depth, it will be by your side in any challenging environment.<br>
 
-Αποθηκευτικός Χώρος και Μνήμη
-Μνήμη RAM:
-8 GB
-Χωρητικότητα:
-128 GB
-Υποστήριξη εξωτερικής μνήμης:
-microSDXC (έως 1TB)
+Quad Camera 50MP<br>
 
-Κάμερα
-Φακοί κύριας κάμερας:
-Quad
-Κάμερα:
-50MP/8MP/2MP/2MP
-Λεπτομέριες κύριας κάμερας:
-50MP f/1.8 (wide) + 8MP 118.8° f/2.2 (ultrawide) + 2MP f/2.8 (macro) + 2MP (depth)
-Φάκοι Selfie κάμερας:
-Single
-Selfie κάμερα:
-16 MP f/2.2
-Ανάλυση βίντεο:
-2K@30fps
+The quad rear camera allows you to capture every enjoyable moment of life. The main 50MP camera takes faithfully clear and detailed photos. Choose between the 8MP wide-angle camera for magnificent landscape shots, the 2MP macro lens for close-up shots, while the depth sensor takes your photography to new levels.<br>
 
-Συνδεσιμότητα
-Δίκτυο δεδομένων:
-4G
-Υποδοχές SIM:
-Dual
-Τύπος SIM:
-Nano-SIM
-Θύρα USB:
-Type-C 2.0
-Έκδοση Bluetooth:
-5.0
-Ασύρματη επικοινωνία:
-802.11 a/ac/b/g/n
-Τοποθεσία:
-GPS, GLONASS, Galileo, BEIDOU
+Powerful processor<br>
 
-Δυνατότητες και Λειτουργίες
-Δαχτυλικό αποτύπωμα:
-Side-mounted
-Υποστήριξη voice assistant:
-Google Assistant
-Αισθητήρες:
-Επιταχυνσιόμετρο, Αισθητήρας G, Αισθητήρας P, Αισθητήρας L, Πυξίδα E, Γυροσκόπιο, Βηματόμετρο, Coulombmeter
-Ανθεκτικότητα:
-IP68 - Ανθεκτικό στη σκόνη/νερό (έως 1.5m για 30')
+It comes with the MediaTek Helio G99 chipset combined with an octa-core CPU with 2*Cortex-A76 clocked up to 2.2 GHz and 6*Cortex-A55 clocked up to 2.0 GHz. The powerful ARM G57-MC2 GPU provides you with a smooth gaming experience. Such a powerful chipset supports online chats, video playback, professional document management, games, and photos.<br>
 
-Μπαταρία
-Μπαταρία:
-5180 mAh
-Υποστήριξη γρήγορης φόρτισης:
-Υποστηρίζεται
-Υποστήριξη ασύρματης φόρτισης:
-Υποστηρίζεται (15W)
-Ισχύς:
-18W
+Storage Space & RAM<br>
 
-Ήχος
-Αριθμός ηχείων:
-x2
+It includes 8GB of RAM and can reach up to 5GB of virtual memory, thus reaching a total memory of 13GB, making the phone quite fast and able to run music, video, games, and whatever else you need to complete your day smoothly. All of this is stored in the 128GB internal memory it has, but in case you need more space, there is the possibility of expanding it up to 1TB through the SD Card slot.<br>
 
-Διαστάσεις και Βάρος
-Διαστάσεις (ΠxΒxΥ):
-82.5 x 175.9 x 14.25 mm
-Βάρος:
-297 g
+Large battery<br>
 
-Εγγύηση - Πιστοποιήσεις
-Εγγύηση:
-24 μήνες
+The Armor 12S with a 5180mAh battery lasts all day without any problem, supports wired fast charging of 18W and wireless charging of 15W.<br>
 
-https://www.public.gr/product/tilefonia/kinita-smartphones/smartphone-ulefone-armor-12s-128gb-dual-sim--black/1801874
+<ul>
+<li>Package Contents</li>
+<li>Ulefone Armor 12s</li>
+<li>15W Charger</li>
+<li>USB Type-A to Type-C Cable</li>
+<li>Screen Protector</li>
+<li>Strap</li>
+<li>User Manual</li>
+</ul>

@@ -1,50 +1,29 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Τύπος ΚινητούSmartPhone
-Λειτουργικό ΣύστημαAndroid
-SIMDual
-Έτος Κυκλοφορίας2023
-ΧρώμαΜαύρο
-Βάρος189 gr
-Περιεχόμενα ΣυσκευασίαςΘήκη Προστασίας, Καλώδιο Φόρτισης, Φορτιστής
-Επεξεργαστής & Μνήμη
-Μοντέλο ΕπεξεργαστήSnapdragon 8 Gen 2
-Ισχύς Βασικού Επεξεργαστή3,2 GHz
-Πυρήνες Επεξεργαστή1+2+2+3
-RAM8 GB
-Χωρητικότητα256 GB
-Card SlotΌχι
-Οθόνη
-Μέγεθος6,36 "
-Ανάλυση2400 x 1080 pixels
-Ρυθμός Ανανέωσης120 Hz
-ΤύποςAMOLED
-ΧειρισμόςΟθόνη αφής (Touch screen)
-DefinitionFull HD
-Κάμερα
-Πίσω ΚάμεραΤριπλή
-Φακοί Πίσω ΚάμεραςΕυρυγώνιος 50MP, Υπερευρυγώνιος 12MP, Τηλεφακός 10MP 3.2x Οπτικό Zoom
-Βίντεο Πίσω Κάμερας1080p 120fps Slow Motion, 1080p 1920fps Slow Motion, 1080p 240fps Slow Motion, 1080p 30fps, 1080p 60fps, 1080p 960fps Slow Motion, 4K 30fps, 4K 60fps, 720p 30fps, 8K 24fps
-Flash Πίσω ΚάμεραςΝαι
-Φακοί Selfie ΚάμεραςΕυρυγώνιος 32MP
-ΔυνατότητεςHDR, Night Mode, OIS, Optical Zoom, Slow Motion
-Δίκτυο & Συνδεσιμότητα
-Δίκτυο Σύνδεσης5G
-ΣυνδεσιμότηταBluetooth, NFC, USB-C, Wi-Fi
-Μπαταρία
-Χωρητικότητα4500 mAh
-ΑποσπώμενηΌχι
-Γρήγορη ΦόρτισηΝαι
-Ισχύς Φόρτισης67 W
-Ασύρματη ΦόρτισηΝαι
-Ισχύς Ασύρματης Φόρτισης50 W
-Τεχνολογία Γρήγορης ΦόρτισηςQuick Charge 4.0
-Ειδικά Χαρακτηριστικά
-ΠροστασίαDust Resistant, Water Resistant
-Πιστοποίηση ΠροστασίαςIP68
-ΑισθητήρεςAccelerometer, Face ID, Light Sensor, Proximity, Γυροσκόπιο, Πυξίδα
-Δακτυλικό ΑποτύπωμαΚάτω από την Οθόνη
-Διαστάσεις
-Μήκος152,8 mm
-Πλάτος71,5 mm
-Πάχος7,98 mm
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Screen 6.36"/2400 x 1080/120Hz</li>
+<li>NFC Support</li>
+<li>Processor Snapdragon 8 Gen 2</li>
+<li>Triple Rear Camera 50MP</li>
+<li>Battery 4500mAh/100% in 48 min</li>
+</ul>
+<br>
+
+Enjoy your next photographic masterpiece, thanks to the Xiaomi 13 series. Behind the masterpiece is a camera system co-designed with Leica, seamlessly tuned to incorporate iconic features such as the Leica 75mm telephoto lens that shapes the classic Leica style and aesthetic.<br>
+Masterful design<br>
+Polished flat design<br>
+Convenient handle<br>
+
+Strikingly immersive screen design<br>
+Convenient handle<br>
+Activate the screen to enjoy an unparalleled experience. Ultra-thin 1.61mm bezels offer unlimited visuals.<br>
+
+
+Built for unlimited scenarios<br>
+Water and dust resistance IP68<br>
+"It's waterproof and water-resistant, thanks to precision manufacturing. Capture special memories anytime, anywhere."<br>
+
+
+Masterpiece camera<br>
+Leica Professional Camera System<br>
+Capturing important circumstances as well as extraordinary details<br>
