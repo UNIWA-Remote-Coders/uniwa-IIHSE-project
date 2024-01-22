@@ -3,6 +3,12 @@
   session_start();
   //include('./server/connection.php');
 
+
+  if(isset($_POST['order_pay_btn'])) {
+    $order_status = $_POST['order_staus'];
+    $order_total_price = $_POST['order_total_price'];
+  }
+
 ?>
 
 <!DOCTYPE html>
@@ -131,9 +137,17 @@
         <hr class="mx-auto" />
       </div>
       <div class="mx-auto container text-center">
-        <p><?php echo $_GET['order_status'];?></p>
-        <p>Total Payment: <?php echo $_SESSION['total'];?></p>
+
+      <?php if(isset($_SESSION['total']) && $_SESSION['total'] != 0) { ?>
+        <p>Total Payment: <?php echo $_SESSION['total']; ?>€</p>
         <input class="btn btn-primary" value="Pay Now" type="Submit"/>
+      <?php } else if(isset($_POST['order_status']) && $_POST['order_status'] == "not paid") { ?>
+        <p>Total Payment: <?php echo $_POST['order_total_price']; ?>€</p>
+        <input class="btn btn-primary" value="Pay Now" type="Submit"/>
+      <?php } else { ?>
+        <p>You don't have an order</p>
+      <?php }?>
+
         <!--http://localhost:3000/payment.php?order_status=order%20placed%20successfully-->
       </div>
     </section>
