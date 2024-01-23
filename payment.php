@@ -175,7 +175,7 @@
       
         <div class="form-body">
           <!-- Card Number -->
-          <input type="text" class="card-number" placeholder="Card Number">
+          <input id="ccn" type="tel" class="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
       
           <!-- Date Field -->
           <div class="date-field">
