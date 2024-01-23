@@ -157,23 +157,23 @@
     </section>
 
       <form class="credit-card">
-        <p>Choose a payment method: </p>
+      <div class="form-header">
+        <h4 class="title">Choose a payment method: </h4>
         <input type="radio" id="pod" name="payment_method" value="0">
         <label for="radio">Pay On Delivery</label>
-        <div id="test" class="d-inline-block">
+        <div id="pod-button" class="d-inline-block">
           <input type="button" class="btn btn-primary" name="ins_value" id="ins_value" value="Finish Order">
         </div>
         <br>
         <input type="radio" id="credit" name="payment_method" value="0">
-        <label for="css">Pay with Credit/Debit Card</label><br>
+        <label for="css" >Pay with Credit/Debit Card</label><br>
         <input type="radio" id="paypal" name="payment_method" value="0">
         <label for="javascript">Pay with PayPal</label>
 
-        <div class="form-header">
-          <h4 class="title">Credit card detail</h4>
         </div>
       
-        <div class="form-body">
+        <div class="form-credit">
+          <h4 class="title">Credit card details</h4>
           <!-- Card Number -->
           <input id="ccn" type="tel" class="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
       
@@ -225,9 +225,12 @@
           <!-- Buttons -->
           <div class="center-btn">
             <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
-            <p style="padding-left: 120px;">Or</p>
-            <div id="paypal-button"></div>
           </div>
+        </div>
+
+        <div class="form-credit">
+          <h4 class="title">Paypal Payment</h4>
+          <div id="paypal-button"></div>
         </div>
         
       </form>
@@ -235,7 +238,7 @@
       
 
     <!--Footer-->
-    <footer>
+    <!-- <footer>
       <div class="footerContainer">
         <div class="socialIcons">
           <a href=""><i class="fa-brands fa-facebook"></i></a>
@@ -257,25 +260,44 @@
       <div class="footerBottom">
         <p>eCommerce @ 2025 All Right Reserved</p>
       </div>
-    </footer>
+    </footer> -->
 
     <script type="text/javascript">
-      var radio = document.getElementById('pod');
-      var div = document.getElementById('test');
-      radio.addEventListener("click", function(){
-          if(radio.value == 0){
-              radio.value = 1;
+      const radio = [document.getElementById('pod'), document.getElementById('credit'), document.getElementById('paypal')];
+      const div = [document.getElementById('pod-button'), document.getElementById('credit-form'), document.getElementById('paypal-button')];
+      radio[0].addEventListener("click", function(){
+          if(radio[0].value == 0){
+              radio[0].value = 1;
+              radio[1].value = radio[2].value= 0;
               this.checked = true;
-              div.style.visibility = 'visible';
-              div.value = radio.value;
+              div[0].style.visibility = 'visible';
+              div[0].value = radio[0].value;
           }
           else{
-              radio.value = 0;
-              div.style.visibility = 'hidden';
-              div.value = '';
+              radio[0].value = 0;
+              div[0].style.visibility = 'hidden';
+              div[0].value = '';
               this.checked = false;
           }
       });
+
+      radio[2].addEventListener("click", function(){
+        if(radio[2].value == 0){
+                radio[2].value = 1;
+                radio[0].value = radio[1].value= 0;
+                this.checked = true;
+                div[2].style.visibility = 'visible';
+                div[2].value = radio[2].value;
+            }
+            else{
+                radio[2].value = 0;
+                div[2].style.visibility = 'hidden';
+                div[2].value = '';
+                this.checked = false;
+            }
+      });
+
+        
     </script>
     
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
