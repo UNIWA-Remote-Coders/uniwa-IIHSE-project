@@ -141,9 +141,13 @@
       <?php if(isset($_SESSION['total']) && $_SESSION['total'] != 0) { ?>
         <p>Total Payment: <?php echo $_SESSION['total']; ?>€</p>
         <input class="btn btn-primary" value="Pay Now" type="Submit"/>
+        <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
+
       <?php } else if(isset($_POST['order_status']) && $_POST['order_status'] == "not paid") { ?>
         <p>Total Payment: <?php echo $_POST['order_total_price']; ?>€</p>
         <input class="btn btn-primary" value="Pay Now" type="Submit"/>
+        <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
+
       <?php } else { ?>
         <p>You don't have an order</p>
       <?php }?>
@@ -151,6 +155,84 @@
         <!--http://localhost:3000/payment.php?order_status=order%20placed%20successfully-->
       </div>
     </section>
+
+      <form class="credit-card">
+        <p>Choose a payment method: </p>
+        <input type="radio" id="pod" name="payment_method" value="0">
+        <label for="radio">Pay On Delivery</label>
+        <div id="test" class="d-inline-block">
+          <input type="button" class="btn btn-primary" name="ins_value" id="ins_value" value="Finish Order">
+        </div>
+        <br>
+        <input type="radio" id="credit" name="payment_method" value="0">
+        <label for="css">Pay with Credit/Debit Card</label><br>
+        <input type="radio" id="paypal" name="payment_method" value="0">
+        <label for="javascript">Pay with PayPal</label>
+
+        <div class="form-header">
+          <h4 class="title">Credit card detail</h4>
+        </div>
+      
+        <div class="form-body">
+          <!-- Card Number -->
+          <input type="text" class="card-number" placeholder="Card Number">
+      
+          <!-- Date Field -->
+          <div class="date-field">
+            <div class="month">
+              <select name="Month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+            </div>
+            <div class="year">
+              <select name="Year">
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2024">2025</option>s
+                <option value="2024">2026</option>
+              </select>
+            </div>
+          </div>
+      
+          <!-- Card Verification Field -->
+          <div class="card-verification">
+            <div class="cvv-input">
+              <input type="text" placeholder="CVV">
+            </div>
+            <div class="cvv-details">
+              <p>3 or 4 digits usually found <br> on the signature strip</p>
+            </div>
+          </div>
+      
+          <!-- Buttons -->
+          <div class="center-btn">
+            <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
+            <p style="padding-left: 120px;">Or</p>
+            <div id="paypal-button"></div>
+          </div>
+        </div>
+        
+      </form>
+
+      
 
     <!--Footer-->
     <footer>
@@ -177,10 +259,69 @@
       </div>
     </footer>
 
-    <script
+    <script type="text/javascript">
+      var radio = document.getElementById('pod');
+      var div = document.getElementById('test');
+      radio.addEventListener("click", function(){
+          if(radio.value == 0){
+              radio.value = 1;
+              this.checked = true;
+              div.style.visibility = 'visible';
+              div.value = radio.value;
+          }
+          else{
+              radio.value = 0;
+              div.style.visibility = 'hidden';
+              div.value = '';
+              this.checked = false;
+          }
+      });
+    </script>
+    
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script>
+
+      paypal.Button.render({
+        // Configure environment
+        env: 'sandbox',
+        client: {
+          sandbox: 'demo_sandbox_client_id',
+          production: 'demo_production_client_id'
+        },
+        // Customize button (optional)
+        locale: 'en_US',
+        style: {
+          size: 'medium',
+          color: 'gold',
+          shape: 'pill',
+        },
+
+        // Enable Pay Now checkout flow (optional)
+        commit: true,
+
+        // Set up a payment
+        payment: function(data, actions) {
+          return actions.payment.create({
+            transactions: [{
+              amount: {
+                total: '0.01',
+                currency: 'USD'
+              }
+            }]
+          });
+        },
+        // Execute the payment
+        onAuthorize: function(data, actions) {
+          return actions.payment.execute().then(function() {
+            // Show a confirmation message to the buyer
+            window.alert('Thank you for your purchase!');
+          });
+        }
+      }, '#paypal-button');
+
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
-    ></script>
+    </script>
   </body>
 </html>

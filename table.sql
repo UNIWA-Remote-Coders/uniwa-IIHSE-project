@@ -353,7 +353,7 @@ INSERT INTO `products` VALUES (NULL, 'Apple iPhone 13 512GB - Midnight', 'Smartp
 'assets/imgs/offers/!Apple iPhone 13 512GB - Midnight/3.png', 
 'assets/imgs/offers/!Apple iPhone 13 512GB - Midnight/4.png', 1088.99, 0, 'Midnight');
 
---handsfree
+-- handsfree
 INSERT INTO `products` VALUES (NULL, 'Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree', 'Handsfree', 
 'Descriptions: <ul> <li>Operating Time 7 hours</li> <li>Operating with Charging Case 35 hours</li> <li>Wireless Charging</li> <li>Passive Noise Cancelling</li> <li>Sweat and Water Resistant</li> <li>Bluetooth 5.1</li> </ul> <br> The Bang & Olufsen Beoplay E8 headphones are designed for people who are looking for high-quality audio performance and style. They are designed for people who demand the best possible sound quality from their headphones and have a high level of aesthetics and aesthetic value.<br> In terms of price, the Beoplay E8 series is aimed at a more demanding and exclusive audience who are willing to pay for the ultimate listening experience and their refined style.<br> They provide fast wireless charging and microphone noise reduction during calls, as well as high fidelity sound.<br> Up to 35 hours of gameplay<br> The Beoplay E8 3rd Gen offers top battery performance in the market. With 7 hours of playback from the earphones and four additional charges in the case, the Beoplay E8 3rd Gen provides up to 35 hours* of playback at moderate listening levels.', 
 'assets/imgs/products/handsfree/Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree/1.png', 
@@ -473,7 +473,7 @@ INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Buds Bluetooth Handsfree', 
 'assets/imgs/products/handsfree/Samsung Galaxy Buds Bluetooth Handsfree/6.png', 
 'assets/imgs/products/handsfree/Samsung Galaxy Buds Bluetooth Handsfree/7.png', 353.00, 0, 'Black');
 
---Smartphones
+--  Smartphones
 INSERT INTO `products` VALUES (NULL, 'Apple iPhone 12 5G 128GB - Black', 'Smartphone', 
 'Descriptions: <ul> <li>Model: 2023</li> <li>Super Retina XDR 6.1" Display</li> <li>NFC Support</li> <li>A16 Bionic Processor</li> <li>Dual Rear Camera 48MP/4K 60fps</li> </ul> <br> Dynamic Island<br> When things emerge.<br> The Dynamic Island displays notifications and activities happening now - so you don t miss them while doing something else. You can track the location of your Taxi, see who is calling you, check the status of your flight, and much more.<br> Creating color through chemistry.<br> The extremely thin metallic ions incorporate color into the glass — with a unique composition for each color. Then, the glass is polished with nanocrystalline particles and etched to create a textured matte finish.<br> A design that feels right.<br> The high-quality aerodynamic aluminum frame is extremely durable, and the newly shaped edges feel even better in your hand.<br> 75% recycled aluminum in the casing', 
 'assets/imgs/products/smartphones/!Apple iPhone 12 5G 128GB - Black/1.png', 
