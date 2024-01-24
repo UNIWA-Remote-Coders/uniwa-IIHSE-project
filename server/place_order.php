@@ -18,7 +18,7 @@ if(isset($_POST['place_order'])) {
     $order_cost = $_SESSION['total'];
     $order_status = "not paid";
     $user_id = $_SESSION['user_id'];
-    $order_date = date('Y-m-d H:i:s');
+    $order_date = date('Y-m-d H:i:s', strtotime('1 hour'));
 
     $stmt = $conn->prepare("INSERT INTO orders (order_cost, order_status, user_id, user_phone, user_city, user_address, order_date) 
                             VALUES (?, ?, ?, ?, ?, ?, ?)");

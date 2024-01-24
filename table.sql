@@ -36,8 +36,10 @@ CREATE TABLE IF NOT EXISTS `order_items`(
     `product_id` varchar(255) NOT NULL,
     `product_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_price` double(6,2) NOT NULL,/*9999.99*/
+    `product_quantity` int(2) NOT NULL,
     `user_id` int(11) NOT NULL,
-    `oreder_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    `order_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
     PRIMARY KEY (`item_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -47,6 +49,7 @@ CREATE TABLE IF NOT EXISTS `users`(
     `user_name` varchar(100) NOT NULL,
     `user_email` varchar(100) NOT NULL,
     `user_password` varchar(100) NOT NULL,
+    `user_address` varchar(100) NOT NULL,
     PRIMARY KEY (`user_id`),
     UNIQUE KEY `UX_Constraint` (`user_email`)
 )ENGINE=InnoDB DEFAULT CHARSET=latin1;
