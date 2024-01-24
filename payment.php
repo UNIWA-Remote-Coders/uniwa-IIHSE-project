@@ -156,7 +156,7 @@
       </div>
     </section>
 
-      <form class="credit-card">
+      <form class="credit-card" method="POST" action="account.php">
       <div class="form-header">
         <h4 class="title">Choose a payment method: </h4>
         <input type="radio" id="pod" name="payment_method" value="0">
@@ -172,67 +172,71 @@
 
         </div>
       
-        <div class="form-credit">
-          <h4 class="title">Credit card details</h4>
-          <!-- Card Number -->
-          <input id="ccn" type="tel" class="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
-      
-          <!-- Date Field -->
-          <div class="date-field">
-            <div class="month">
-              <select name="Month">
-                <option value="january">January</option>
-                <option value="february">February</option>
-                <option value="march">March</option>
-                <option value="april">April</option>
-                <option value="may">May</option>
-                <option value="june">June</option>
-                <option value="july">July</option>
-                <option value="august">August</option>
-                <option value="september">September</option>
-                <option value="october">October</option>
-                <option value="november">November</option>
-                <option value="december">December</option>
-              </select>
+        <fieldset id="fs-credit" disabled="disabled">
+          <div class="form-credit">
+            <h4 class="title">Credit card details</h4>
+            <!-- Card Number -->
+            <input id="ccn" type="tel" class="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+        
+            <!-- Date Field -->
+            <div class="date-field">
+              <div class="month">
+                <select name="Month">
+                  <option value="january">January</option>
+                  <option value="february">February</option>
+                  <option value="march">March</option>
+                  <option value="april">April</option>
+                  <option value="may">May</option>
+                  <option value="june">June</option>
+                  <option value="july">July</option>
+                  <option value="august">August</option>
+                  <option value="september">September</option>
+                  <option value="october">October</option>
+                  <option value="november">November</option>
+                  <option value="december">December</option>
+                </select>
+              </div>
+              <div class="year">
+                <select name="Year">
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                  <option value="2018">2018</option>
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2024">2025</option>s
+                  <option value="2024">2026</option>
+                </select>
+              </div>
             </div>
-            <div class="year">
-              <select name="Year">
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-                <option value="2021">2021</option>
-                <option value="2022">2022</option>
-                <option value="2023">2023</option>
-                <option value="2024">2024</option>
-                <option value="2024">2025</option>s
-                <option value="2024">2026</option>
-              </select>
+        
+            <!-- Card Verification Field -->
+            <div class="card-verification">
+              <div class="cvv-input">
+                <input type="text" placeholder="CVV">
+              </div>
+              <div class="cvv-details">
+                <p>3 or 4 digits usually found <br> on the signature strip</p>
+              </div>
             </div>
+        
+            <!-- Buttons -->
+            <div id="credit-button">
+              <button type="submit" class="proceed-btn">Proceed</button>
+              <!-- <button type="button" disabled>test</button> -->
+            </div>
+
           </div>
-      
-          <!-- Card Verification Field -->
-          <div class="card-verification">
-            <div class="cvv-input">
-              <input type="text" placeholder="CVV">
-            </div>
-            <div class="cvv-details">
-              <p>3 or 4 digits usually found <br> on the signature strip</p>
-            </div>
-          </div>
-      
-          <!-- Buttons -->
-          <div class="center-btn">
-            <button type="submit" class="proceed-btn"><a href="#">Proceed</a></button>
-          </div>
-        </div>
+        </fieldset>
 
         <div class="form-credit">
           <h4 class="title">Paypal Payment</h4>
           <div id="paypal-button"></div>
         </div>
-        
+
       </form>
 
       
@@ -264,40 +268,169 @@
 
     <script type="text/javascript">
       const radio = [document.getElementById('pod'), document.getElementById('credit'), document.getElementById('paypal')];
-      const div = [document.getElementById('pod-button'), document.getElementById('credit-form'), document.getElementById('paypal-button')];
-      radio[0].addEventListener("click", function(){
-          if(radio[0].value == 0){
-              radio[0].value = 1;
-              radio[1].value = radio[2].value= 0;
-              this.checked = true;
-              div[0].style.visibility = 'visible';
-              div[0].value = radio[0].value;
-          }
-          else{
-              radio[0].value = 0;
-              div[0].style.visibility = 'hidden';
-              div[0].value = '';
-              this.checked = false;
-          }
-      });
+      const div = [document.getElementById('pod-button'), document.getElementById('credit-button'), document.getElementById('paypal-button')];
+      var field = document.getElementById('fs-credit');
 
-      radio[2].addEventListener("click", function(){
-        if(radio[2].value == 0){
-                radio[2].value = 1;
-                radio[0].value = radio[1].value= 0;
-                this.checked = true;
-                div[2].style.visibility = 'visible';
-                div[2].value = radio[2].value;
-            }
-            else{
-                radio[2].value = 0;
-                div[2].style.visibility = 'hidden';
-                div[2].value = '';
-                this.checked = false;
-            }
-      });
+      for (let i=0; i<radio.length; i++) {
+          radio[i].addEventListener('click', function(e){
+              e = e || window.event;
+              var target = e.target || e.srcElement;
+              // text = target.id;   
+              // alert(text);
 
-        
+              if (target.id=='pod' && radio[0].value==0) { //&& radio[r].value==0
+                    radio[0].value = 1;
+                    this.checked = true;
+                    div[0].style.visibility = 'visible';
+                    div[0].value = radio[0].value;
+
+                    radio[1].value = radio[2].value= 0;
+                    radio[1].checked = radio[2].checked = false;
+                    div[1].style.visibility = div[2].style.visibility = 'hidden';
+                    field.disabled = true;
+                    div[1].value = div[2].value = '';
+              }
+              else if (target.id=='credit' && radio[1].value==0) {
+                  radio[1].value = 1;
+                  this.checked = true;
+                  div[1].style.visibility = 'visible';
+                  field.disabled = false;
+                  div[1].value = radio[1].value;
+
+                  radio[0].value = radio[2].value= 0;
+                  radio[0].checked = radio[2].checked = false;
+                  div[0].style.visibility = div[2].style.visibility = 'hidden';
+                  div[0].value = div[2].value = '';
+              }
+              else if (target.id=='paypal' && radio[2].value==0){
+                  radio[2].value = 1;
+                  this.checked = true;
+                  div[2].style.visibility = 'visible';
+                  div[2].value = radio[2].value;
+
+                  radio[0].value = radio[1].value= 0;
+                  radio[0].checked = radio[1].checked = false;
+                  div[0].style.visibility = div[1].style.visibility = 'hidden';
+                  field.disabled = true;
+                  div[0].value = div[1].value = '';
+              }
+        }, false);
+
+      }
+
+      // for (let i=0; i<radio.length; i++) {
+      //   radio[i].addEventListener('click', function(e){
+      //     e = e || window.event;
+      //     var target = e.target || e.srcElement,
+      //     text = target.id;   
+      //     alert(text);
+      //   }, false);
+      // }
+
+      // radio[0].addEventListener('click', function(e) {
+      //    e = e || window.event;
+      //    var target = e.target || e.srcElement,
+      //    text = target.id;   
+      //    alert(text);
+      // }, false);
+
+
+      // function checkRadioButton(e) {
+
+      
+        // if (this.attr('id')=='pod' ) { //&& radio[r].value==0
+        //       alert("I am an alert box!");
+        //       radio[r].value = 1;
+        //       this.checked = true;
+        //       div[r].style.visibility = 'visible';
+        //       div[r].value = radio[r].value;
+
+        //       radio[1].value = radio[2].value= 0;
+        //       radio[1].checked = radio[2].checked = false;
+        //       div[1].style.visibility = div[2].style.visibility = 'hidden';
+        //       field.disabled = true;
+        //       div[1].value = div[2].value = '';
+        // }
+        // else if (this.id=='credit') {
+        //     radio[r].value = 1;
+        //     this.checked = true;
+        //     div[r].style.visibility = 'visible';
+        //     field.disabled = false;
+        //     div[r].value = radio[r].value;
+
+        //     radio[0].value = radio[2].value= 0;
+        //     radio[0].checked = radio[2].checked = false;
+        //     div[0].style.visibility = div[2].style.visibility = 'hidden';
+        //     div[0].value = div[2].value = '';
+        // }
+        // else if (this.id=='paypal'){
+        //     radio[r].value = 1;
+        //     this.checked = true;
+        //     div[r].style.visibility = 'visible';
+        //     div[r].value = radio[r].value;
+
+        //     radio[0].value = radio[1].value= 0;
+        //     radio[0].checked = radio[1].checked = false;
+        //     div[0].style.visibility = div[1].style.visibility = 'hidden';
+        //     field.disabled = true;
+        //     div[0].value = div[1].value = '';
+        // }
+      //}
+
+
+      // radio[0].addEventListener("click", function(){
+      //     if(radio[0].value == 0){
+      //         radio[0].value = 1;
+      //         radio[1].value = radio[2].value= 0;
+      //         this.checked = true;
+      //         div[0].style.visibility = 'visible';
+      //         div[0].value = radio[0].value;
+      //     }
+      //     else{
+      //         radio[0].value = 0;
+      //         div[0].style.visibility = 'hidden';
+      //         div[0].value = '';
+      //         this.checked = false;
+      //     }
+      // });
+
+      // radio[1].addEventListener("click", function(){
+      //   if(radio[1].value == 0){
+      //           radio[1].value = 1;
+      //           radio[0].value = radio[2].value= 0;
+      //           this.checked = true;
+
+      //           field.disabled = false;
+      //           div[1].style.visibility = 'visible';
+
+      //           div[1].value = radio[1].value;
+      //       }
+      //       else{
+      //           radio[1].value = 0;
+
+      //           field.disabled = true;
+      //           div[1].style.visibility = 'hidden';
+
+      //           div[1].value = '';
+      //           this.checked = false;
+      //       }
+      // });
+
+      // radio[2].addEventListener("click", function(){
+      //   if(radio[2].value == 0){
+      //           radio[2].value = 1;
+      //           radio[0].value = radio[1].value= 0;
+      //           this.checked = true;
+      //           div[2].style.visibility = 'visible';
+      //           div[2].value = radio[2].value;
+      //       }
+      //       else{
+      //           radio[2].value = 0;
+      //           div[2].style.visibility = 'hidden';
+      //           div[2].value = '';
+      //           this.checked = false;
+      //       }
+      // });
     </script>
     
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>

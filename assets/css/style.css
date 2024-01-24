@@ -874,10 +874,11 @@ body {
     text-align: center;
 }
 
-.center-btn {
+#credit-button {
     width: 100%;
     /* padding-left: 20px; */
     text-align: center;
+    visibility:hidden; 
 }
 
 #pod-button {
@@ -885,6 +886,7 @@ body {
     display:inline;
     padding-left: 100px;
 }
+
 
 #paypal-button {
     visibility:hidden; 
