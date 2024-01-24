@@ -1,31 +1,29 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαAndroid
-Έτος Κυκλοφορίας2022
-ΧρώμαΓκρι
-Βάρος728 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM8 GB
-Χωρητικότητα256 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (1+3+4)
-Ταχύτητα Βασικού Επεξεργαστή3 GHz
-Οθόνη
-Μέγεθος Οθόνης14,6 "
-Ανάλυση Οθόνης2960 x 1848 pixels
-ΤύποςSuper AMOLED
-ΕυκρίνειαQHD
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας11200 mAh
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, Ενσωματωμένο GPS, Περιλαμβάνει Πενάκι
-ΑισθητήρεςΑισθητήρας Εγγύτητας, Γυροσκόπιο, Δακτυλικό Αποτύπωμα, Επιταχυνσιόμετρο, Πυξίδα
-Διαστάσεις
-Μήκος326,4 mm
-Πλάτος208,6 mm
-Πάχος5,5 mm
+Descriptions:
+<ul>
+<li>Model 2022</li>
+<li>Super Amoled 14.6" 2960x1848 Display</li>
+<li>Snapdragon 8 Gen 1 Processor</li>
+<li>11200mAh Battery</li>
+<li>Up to 14 hours Video Playback</li>
+<li>Weight 728 gr</li>
+</ul>
+<br>
+
+The Samsung Galaxy Tab S8 Ultra is primarily aimed at those who need a multifunctional tablet with a large screen for entertainment, work, and media consumption.<br>
+
+It is also targeted at those who desire powerful performance, as it features an advanced processor and large RAM. It is also suitable for users who want access to high-quality images and sound, as it has a high-resolution 14.6-inch OLED display and a four-speaker AKG system.<br>
+
+Finally, it has a large battery for extended battery life of the device.<br>
+
+The largest screen in the history of the Galaxy Tab S<br>
+Every color appears as vivid as in reality with the Super AMOLED display, so you can enjoy your favorite movies and games. At 14.6 inches, with a thinner frame (6.3mm with a screen-to-body ratio of 90%) and WQXGA+ resolution (2,960 × 1,848) for even more viewing, the Galaxy Tab S8 Ultra offers smooth scene transitions and smooth scrolling with a 120 Hz refresh rate.<br>
+
+Snapdragon 8 Gen 1 Processor<br>
+Offering up to 24% higher CPU performance and up to 52% higher GPU performance (compared to the Snapdragon 865+), the Snapdragon 8 Gen 1 ushers in a new era of processing power, improving performance and power consumption. High-level games run quickly and smoothly, while also facilitating multitasking.<br>
+
+The Snapdragon 8 Gen 1 features:<br>
+
+1 Cortex-X2 core at 3.00 GHz<br>
+3 Cortex-A710 cores at 2.50 GHz<br>
+4 Corten-A510 cores at 1.80 GHz<br>
+Adreno 730 graphics<br>

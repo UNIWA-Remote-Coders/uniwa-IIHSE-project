@@ -1,0 +1,20 @@
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>AMOLED touchscreen</li>
+<li>Battery life up to 14 days</li>
+<li>GPS, Bluetooth, Wi-Fi</li>
+<li>Suitable for swimming</li>
+</ul>
+<br>
+
+Specially designed with advanced health and fitness features and the ability to make calls and send messages, the Venu 3s is more than just a simple smartwatch - it is your personal trainer on your wrist that will support you in every goal.<br>
+
+Body Battery™ Energy Monitoring<br>
+Monitor your energy levels throughout the day to know when your body is charged and ready for activity or exhausted and in need of recharging your batteries with a restful sleep. Get even more details and personal information on how nighttime and midday sleep, activities, and high stress levels affect your energy levels.<br>
+
+Sleep Advisor<br>
+Get a sleep score and personalized sleep advice on how much sleep you need, along with tips to improve it. Additionally, track different sleep stages and nap - and see key metrics like HRV status to better understand your health.<br>
+
+Built-in Sports Applications<br>
+Record all the ways you move with over 30 preloaded sports apps with GPS and indoor tracking, including walking, running, cycling, swimming, wheelchair activities, and many more.<br>

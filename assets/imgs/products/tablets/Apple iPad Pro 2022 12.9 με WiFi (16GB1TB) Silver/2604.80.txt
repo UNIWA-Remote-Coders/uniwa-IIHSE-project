@@ -1,29 +1,20 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαiPadOS
-Έτος Κυκλοφορίας2022
-ΧρώμαΑσημί
-Βάρος682 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM16 GB
-Χωρητικότητα1000 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (4+4)
-Οθόνη
-Μέγεθος Οθόνης12,9 "
-Ανάλυση Οθόνης2732 x 2048 pixels
-ΤύποςLiquid Retina XDR
-Ευκρίνεια2K
-Κάμερα
-Ανάλυση Βασικής Κάμερας12 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας10758 mAh
-Δυνατότητες & Λειτουργίες
-ΑισθητήρεςFace ID, Light Sensor, Βαρόμετρο, Γυροσκόπιο, Επιταχυνσιόμετρο, Πυξίδα
-Διαστάσεις
-Μήκος280,6 mm
-Πλάτος214,9 mm
-Πάχος6,4 mm
+Descriptions:
+<ul>
+<li>2022 Model</li>
+<li>Liquid Retina XDR 12.9" Display</li>
+<li>Apple M2 Chip</li>
+<li>10758 mAh Battery</li>
+<li>Up to 10 hours browsing with Wi-Fi</li>
+<li>682 g Weight</li>
+</ul>
+<br>
+
+iPad Pro offers impressive performance, ultra-fast wireless connection and advanced Apple Pencil experience. In addition, iPadOS 16 brings innovative productivity features and new ways to collaborate. iPad Pro is the ultimate iPad experience.<br>
+
+iPad Pro 2022 is an advanced device for professionals and everyone looking for a more powerful and rich iPad experience. It is aimed at people who need high performance for work, such as designers, artists, photographers, videographers, marketing professionals and many others. In addition, users looking for a device with a large screen and advanced features for their professional or personal videos, photos and other content can also benefit from the iPad Pro 2022.<br>
+
+Apple M2 chip<br>
+Next-generation performance<br>
+The M2 chip is the next generation of Apple silicon, with an 8‑core CPU that delivers up to 15 percent faster performance and a 10‑core GPU that provides up to 35 percent faster graphics performance.<br>
+
+With a 40 percent faster Neural Engine to accelerate machine learning tasks and 50 percent more memory bandwidth, M2 brings astonishing performance and new capabilities to iPad Pro. So you can create photorealistic 3D designs, build intricate AR models, and play games with console‑quality graphics at high frame rates faster than ever. All while enjoying all‑day battery life.<br>

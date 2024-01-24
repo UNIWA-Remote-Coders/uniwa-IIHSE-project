@@ -1,30 +1,16 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαAndroid
-Έτος Κυκλοφορίας2023
-ΧρώμαΜπεζ
-Βάρος737 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM12 GB
-Χωρητικότητα512 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (1+2+2+3)
-Ταχύτητα Βασικού Επεξεργαστή2,8 GHz
-Οθόνη
-Μέγεθος Οθόνης14,6 "
-Ανάλυση Οθόνης2960 x 1848 pixels
-ΤύποςDynamic AMOLED 2X
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi + 5G
-Μπαταρία
-Χωρητικότητα Μπαταρίας11200 mAh
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, Ενσωματωμένο GPS, Περιλαμβάνει Πενάκι
-ΑισθητήρεςΑισθητήρας Εγγύτητας, Γυροσκόπιο, Δακτυλικό Αποτύπωμα, Επιταχυνσιόμετρο, Πυξίδα
-Διαστάσεις
-Μήκος326,4 mm
-Πλάτος208,6 mm
-Πάχος5,5 mm
+Descriptions:
+<ul>
+<li>Model 2023</li>
+<li>Dynamic AMOLED 2X 14.6'' display</li>
+<li>Snapdragon 8 Gen 2 processor</li>
+<li>11200mAh battery</li>
+<li>Fast charging 15W</li>
+<li>Weight 732gr</li>
+</ul>
+<br>
+
+The Samsung Galaxy Tab S9 Ultra is aimed at users who are looking for a powerful and versatile tablet. It is ideal for those who want to play games, watch videos, create content, and work. The 14.6'' Dynamic AMOLED 2X display with a resolution of 2960 x 1848 pixels is huge and perfect for watching videos, reading books, or working.<br>
+
+In addition, the Galaxy Tab S9 series features the powerful Snapdragon® 8 Gen 2 processor, offering stunning performance in gaming, while also innovating with the first tablet device resistant to water and dust with IP68 certification.<br>
+
+Finally, the series is complemented by the also IP68 certified S Pen from Samsung, which has high responsiveness.<br>

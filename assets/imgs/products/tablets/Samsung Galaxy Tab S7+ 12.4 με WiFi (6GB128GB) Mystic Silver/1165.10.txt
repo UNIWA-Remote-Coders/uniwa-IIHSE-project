@@ -1,31 +1,21 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαAndroid
-Έτος Κυκλοφορίας2020
-ΧρώμαΑσημί
-Βάρος575 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM6 GB
-Χωρητικότητα128 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (1+3+4)
-Ταχύτητα Βασικού Επεξεργαστή3,09 GHz
-Οθόνη
-Μέγεθος Οθόνης12,4 "
-Ανάλυση Οθόνης2800 x 1752 pixels
-ΤύποςSuper AMOLED
-ΕυκρίνειαQHD
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας8 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας10090 mAh
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, Περιλαμβάνει Πενάκι
-ΑισθητήρεςΕπιταχυνσιόμετρο, Αισθητήρας Εγγύτητας, Γυροσκόπιο, Δακτυλικό Αποτύπωμα, Πυξίδα
-Διαστάσεις
-Μήκος285 mm
-Πλάτος185 mm
-Πάχος5,7 mm
+Descriptions:
+<ul>
+<li>2020 Model</li>
+<li>Super AMOLED QHD 12.4" Display</li>
+<li>Snapdragon 865 5G+</li>
+<li>10090 mAh Battery</li>
+<li>Up to 14 hours of video playback</li>
+<li>575 gr Weight</li>
+</ul>
+<br>
+
+The Galaxy Tab S7+ has a 12.4-inch screen with a 120 Hz refresh rate, HDR10+ support and four AKG speakers with Dolby Atmos, while the 10,090 mAh battery gives you 14 hours of use. It also has two cameras, a 13 MP wide-angle camera and a 5 MP Ultra Wide camera.<br>
+
+The Samsung Galaxy Tab S7+ appeals to a number of people, such as professionals who need a tablet for work, students who want a professional tablet to take notes and attend classes, and those looking for an advanced tablet for entertainment, gaming , and creative work.<br>
+
+The Galaxy Tab S7+ is also aimed at people who need a device with a large screen and high resolution, such as design and photography professionals, as well as users who demand high performance in applications and games.<br>
+
+Finally, those who want a device with long battery life as well as flexible connectivity such as WiFi and Bluetooth, can also benefit from the Galaxy Tab S7+.<br>
+
+Large, bright and high-performance display<br>
+The 12.4-inch Super Amoled display with WQXGA+ (2800 x 1752) resolution and HDR10+ support will keep you captivated. It has a 120 Hz refresh rate and intelligently adjusts the refresh rate based on your content, and helps you save battery as you watch and scroll.<br>

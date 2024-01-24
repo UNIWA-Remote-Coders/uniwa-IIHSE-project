@@ -1,29 +1,25 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαWindows
-Έτος Κυκλοφορίας2022
-ΧρώμαΜαύρο
-Βάρος1500 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM16 GB
-Χωρητικότητα1000 GB
-Πυρήνες ΕπεξεργαστήDeca-Core
-Ταχύτητα Βασικού Επεξεργαστή3,5 GHz
-Οθόνη
-Μέγεθος Οθόνης17,3 "
-Ανάλυση Οθόνης2560 x 1920 pixels
-ΤύποςOLED
-ΕυκρίνειαFull HD
-Κάμερα
-Ανάλυση Βασικής Κάμερας5 MP
-Δίκτυα & Συνδεσιμότητα
-Συνδεσιμότητα3.5mm Jack, Bluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας5000 mAh
-Δυνατότητες & Λειτουργίες
-Δυνατότητες2 in 1 Detachable
-Διαστάσεις
-Μήκος378,5 mm
-Πλάτος287,6 mm
-Πάχος8,7 mm
+Descriptions:
+<ul>
+<li>Release Date 2021</li>
+<li>Screen IPS 13" 2160 x 1350</li>
+<li>Snapdragon 870 Processor</li>
+<li>Battery Capacity 10200 mAh</li>
+<li>12 hours of battery life</li>
+<li>Weight 830 gr</li>
+</ul>
+<br>
+
+Ultimate at-home entertainment tablet<br>
+
+Intensify your media experience on the Lenovo Yoga Tab 13. Dive deep into different worlds with 2K resolution tuned by Dolby Vision™ and surround yourself with Dolby Atmos® cinema sound over four JBL speakers sweetened by Lenovo Premium Audio. Then play your heart out on the gaming-optimized Qualcomm Adreno 650 GPU.<br>
+
+The Lenovo Yoga Tab 13 is aimed at users looking for a large-screen tablet for entertainment, work and fun. Its large 13-inch screen is suitable for video streaming, gaming and browsing the web.<br>
+
+In addition, the built-in base on the back of the tablet offers a comfortable position for the tablet to rest on while watching movies and television shows but also using it for educational and work purposes.<br>
+
+Escape into the story<br>
+
+Stand, hang, and tilt your tablet with a stainless-steel kickstand, as you feel the drama and tension of your favorite movies and shows in stunning 2K picture quality through Dolby Vision™. You’ll enjoy the full sRGB color palette for hours on end with TÜV-certified eye care protection which cuts out harmful levels of blue light.
+<br>
+
+Just swipe right from your home screen to discover new content with Entertainment Space. Sign in with your subscription services and get personalized access to all your favorite entertainment, from movies and TV shows to games and books, all in one place, so you won't need to jump from app to app. Yoga Tab 13 is also Netflix HD streaming certified.<br>

@@ -1,29 +1,17 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαiPadOS
-Έτος Κυκλοφορίας2022
-ΧρώμαΓκρι
-Βάρος466 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM16 GB
-Χωρητικότητα1000 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (4+4)
-Οθόνη
-Μέγεθος Οθόνης11 "
-Ανάλυση Οθόνης2388 x 1668 pixels
-ΤύποςLiquid Retina
-Ευκρίνεια2K, -
-Κάμερα
-Ανάλυση Βασικής Κάμερας12 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Μπαταρία
-Χωρητικότητα Μπαταρίας7538 mAh
-Δυνατότητες & Λειτουργίες
-ΑισθητήρεςFace ID, Light Sensor, Βαρόμετρο, Γυροσκόπιο, Επιταχυνσιόμετρο, Πυξίδα
-Διαστάσεις
-Μήκος247,6 mm
-Πλάτος178,5 mm
-Πάχος5,9 mms
+Descriptions:<br>
+iPad Pro offers impressive performance, ultra-fast wireless connection and advanced Apple Pencil experience. In addition, iPadOS 16 brings innovative productivity features and new ways to collaborate. iPad Pro is the ultimate iPad experience.<br>
+
+iPad Pro 2022 is an advanced device for professionals and everyone looking for a more powerful and rich iPad experience. It is aimed at people who need high performance for work, such as designers, artists, photographers, videographers, marketing professionals and many others. In addition, users looking for a device with a large screen and advanced features for their professional or personal videos, photos and other content can also benefit from the iPad Pro 2022.<br>
+
+Apple M2 chip<br>
+Next-generation performance<br>
+The M2 chip is the next generation of Apple silicon, with an 8‑core CPU that delivers up to 15 percent faster performance and a 10‑core GPU that provides up to 35 percent faster graphics performance.<br>
+
+With a 40 percent faster Neural Engine to accelerate machine learning tasks and 50 percent more memory bandwidth, M2 brings astonishing performance and new capabilities to iPad Pro. So you can create photorealistic 3D designs, build intricate AR models, and play games with console‑quality graphics at high frame rates faster than ever. All while enjoying all‑day battery life.<br>
+
+A complete movie studio in your hands.<br>
+The high‑performance media engine on M2 accelerates ProRes encode and decode. So you can convert video projects to ProRes up to 3x faster than before.<br>
+
+ProRes video capture.<br>
+
+Now for the first time you can capture ProRes video, using the high-performance media engine and image signal processor on M2 and advanced cameras on iPad Pro. Five studio‑quality microphones and four‑speaker audio with support for Dolby Atmos let you record and deliver theater‑like sound.<br>

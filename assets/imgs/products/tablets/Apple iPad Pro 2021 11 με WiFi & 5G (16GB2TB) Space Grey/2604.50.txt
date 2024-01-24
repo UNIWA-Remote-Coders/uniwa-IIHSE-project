@@ -1,28 +1,23 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαiOS
-Έτος Κυκλοφορίας2021
-ΧρώμαΓκρι
-Βάρος470 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM16 GB
-Χωρητικότητα2000 GB
-Πυρήνες ΕπεξεργαστήOcta-Core
-Οθόνη
-Μέγεθος Οθόνης11 "
-Ανάλυση Οθόνης2388 x 1668 pixels
-ΤύποςLiquid Retina
-Κάμερα
-Ανάλυση Βασικής Κάμερας12 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi + 5G
-Μπαταρία
-Χωρητικότητα Μπαταρίας7538 mAh
-Δυνατότητες & Λειτουργίες
-ΑισθητήρεςFace ID, Light Sensor, Βαρόμετρο, Γυροσκόπιο, Επιταχυνσιόμετρο
-Διαστάσεις
-Μήκος247,6 mm
-Πλάτος178,5 mm
-Πάχος5,9 mm
+Descriptions:
+<ul>
+<li>2021 Model</li>
+<li>Liquid Retina HDR 11" Display</li>
+<li>M1 Chipset</li>
+<li>10758mAh Battery</li>
+<li>Up to 10 Hours of Video Playback</li>
+<li>682 gr Weight</li>
+</ul>
+<br>
+
+iPad Pro features Apple's powerful M1 processor for breakthrough performance and all-day battery life. It features a stunning Liquid Retina XDR 11 inch display for viewing or editing photos and HDR video.<br>
+
+Cellular models offer 5G speed support for network data connectivity.<br>
+
+Meanwhile, the front camera with Center Stage feature recognizes you and keeps you in the frame automatically during your video calls.<br>
+
+The fifth-generation iPad Pro 11 is primarily aimed at professionals and content creators, such as artists, photographers, designers, architects and engineers, who need a powerful and multifunctional tablet for their work. It is also aimed at demanding users looking for the best performance and user experience from a tablet.<br>
+
+iPad Pro and M1, the perfect duo<br>
+Thanks to the M1 chip, iPad Pro is a blazing fast device that uses advanced image signal processing technology and M1's unified memory architecture. With an octa-core processor and fast graphics, you can build complex AR models and play games with console-level graphics and high refresh rates.<br>
+
+At the same time, it manages to be thin and lightweight so you can carry it everywhere with you without worry, thanks to its long-lasting battery.<br>

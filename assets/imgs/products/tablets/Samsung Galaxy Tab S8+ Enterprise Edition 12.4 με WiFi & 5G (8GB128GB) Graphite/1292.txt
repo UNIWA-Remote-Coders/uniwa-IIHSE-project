@@ -1,31 +1,17 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαAndroid
-Έτος Κυκλοφορίας2022
-ΧρώμαΓκρι
-Βάρος572 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM8 GB
-Χωρητικότητα128 GB
-Πυρήνες ΕπεξεργαστήOcta-Core (1+3+4)
-Ταχύτητα Βασικού Επεξεργαστή3 GHz
-Οθόνη
-Μέγεθος Οθόνης12,4 "
-Ανάλυση Οθόνης2800 x 1752 pixels
-ΤύποςSuper AMOLED
-ΕυκρίνειαQHD
-Κάμερα
-Ανάλυση Βασικής Κάμερας13 MP
-Ανάλυση Selfie Κάμερας12 MP
-Δίκτυα & Συνδεσιμότητα
-ΣυνδεσιμότηταBluetooth, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi + 5G
-Μπαταρία
-Χωρητικότητα Μπαταρίας10090 mAh
-Δυνατότητες & Λειτουργίες
-ΔυνατότητεςCard Reader, Περιλαμβάνει Πενάκι
-ΑισθητήρεςΑισθητήρας Εγγύτητας, Γυροσκόπιο, Δακτυλικό Αποτύπωμα, Επιταχυνσιόμετρο
-Διαστάσεις
-Μήκος285 mm
-Πλάτος185 mm
-Πάχος5,7 mm
+Descriptions:
+<ul>
+<li>Super Amoled 12.4" screen</li>
+<li>4G connectivity</li>
+<li>Redesigned S Pen</li>
+<li>Support for ultra-fast charging 45W</li>
+</ul>
+<br>
+
+Cinematic viewing experience<br>
+Enjoy your favorite movies and games on a large, vibrant, and expansive 16:10 Super AMOLED display. With a thinner frame of 8.95mm and a screen-to-body ratio of 85%, realistic colors, and WQXGA resolution (2,800 × 1,752) for even more viewing, it offers smooth scene transitions and smooth scrolling with a refresh rate of 120 Hz.<br>
+
+Snapdragon 8 Gen 1 Processor<br>
+Offering up to 24% higher CPU performance and up to 52% higher GPU performance (compared to Snapdragon 865+), the Snapdragon 8 Gen 1 introduces a new era of processing power, improving performance and power consumption. High-level games run quickly and smoothly, while also facilitating multitasking.
+<br>
+Long-lasting battery<br>
+Continuous multitasking, all-day monitoring, video playback with a powerful battery. It will take hours before you need to charge the large battery of the Tab S8+, enough for binge-watching favorite series, long video calls and interviews, mobile gaming, designing with the updated S Pen, and of course, creating and editing work and texts. With support for super-fast charging of 45W, you can have a full charge in just 80 minutes.<br>

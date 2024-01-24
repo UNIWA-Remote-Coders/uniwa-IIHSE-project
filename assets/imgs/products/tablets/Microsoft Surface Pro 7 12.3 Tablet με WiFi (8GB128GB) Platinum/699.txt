@@ -1,29 +1,20 @@
-Χαρακτηριστικά
-Βασικά Χαρακτηριστικά
-Λειτουργικό ΣύστημαWindows
-Έτος Κυκλοφορίας2019
-ΧρώμαΑσημί
-Βάρος770 gr
-Επεξεργαστής & Μνήμη
-Μνήμη RAM8 GB
-Χωρητικότητα128 GB
-Πυρήνες ΕπεξεργαστήQuad-Core
-Ταχύτητα Βασικού Επεξεργαστή1,1 GHz
-Οθόνη
-Μέγεθος Οθόνης12,3 "
-Ανάλυση Οθόνης2736 x 1824 pixels
-ΤύποςIPS
-ΕυκρίνειαQHD
-Κάμερα
-Ανάλυση Βασικής Κάμερας8 MP
-Ανάλυση Selfie Κάμερας5 MP
-Δίκτυα & Συνδεσιμότητα
-Συνδεσιμότητα3.5mm Jack, Bluetooth, USB-A, USB-C
-Δίκτυο ΣύνδεσηςWi-Fi
-Δυνατότητες & Λειτουργίες
-Δυνατότητες2 in 1 Detachable, Card Reader
-ΑισθητήρεςΕπιταχυνσιόμετρο, Light Sensor, Γυροσκόπιο, Πυξίδα
-Διαστάσεις
-Μήκος292 mm
-Πλάτος201 mm
-Πάχος8,5 mm
+Descriptions:
+<ul>
+<li>Model 2022</li>
+<li>13'' PixelSense Flow Display</li>
+<li>10-core i7-1265U processor</li>
+<li>Wi-Fi 6E/Bluetooth 5.1</li>
+<li>Weight 879g</li>
+</ul>
+<br>
+
+The Surface Pro 9 offers the flexibility and portability of a tablet combined with the performance and battery life of a laptop, all in one device.<br>
+
+It features the stunning PixelSense Flow touchscreen (10-point multi-touch) with a 13-inch diagonal, 2,880 x 1,920 pixel resolution (267 PPI), a dynamic refresh rate of up to 120Hz, and Dolby Vision IQ support.<br>
+<br>
+In addition, it is equipped with LPDDR5 memory (RAM) from 8 GB to 32 GB, Wi-Fi 6E (802.11ax) connectivity, Bluetooth Wireless 5.1 technology, 2x USB-C ports with USB 4.0/ Thunderbolt 4, a 3.5mm headphone jack, and Surface Connect and Surface Type Cover ports.<br>
+
+Finally, it features a main autofocus camera of 10 MP (Full HD and 4K), dual far-field Studio microphones, and 2W stereo speakers with Dolby Atmos.<br>
+
+Unique Flexibility!<br>
+The flexibility and portability are the main assets of the Surface Pro 9. Choose the viewing angle you prefer thanks to the adjustable built-in kickstand and watch movies and browse the web with the tips of your fingers. Then switch from tablet mode to laptop mode with a *Surface Pro Signature Keyboard (with Fingerprint Reader if you prefer for added security) and connect screens, charge devices, and transfer files through the USB 4.0/Thunderbolt 4 ports in desktop computer mode.<br>
