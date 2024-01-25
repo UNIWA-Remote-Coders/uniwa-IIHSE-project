@@ -3,7 +3,7 @@ USE php_project;
 -- Create products table if not exists
 CREATE TABLE IF NOT EXISTS `products`(
     `product_id` int(11) NOT NULL AUTO_INCREMENT,
-    `product_name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
+    `product_name` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_category` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_description` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
@@ -733,7 +733,7 @@ INSERT INTO `products` VALUES (NULL, 'Smartwatch Suunto Vertical 49mm - Titanium
 'assets/imgs/products/smartwatches/Smartwatch Suunto Vertical 49mm - Titanium Solar Black/3.png', 
 'assets/imgs/products/smartwatches/Smartwatch Suunto Vertical 49mm - Titanium Solar Black/4.png', 768.00, 0, 'Titanium Solar Black');
 
---Tablets
+-- Tablets
 INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Tab S8+ 12.4 with WiFi & 5G (8GB128GB) Pink Gold', 'Tablet', 
 'Description: <ul> <li>Model 2022</li> <li>Super Amoled 12.4" 2800x1752 display</li> <li>Snapdragon 8 Gen 1 processor</li> <li>10090 mAh battery</li> <li>Superfast charging 45W</li> <li>Weight 572 gr</li> </ul> <br> The Samsung Galaxy Tab S8+ is mainly aimed at those who need a multifunctional tablet with a large screen for entertainment, work, and media consumption.<br> It also appeals to those who desire powerful performance, as it features an advanced processor and large RAM. It is also ideal for users who want access to high-quality images and sound, as it has a high-resolution 12.4-inch OLED display and a system of four AKG speakers.<br> Finally, it has a large battery for extended battery life of the device.<br> Cinematic viewing experience<br> Enjoy your favorite movies and games on a large, vibrant, and expansive 16:10 Super AMOLED display. With a slimmer frame of 8.95mm and a screen-to-body ratio of 85%, realistic colors, and WQXGA resolution (2,800 × 1,752) for even more viewing, it offers smooth scene transitions and smooth scrolling with a refresh rate of 120 Hz.<br> Snapdragon 8 Gen 1 Processor<br> Offering up to 24% higher CPU performance and up to 52% higher GPU performance (compared to Snapdragon 865+), the Snapdragon 8 Gen 1 introduces a new era of processing power, improving performance and power consumption. High-level games run quickly and smoothly, while also facilitating multitasking.<br> The Snapdragon 8 Gen 1 features:<br> 1 Cortex-X2 core at 3.00 GHz<br> 3 Cortex-A710 cores at 2.50 GHz<br> 4 Cortex-A510 cores at 1.80 GHz<br> Adreno 730 graphics<br>', 
 'assets/imgs/products/tablets/Samsung Galaxy Tab S8+ 12.4 με WiFi & 5G (8GB128GB) Pink Gold/1.png', 
