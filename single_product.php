@@ -244,29 +244,7 @@ else { //no product id
 
     
     <!--Footer-->
-    <footer>
-      <div class="footerContainer">
-        <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footerNav">
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="about-us.html">About us</a></li>
-            <li><a href="about-us.html">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerBottom">
-        <p>eCommerce @ 2024 All Right Reserved</p>
-      </div>
-    </footer>
+    <?php include('footer.php'); ?>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -285,76 +263,3 @@ else { //no product id
     </script>
   </body>
 </html>
-
-
-<!-- 
-          <h4> Γενικά <h4>
-                        <h6>Κατασκευαστής: APPLE</h6>
-                        <h6>Περιγραφή προϊόντος: Apple iPhone 12 5G 128GB - Black</h6>
-                        <h6>Σειρά: iPhone</h6>
-                        <h6>Μοντέλο: iPhone 12</h6>
-                        <h6>Έτος κυκλοφορίας: 2020</h6>
-                        <h6>Λειτουργικό σύστημα: iOS 14</h6>
-                        <h6>Χρώμα: Black</h6>
-                        <h6>Υλικό (Backplate): Corning-made glass</h6>
-                        <h6>Υλικό (Frame): Αλουμίνιο</h6>
-                        <h6>Περιεχόμενα συσκευασίας: iPhone, Καλώδιο USB‑C σε Lightning, Έντυπα οδηγιών</h6>
-                        
-                        <h5>Οθόνη</h5>
-                        <h6>Μέγεθος οθόνης: 6.1"</h6>
-                        <h6> Ανάλυση οθόνης: Full HD+ (1170 x 2532)</h6>
-                        <h6>Τύπος οθόνης: Super Retina XDR</h6>
-                        <h6>Φωτεινότητα: 1200 nits</h6>
-                        <h6>Screen to Body Ratio: 85% - 89.9%</h6>
-                        
-                        <h5>Επεξεργαστής και GPU</h5>
-                        <h6>Μάρκα επεξεργαστή: Apple</h6>
-                        <h6>Μοντέλο Επεξεργαστή: A14 Bionic</h6>
-                        <h6>Αριθμός Πυρήνων Eπεξεργαστή: Εξαπύρηνος</h6>
-                        <h6> Ταχύτητα Επεξεργαστή: 2x3.1 GHz Firestorm + 4x1.8 GHz Icestorm</h6>
-                        <h6> GPU: Apple GPU
-                        
-                        <h5>Αποθηκευτικός Χώρος και Μνήμη</h5>
-                        <h6> Μνήμη RAM: 4 GB</h6>
-                        <h6>Χωρητικότητα: 128 GB</h6>
-                        <h6>Υποστήριξη εξωτερικής μνήμης: Δεν υποστηρίζεται</h6>
-                        
-                        <h5>Κάμερα</h5>
-                        <h6>Φακοί κύριας κάμερας: Dual</h6>
-                        <h6>Κάμερα: 12MP/12MP</h6>
-                        <h6>Λεπτομέριες κύριας κάμερας: 12 MP, f/1.6, 26mm (wide) + 12 MP, f/2.4, 13mm, 120˚ (ultrawide),</h6>
-                        <h6>Φάκοι Selfie κάμερας: Single</h6>
-                        <h6>Selfie κάμερα: 12 MP f/2.2 23mm (wide)</h6>
-                        <h6>Ανάλυση βίντεο: 4K@60fps</h6>
-                        
-                        <h5>Συνδεσιμότητα</h5>
-                        <h6>Δίκτυο δεδομένων: 5G</h6>
-                        <h6>Υποδοχές SIM: Single</h6>
-                        <h6>Τύπος SIM: Nano-SIM, eSIM</h6>
-                        <h6>Θύρα USB: Lightning</h6>
-                        <h6>Υποστήριξη NFC: Διαθέτει</h6>
-                        <h6>Έκδοση Bluetooth: 5.0</h6>
-                        <h6>Ασύρματη επικοινωνία: 802.11 a/b/g/n/ac/6</h6>
-                        <h6>Τοποθεσία: GPS, GLONASS, GALILEO, QZSS</h6>
-                        
-                        <h5>Δυνατότητες και Λειτουργίες</h5>
-                        <h6>Δαχτυλικό αποτύπωμα: Δε διαθέτει</h6>
-                        <h6>Υποστήριξη voice assistant: Siri</h6>
-                        <h6>Αισθητήρες: Επιταχυνσιόμετρο, Γυροσκόπιο, Εγγύτητας, Πυξίδα, Βαρόμετρο, Υποστήριξη Ultra Wideband (UWB)</h6>
-                        <h6>Ανθεκτικότητα: IP68 - Ανθεκτικό στη σκόνη/νερό (έως 6m για 30')</h6>
-                        
-                        <h5>Μπαταρία</h5>
-                        <h6>Μπαταρία: 2815 mAh</h6>
-                        <h6>Υποστήριξη γρήγορης φόρτισης: Υποστηρίζεται (50% σε 30')</h6>
-                        <h6>Υποστήριξη ασύρματης φόρτισης: MagSafe (15W) // Qi (7.5W)</h6>
-                        
-                        <h5>Ήχος</h5>
-                        <h6>Αριθμός ηχείων: x2</h6>
-                        
-                        <h5>Διαστάσεις και Βάρος</h5>
-                        <h6>Διαστάσεις (ΠxΒxΥ): 71.5 x 7.4 x 146.7 mm</h6>
-                        <h6>Βάρος: 164 g</h6>
-                        
-                        <h5>Εγγύηση - Πιστοποιήσεις</h5>
-                        <h6>Εγγύηση: 24 μήνες</h6>
-                    </h4> -->

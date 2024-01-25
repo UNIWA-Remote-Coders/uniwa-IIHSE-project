@@ -4,12 +4,12 @@
       <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <title> Navbar </title>
+        <title>Navbar</title>
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
 
 <!--Navbar-->
-<body>
+  <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
             <div class="container">
               <img src="assets/imgs/logo1.png" width="100px" height="100px">
@@ -63,5 +63,5 @@
               </div>
             </div>
           </nav>
-          </body>
+    </body>
 </html>

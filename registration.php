@@ -201,29 +201,7 @@
     </section>
 
     <!--Footer-->
-    <footer>
-      <div class="footerContainer">
-        <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <div class="footerNav">
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="offers.html">Offers</a></li>
-            <li><a href="about-us.html">About us</a></li>
-            <li><a href="about-us.html">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footerBottom">
-        <p>eCommerce @ 2025 All Right Reserved</p>
-      </div>
-    </footer>
+    <?php include('footer.php'); ?>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
