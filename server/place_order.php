@@ -57,7 +57,7 @@ if(isset($_POST['place_order'])) {
 
 
     //6. inform user whether everything is fine or there is a problem
-    header('location: ../payment.php?order_status=order placed successfully');
+    header('location: ../payment.php?order_status=order placed successfully&order_id='.$order_id);
 }
 
 ?>

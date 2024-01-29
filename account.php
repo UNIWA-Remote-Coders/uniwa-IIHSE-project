@@ -55,6 +55,20 @@
   //get orders
   if(isset($_SESSION['logged_in'])) {
 
+    if(isset($_POST['pod_btn']) || isset($_POST['credit_btn'])) {
+
+      if (isset($_POST['pod_btn'])) {
+        $stmt_status = $conn->prepare("UPDATE orders SET order_status='shipped and pod' WHERE order_id=?");
+      }
+      else {
+        $stmt_status = $conn->prepare("UPDATE orders SET order_status='paid and delivered' WHERE order_id=?");
+      }
+
+      $order_id = $_POST['order_id'];
+      $stmt_status->bind_param('s', $order_id);
+      $stmt_status->execute();
+    }
+
     $user_id = $_SESSION['user_id'];
     $stmt = $conn->prepare("SELECT * FROM orders WHERE user_id=?");
     $stmt->bind_param('i', $user_id);
@@ -98,6 +112,9 @@
     />
   </head>
   <body>
+
+    <!--Navbar-->
+    <?php include('navbar.php'); ?>
     
     <br/><br/><br/><br/><br/>
 

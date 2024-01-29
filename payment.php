@@ -5,8 +5,15 @@
 
 
   if(isset($_POST['order_pay_btn'])) {
-    $order_status = $_POST['order_staus'];
+    $order_status = $_POST['order_status'];
     $order_total_price = $_POST['order_total_price'];
+  }
+
+  if(isset($_GET['order_id'])) {
+    $order_id = $_GET['order_id'];
+  }
+  if(isset($_POST['order_id'])) {
+    $order_id = $_POST['order_id'];
   }
 
 ?>
@@ -72,12 +79,15 @@
       </section>
 
         <form class="credit-card" method="POST" action="account.php">
+
+          <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
+          
           <div class="form-header">
           <h4 class="title">Choose a payment method: </h4>
           <input type="radio" id="pod" name="payment_method" value="0">
           <label for="radio">Pay On Delivery</label>
           <div id="pod-button" class="d-inline-block">
-            <input type="button" class="btn btn-primary" name="ins_value" id="ins_value" value="Finish Order">
+            <input type="Submit" class="btn btn-primary" name="pod_btn" id="ins_value" value="Finish Order">
           </div>
           <br>
           <input type="radio" id="credit" name="payment_method" value="0">
@@ -136,7 +146,7 @@
           
               <!-- Buttons -->
               <div id="credit-button">
-                <button type="submit" class="proceed-btn">Proceed to Checkout</button>
+                <button type="submit" class="proceed-btn" name="credit_btn">Proceed to Checkout</button>
                 <!-- <button type="button" disabled>test</button> -->
               </div>
 
@@ -144,7 +154,9 @@
           </fieldset>
 
           <div class="form-credit">
-            <h4 class="title">Paypal Payment</h4>
+            <h4 class="title" >Paypal Payment</h4>
+            <!-- <input type="Submit" name="paypal_btn" value="Finish Order"> -->
+            <!-- onclick="document.forms[0].submit();" -->
             <div id="paypal-button"></div>
           </div>
 
@@ -159,6 +171,10 @@
       const radio = [document.getElementById('pod'), document.getElementById('credit'), document.getElementById('paypal')];
       const div = [document.getElementById('pod-button'), document.getElementById('credit-button'), document.getElementById('paypal-button')];
       var field = document.getElementById('fs-credit');
+
+      div[2].addEventListener('click', function() {
+          document.forms[0].submit();
+      });
 
       for (let i=0; i<radio.length; i++) {
           radio[i].addEventListener('click', function(e){

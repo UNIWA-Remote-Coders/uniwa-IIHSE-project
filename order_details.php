@@ -1,8 +1,8 @@
 <?php
     /*
         "not paid"
-        "shipped"
-        "delivered"
+        "shipped and pod"
+        "paid and delivered"
     */
     session_start();
     include('./server/connection.php');
@@ -40,7 +40,6 @@
       return $total;
 
   }
-
 
 ?>
 
@@ -124,24 +123,12 @@
             <form style="float: right;" method="POST" action="payment.php">
                 <input type="hidden" name="order_total_price" value="<?php echo $order_total_price; ?>"/>
                 <input type="hidden" name="order_status" value="<?php echo $order_status; ?>"/>
+                <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
                 <input type="submit" name="order_pay_btn" class="btn btn-primary" value="Pay Now"/>
             </form>
         
         <?php } ?>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!--Footer-->
     <?php include('footer.php'); ?>
