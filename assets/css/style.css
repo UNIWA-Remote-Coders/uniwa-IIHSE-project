@@ -105,6 +105,12 @@ hr{
     /* text-decoration: none; */
 } 
 
+.dropdown-menu a.active{
+    font-weight: bold;
+    background-color: white;
+    /* text-decoration: none; */
+} 
+
 
 
 .navbar i{

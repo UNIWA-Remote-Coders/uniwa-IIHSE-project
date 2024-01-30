@@ -33,12 +33,12 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="smartphones.php">Smartphones</a></li>
-                      <li><a class="dropdown-item" href="handsfree.php">Handsfree</a></li>
-                      <li><a class="dropdown-item" href="tablets.php">Tablets</a></li>
-                      <li><a class="dropdown-item" href="smartwatches.php">Smartwatch</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" id="smartphones" href="smartphones.php">Smartphones</a></li>
+                      <li><a class="dropdown-item" id="handsfree" href="handsfree.php">Handsfree</a></li>
+                      <li><a class="dropdown-item" id="tablets" href="tablets.php">Tablets</a></li>
+                      <li><a class="dropdown-item" id="smartwatches" href="smartwatches.php">Smartwatches</a></li>
+                      <!-- <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                   </li>
 
@@ -71,11 +71,17 @@
       const topnav_id = elem[0].id;
       const menu_id = topnav_id.substring(0, topnav_id.indexOf("_"));
       const link_id = document.getElementById(menu_id);
+      var link_prod;
 
-      if (menu_id=="products") 
-        link_id.className = "nav-link dropdown-toggle active";
-      else 
+      if (menu_id=="smartphones" || menu_id=="handsfree" || menu_id=="tablets" || menu_id=="smartwatches") {
+        link_id.className = "dropdown-item active";
+        link_prod = document.getElementById("products");
+        link_prod.className = "nav-link dropdown-toggle active";
+        link_prod.style.color = "#8A0D0D";
+      }
+      else {
         link_id.className = "nav-link active";
+      }
 
       link_id.href = "#";
       link_id.style.color = "#8A0D0D";

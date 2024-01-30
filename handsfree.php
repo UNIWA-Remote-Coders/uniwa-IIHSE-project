@@ -15,7 +15,7 @@
     <body>
 
     <!--Navbar-->
-    <div class="topnav" id="products_bar">
+    <div class="topnav" id="handsfree_bar">
         <?php include('navbar.php'); ?>
     </div>
 
