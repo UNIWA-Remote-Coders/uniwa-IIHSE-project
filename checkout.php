@@ -119,7 +119,7 @@
             />
           </div>
           <div class="form-group checkout-btn-container">
-              <p>Total amount: <?php echo $_SESSION['total']; ?></p>
+              <p>Total amount: <?php echo $_SESSION['total']; ?>€</p>
               <input
                 type="submit"
                 class="btn"

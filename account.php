@@ -121,7 +121,7 @@
     <br/><br/><br/><br/><br/>
 
     <!--Account-->
-    <section class="my-5 py-5">
+    <section class="my-5 py-5 pb-0">
       <div class="row container mx-auto">
         <div class="text-center">
               <b id="confirm-msg">
