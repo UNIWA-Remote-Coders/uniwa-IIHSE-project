@@ -19,11 +19,11 @@
         <?php include('navbar.php'); ?>
     </div>
 
-          <br><br><br>
+    <br><br><br><br>
 
           <!--Tablets-->
  <section id="tablets" class="my-5 pb-5">
-    <div class="container text-center mt-5 py-5">
+    <div class="container text-center mt-5 py-5 pb-0">
         <h3>Our Tablets</h3>
         <hr class="mx-auto">
         <p>Here you can check out our featured products</p>
@@ -44,7 +44,7 @@
       
       </div>
     
-      <br> <br>
+      <br><br>
 
     <?php include('server/get_products.php'); ?>
     
@@ -65,7 +65,7 @@
                     <i class="fas fa-star"></i>
                 </div>
                 <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                <h4 class="p-price"><?php echo $row['product_price']; ?></h4>
+                <h4 class="p-price"><?php echo $row['product_price']; ?>€</h4>
                 <form action="single_product.php" method="get">
                     <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
                 </form>

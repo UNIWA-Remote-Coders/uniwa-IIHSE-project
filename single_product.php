@@ -54,13 +54,12 @@ else { //no product id
     />
   </head>
   <body>
+    
     <!--Navbar-->
     <div class="topnav" id="products_bar">
         <?php include('navbar.php'); ?>
     </div>
-
-    <!--    END OF NAVBAR   -->
-
+    <br><br><br><br>
 
     <!--Single Product-->
     <section class="container single-product my-5 pt-5">
@@ -71,13 +70,21 @@ else { //no product id
 
         <div class="col-lg-5 col-md-6 col-sm-12">
           <img
-            class="img-fluid w-100 pb-1"
+            class="img-fluid  pb-1"
             src="<?php echo $row['product_image']; ?>"
-            width="50%"
-            height="50%"
+            width="80%"
+            height="80%"
             id="mainImg"
           />
           <div class="small-img-group">
+            <div class="small-img-col">
+              <img
+                src="<?php echo $row['product_image']; ?>"
+                width="100%"
+                height="100%"
+                class="small-img"
+              />
+            </div> 
             <div class="small-img-col">
               <img
                 src="<?php echo $row['product_image2']; ?>"
@@ -252,13 +259,31 @@ else { //no product id
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    
     <script>
       var mainImg = document.getElementById("mainImg");
+      // var mainWid = mainImg.width;
+      var mainHei = mainImg.height;
+      // window.alert(mainHei);
       var smallImg = document.getElementsByClassName("small-img");
 
       for (let i = 0; i < 4; i++) {
         smallImg[i].onclick = function () {
           mainImg.src = smallImg[i].src;
+          // window.alert(smallImg[i].height);
+          // if (parseInt(smallImg[i].height) > parseInt(mainHei)) {
+          //   window.alert(smallImg[i].height);
+          //   mainHei = smallImg[i].height;
+          // }
+          mainImg.style.height = mainHei + "px";
+
+          // mainImg.width = "100";
+          // mainImg.height = "100";
+          // mainImg.style.width = mainWid + "px";
+          // mainImg.style.height = mainHei + "px";
+          // mainImg.style.height = "100";
+          // mainImg.height = mainHei.toString();
+          // window.alert(mainImg.height);
         };
       }
     </script>
