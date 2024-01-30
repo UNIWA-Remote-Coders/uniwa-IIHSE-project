@@ -15,7 +15,9 @@
     <body>
 
     <!--Navbar-->
+    <div class="topnav" id="index_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
           <!--Home-->
           <section id="home">

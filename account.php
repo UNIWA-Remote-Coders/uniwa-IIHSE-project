@@ -114,7 +114,9 @@
   <body>
 
     <!--Navbar-->
-    <?php include('navbar.php'); ?>
+    <div class="topnav" id="account_bar">
+        <?php include('navbar.php'); ?>
+    </div>
     
     <br/><br/><br/><br/><br/>
 

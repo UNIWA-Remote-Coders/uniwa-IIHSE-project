@@ -14,8 +14,10 @@
     </head>
     <body>
 
-        <!--Navbar-->
+    <!--Navbar-->
+    <div class="topnav" id="products_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
           <br><br><br>
 

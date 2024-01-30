@@ -99,8 +99,11 @@
     />
   </head>
   <body>
+
     <!--Navbar-->
+    <div class="topnav" id="account_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
     <!--Registration-->
     <br>

@@ -14,9 +14,10 @@
     </head>
     <body>
 
-         <!--Navbar-->
+    <!--Navbar-->
+    <div class="topnav" id="products_bar">
         <?php include('navbar.php'); ?>
-          <br><br><br>
+    </div>
 
  <!--Smartphones-->
  <section id="smartphones" class="my-5 pb-5">

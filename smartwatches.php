@@ -14,15 +14,12 @@
     </head>
     <body>
 
-         <!--Navbar-->
+    <!--Navbar-->
+    <div class="topnav" id="products_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
-          <br><br><br>
-
-        <!--    END OF NAVBAR   -->
-
-
-
+    <br><br><br>
 
  <!--Smartwatches-->
  <section id="smartwatches" class="my-5 pb-5">

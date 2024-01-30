@@ -20,15 +20,15 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.php">Home</a>
+                    <a class="nav-link" aria-current="page" id="index" href="index.php">Home</a>
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="offers.php">Offers</a>
+                    <a class="nav-link" id="offers" href="offers.php">Offers</a>
                   </li>
 
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" id="products" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Products
                     </a>
 
@@ -43,13 +43,13 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" href="about-us.php">About Us</a>
+                    <a class="nav-link" id="aboutus" href="about-us.php">About Us</a>
                   </li>
 
                 </ul>
 
-                <a class="nav-link" href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
-                <a class="nav-link" href="login.php"><i class="fas fa-user"></i></a> 
+                <a class="nav-link" id="cart" href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
+                <a class="nav-link" id="account" href="login.php"><i class="fas fa-user"></i></a> 
                     
                 
 
@@ -65,3 +65,19 @@
           </nav>
     </body>
 </html>
+
+<script type="text/javascript">
+      const elem = document.getElementsByClassName("topnav");
+      const topnav_id = elem[0].id;
+      const menu_id = topnav_id.substring(0, topnav_id.indexOf("_"));
+      const link_id = document.getElementById(menu_id);
+
+      if (menu_id=="products") 
+        link_id.className = "nav-link dropdown-toggle active";
+      else 
+        link_id.className = "nav-link active";
+
+      link_id.href = "#";
+      link_id.style.color = "#8A0D0D";
+
+</script>

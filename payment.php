@@ -52,9 +52,12 @@
     />
   </head>
   <body>
+
     <!--Navbar-->
+    <div class="topnav" id="cart_bar">
         <?php include('navbar.php'); ?>
-    <br>
+    </div>
+    
     <!--Payment-->
     <section class="my-5 pt-5 pb-0">
       <div class="container text-center mt-3 pt-5">

@@ -18,9 +18,10 @@
     </head>
     <body>
     
-
-       <!--Navbar-->
+    <!--Navbar-->
+    <div class="topnav" id="aboutus_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
           <br><br><br>
 

@@ -55,8 +55,9 @@ else { //no product id
   </head>
   <body>
     <!--Navbar-->
+    <div class="topnav" id="products_bar">
         <?php include('navbar.php'); ?>
-    <br /><br /><br />
+    </div>
 
     <!--    END OF NAVBAR   -->
 

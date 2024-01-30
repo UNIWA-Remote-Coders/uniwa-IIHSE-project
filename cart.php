@@ -156,7 +156,9 @@
   <body>
 
     <!--Navbar-->
+    <div class="topnav" id="cart_bar">
         <?php include('navbar.php'); ?>
+    </div>
 
     <br/><br />
 

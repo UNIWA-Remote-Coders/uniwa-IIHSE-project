@@ -14,9 +14,12 @@
     </head>
     <body>
 
-         <?php include('navbar.php'); ?>
+    <!--Navbar-->
+    <div class="topnav" id="offers_bar">
+        <?php include('navbar.php'); ?>
+    </div>
 
-          <br><br><br>
+    <br><br><br>
 
  <!--offers-->
  <section id="offers" class="my-5 pb-5">
