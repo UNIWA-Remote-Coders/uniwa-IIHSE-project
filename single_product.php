@@ -13,17 +13,52 @@ if (isset($_GET['product_id'])) {
     
     $stmt->execute();
     $p = $stmt->get_result();
-
+    
     foreach($p as $row) {
-      // $stmt2 = $conn->prepare("SELECT * FROM products WHERE product_category <> 'Smartphone' AND product_description LIKE '%'?'%' LIMIT 4");
-      // $product_name = $row['product_name'];
-      // $brand = substr($product_name, 0, strpos($product_name, " "));
-      $stmt2 = $conn->prepare("SELECT * FROM products WHERE product_category <> ? LIMIT 4");
-
-      $stmt2->bind_param("s", $row['product_category']);
-      $stmt2->execute();
-      $related_products = $stmt2->get_result(); 
+      $product_category = $row['product_category'];
     }
+
+    $category = array("Smartphone", "Smartwatch", "Handsfree", "Tablet");
+    $smtm_rel = array();
+    $related_products = array();
+
+    $num = 0;
+
+    for ($i = 0; $i < 4; $i++) {
+      if ($category[$i]==$product_category) {
+        continue;
+      }
+      
+      if ($num == 2) {
+        $smtm_rel[$num] = $conn->prepare("SELECT * FROM products WHERE product_category = ? LIMIT 2");
+        $smtm_rel[$num]->bind_param("s", $category[$i]);
+        $smtm_rel[$num]->execute();
+        $related_products[$num] = $smtm_rel[$num]->get_result();
+        $num++;
+        break;
+      }
+
+      $smtm_rel[$num] = $conn->prepare("SELECT * FROM products WHERE product_category = ? LIMIT 1");
+      $smtm_rel[$num]->bind_param("s", $category[$i]);
+      $smtm_rel[$num]->execute();
+      $related_products[$num] = $smtm_rel[$num]->get_result();
+      $num++;
+    }
+
+    // echo '<script>alert("Num: '.$num.'")</script>'; 
+
+
+    // foreach($p as $row) {
+
+    //   // $stmt2 = $conn->prepare("SELECT * FROM products WHERE product_category <> 'Smartphone' AND product_description LIKE '%'?'%' LIMIT 4");
+    //   // $product_name = $row['product_name'];
+    //   // $brand = substr($product_name, 0, strpos($product_name, " "));
+    //   $stmt2 = $conn->prepare("SELECT * FROM products WHERE product_category <> ? LIMIT 4");
+
+    //   $stmt2->bind_param("s", $row['product_category']);
+    //   $stmt2->execute();
+    //   $related_products = $stmt2->get_result(); 
+    // }
 
 }
 else { //no product id
@@ -184,23 +219,26 @@ else { //no product id
         <hr class="mx-auto" />
       </div>
         <div class="row mx-auto container-fluid">
-          <?php while($row = $related_products->fetch_assoc()){ ?>
-            <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-              <img
-                class="img-fluid mb-3"
-                src="<?php echo $row['product_image']; ?>"
-              />
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-              <h4 class="p-price"><?php echo $row['product_price']; ?>€</h4>
-              <button class="buy-btn">Buy Now</button>
-            </div>
-          <?php } ?>
+        <?php for ($i = 0; $i < 3; $i++) {
+              while($row = $related_products[$i]->fetch_assoc()){ ?>
+                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                  <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>">
+                    <img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>
+                  </a>
+                  <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                  <h4 class="p-price"><?php echo $row['product_price']; ?>€</h4>
+                  <form action="single_product.php" method="get">
+                    <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                  </form>
+                </div>
+
+          <?php }} ?>
       </div>
     </section>
 

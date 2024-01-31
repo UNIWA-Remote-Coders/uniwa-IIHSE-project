@@ -60,7 +60,7 @@
                 <div class="social-links">
                     <a href="https://www.facebook.com/gregory.dimopoulos.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/gregdim88/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://twitter.com/gregdim88"><i class="fa-brands fa-twitter"></i></a>
                     <a href="https://github.com/gregdim13" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
             </div>

@@ -105,7 +105,7 @@
               <img src="assets\imgs\credit_cards_logo.png" style="width: 100%; margin-bottom: 15px;">
               <h4 class="title">Credit card details</h4>
               <!-- Card Number -->
-              <input id="ccn" type="tel" class="card-number" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" required>
+              <input id="ccn" class="card-number" onkeypress="formatCreditCard()" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"  required/>
           
               <!-- Date Field -->
               <div class="date-field">
@@ -140,7 +140,7 @@
               <!-- Card Verification Field -->
               <div class="card-verification">
                 <div class="cvv-input">
-                  <input type="text" placeholder="CVV">
+                  <input type="text" placeholder="CVV" maxlength="4">
                 </div>
                 <div class="cvv-details">
                   <p>3 or 4 digits usually found <br> on the signature strip</p>
@@ -169,6 +169,19 @@
         <p>You don't have an order</p>
       <?php }?>
 
+    
+    <!-- CARD NUMBER FIELD CONTROLLER-->
+    <script type="text/javascript">
+
+      function formatCreditCard() {
+          var x = document.getElementById("ccn");
+          var index = x.value.lastIndexOf('-');
+          var test = x.value.substr(index + 1);
+          if (test.length === 4 && x.value.length!=19)
+              x.value = x.value + '-';
+      }
+
+    </script>
 
     <script type="text/javascript">
       const radio = [document.getElementById('pod'), document.getElementById('credit'), document.getElementById('paypal')];
