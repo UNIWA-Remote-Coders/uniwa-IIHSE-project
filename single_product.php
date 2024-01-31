@@ -9,9 +9,8 @@ if (isset($_GET['product_id'])) {
     $stmt = $conn->prepare("SELECT * FROM products WHERE product_id = ?");
     $stmt->bind_param("i", $product_id);
     $stmt->execute();
-    
-    
     $product = $stmt->get_result();//[]
+    
     $stmt->execute();
     $p = $stmt->get_result();
 
