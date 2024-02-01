@@ -30,19 +30,19 @@
   </div>
   
   <div>
-
-    <!--bar gia allagh selidas -->
-    <nav area-lable="page navigation example">
-      <ul class="pagination mt-5">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
-  
-  </div>
+        <!--bar gia allagh selidas -->
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_smartphone" href="smartphones.php?smartphones_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
+        </nav>
+   
+    </div>
 
   <br> <br>
 
@@ -74,20 +74,52 @@
       } 
       ?>
   </div>
-  <div>
 
-      <!--bar gia allagh selidas -->
-      <nav area-lable="page navigation example">
-        <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
-      
-  </div>
+  <div>
+        <!--bar gia allagh selidas -->
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_smartphone" href="smartphones.php?smartphones_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
+        </nav>
+   
+    </div>
+
+      <!-- Previous and next button functionality-->
+    <script type="text/javascript">
+
+        function goPreviousPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("smartphones_page");  
+            let pre_page = parseInt(cur_page) - 1;            
+
+            if (pre_page!=0) {
+                let previous = document.getElementById('prev_smartphone');
+                previous.href = "smartphones.php?smartphones_page=" + pre_page.toString();
+                // previous = document.activeElement;
+            }
+        }
+
+        function goNextPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("products_page");  
+            let next_page = parseInt(cur_page) + 1;            
+
+            if (next_page<=4) {
+                let next = document.getElementById('next_smartphone');
+                next.href = "smartphones.php?smartphones_page=" + next_page.toString();
+
+            }
+        }
+
+    </script>
 
 </section>
     <?php include('footer.php'); ?>

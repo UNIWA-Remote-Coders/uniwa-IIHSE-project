@@ -30,18 +30,18 @@
     </div>
 
     <div>
-
         <!--bar gia allagh selidas -->
-        <nav area-lable="page navigation example">
-          <ul class="pagination mt-5">
-              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#">Next</a></li>
-          </ul>
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_handsfree" href="handsfree.php?handsfree_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
         </nav>
-      
+   
     </div>
     
     <br> <br>
@@ -75,248 +75,53 @@
       ?>
   </div>
 
-<!--
 
-    <div class="row mx-auto container-fluid">
-      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-          <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Beats Powerbeats Pro In-ear Bluetooth Handsfree/1.jpeg"/>
-          <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-          </div>
-          <h5 class="p-name">Beats Powerbeats Pro In-ear Bluetooth Handsfree</h5>
-          <h4 class="p-price">€282.56</h4>
-          <button class="buy-btn">Buy Now</button>
-      </div>
-
-      <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Huawei FreeBuds Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Huawei FreeBuds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€302.64</h4>
-        <button class="buy-btn">Buy Now</button>
+  <div>
+        <!--bar gia allagh selidas -->
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_handsfree" href="handsfree.php?handsfree_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
+        </nav>
+   
     </div>
 
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EQ In-ear Bluetooth Handsfree Nordic Ice/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EQ In-ear Bluetooth Handsfree Nordic Ice</h5>
-        <h4 class="p-price">€419.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Gold Tone/5.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Gold Tone</h5>
-        <h4 class="p-price">€319.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Anthracite Oxygen/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay EX In-ear Bluetooth Handsfree Anthracite Oxygen</h5>
-        <h4 class="p-price">€319.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Meters Linx Set In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Meters Linx Set In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€330.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics 60+ UC (USB-A) In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Plantronics 60+ UC (USB-A) In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€345.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Denon PerL Pro In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Denon PerL Pro In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€349.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bang & Olufsen Beoplay E8 3rd Gen In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€349.90</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Samsung Galaxy Buds Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Samsung Galaxy Buds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€353.50</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose QuietComfort Ultra Earbuds Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bose QuietComfort Ultra Earbuds Bluetooth Handsfree</h5>
-        <h4 class="p-price">€416.34</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose QuietComfort Earbud Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bose QuietComfort Earbud Bluetooth Handsfree</h5>
-        <h4 class="p-price">€416.41</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics Voyager Free 60+ UC In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Plantronics Voyager Free 60+ UC In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€374.95</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bose SoundSport Free In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bose SoundSport Free In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€390.94</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Plantronics Voyager Free 60+ UC (USB-ATeams) In-ear Bluetooth Handsfree/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Plantronics Voyager Free 60+ UC (USB-ATeams) In-ear Bluetooth Handsfree</h5>
-        <h4 class="p-price">€397.90</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree white/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree white</h5>
-        <h4 class="p-price">€398.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/handfree/Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree black/1.jpeg"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Bowers & Wilkins Pi7 S2 In-ear Bluetooth Handsfree black</h5>
-        <h4 class="p-price">€398.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    </div>
-
--->
-
-    <div>
-        
-    <!--bar gia allagh selidas -->
-    <nav area-lable="page navigation example">
-      <ul class="pagination mt-5">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
-      </ul>
-    </nav>
     
-    </div>
+    <!-- Previous and next button functionality-->
+    <script type="text/javascript">
+
+        function goPreviousPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("handsfree_page");  
+            let pre_page = parseInt(cur_page) - 1;            
+
+            if (pre_page!=0) {
+                let previous = document.getElementById('prev_product');
+                previous.href = "handsfree.php?handsfree_page=" + pre_page.toString();
+                // previous = document.activeElement;
+            }
+        }
+
+        function goNextPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("handsfree_page");  
+            let next_page = parseInt(cur_page) + 1;            
+
+            if (next_page<=4) {
+                let next = document.getElementById('next_product');
+                next.href = "handsfree.php?handsfree_page=" + next_page.toString();
+
+            }
+        }
+
+    </script>
 </section>
 
         <?php include('footer.php'); ?>

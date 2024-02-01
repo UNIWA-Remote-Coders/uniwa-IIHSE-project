@@ -105,7 +105,7 @@
               <img src="assets\imgs\credit_cards_logo.png" style="width: 100%; margin-bottom: 15px;">
               <h4 class="title">Credit card details</h4>
               <!-- Card Number -->
-              <input id="ccn" class="card-number" onkeypress="formatCreditCard()" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"  required/>
+              <input id="ccn" class="card-number" onkeypress="formatCreditCard()" type="tel" inputmode="numeric" pattern="([0-9]{4})+-([0-9]{4})+-([0-9]{4})+-([0-9]{4})" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"  required/>
           
               <!-- Date Field -->
               <div class="date-field">
@@ -140,7 +140,7 @@
               <!-- Card Verification Field -->
               <div class="card-verification">
                 <div class="cvv-input">
-                  <input type="text" placeholder="CVV" maxlength="4">
+                  <input type="text" placeholder="CVV" maxlength="4" pattern="[0-9]{3,4}" required>
                 </div>
                 <div class="cvv-details">
                   <p>3 or 4 digits usually found <br> on the signature strip</p>

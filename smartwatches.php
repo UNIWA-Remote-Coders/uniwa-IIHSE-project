@@ -26,22 +26,22 @@
     <div class="container text-center mt-5 py-5 pb-0">
         <h3>Our Smartwatches</h3>
         <hr class="mx-auto">
-        <p>Here you can check out our featured products</p>
+        <p>Here you can check out our featured smartwatches</p>
     </div>
 
     <div>
-
         <!--bar gia allagh selidas -->
-        <nav area-lable="page navigation example">
-        <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
         </nav>
-    
+   
     </div>
 
     <br> <br>
@@ -84,261 +84,52 @@
         ?>
     </div>
 
-<!--
-
-  <div class="row mx-auto container-fluid">
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Apple Watch SE Midnight Aluminium GPS 44mm - Midnight Sports Band SmallMedium/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Apple Watch SE Midnight Aluminium GPS 44mm - Midnight Sports Band SmallMedium</h5>
-        <h4 class="p-price">€319.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - Blue Alpine Loop - Medium/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - Blue Alpine Loop - Medium</h5>
-        <h4 class="p-price">€908.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - Orange Ocean Band/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - Orange Ocean Band</h5>
-        <h4 class="p-price">€908.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - OrangeBeige Trail Loop - SM/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Apple Watch Ultra 2 Titanium 49mm GPS + Cellular - OrangeBeige Trail Loop - SM</h5>
-        <h4 class="p-price">€908.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Samsung Galaxy Watch6 Classic LTE Smartwatch 43mm - Black/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Samsung Galaxy Watch6 Classic LTE Smartwatch 43mm - Black</h5>
-        <h4 class="p-price">€470.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Samsung Galaxy Watch6 Classic LTE Smartwatch 43mm - Silver/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Samsung Galaxy Watch6 Classic LTE Smartwatch 43mm - Silver</h5>
-        <h4 class="p-price">€470.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Garmin Epix Gen 2 47mm - Titanium Carbon Gray/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Garmin Epix Gen 2 47mm - Titanium Carbon Gray</h5>
-        <h4 class="p-price">€779.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Garmin epix Pro Gen 2 Sapphire Edition 51mm - Carbon Gray DLC Titanium/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Garmin epix Pro Gen 2 Sapphire Edition 51mm - Carbon Gray DLC Titanium</h5>
-        <h4 class="p-price">€999.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray</h5>
-        <h4 class="p-price">€829.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Garmin Instinct 2X Solar 50mm - Moss/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Garmin Instinct 2X Solar 50mm - Moss</h5>
-        <h4 class="p-price">€450.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Garmin Venu 3 41mm - Soft Gold with Dust Rose/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Garmin Venu 3 41mm - Soft Gold with Dust Rose</h5>
-        <h4 class="p-price">€499.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Huawei Watch GT 4 41mm - Steel/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Huawei Watch GT 4 41mm - Steel</h5>
-        <h4 class="p-price">€398.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Huawei Watch Ultimate 48mm - Expedition Black/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Huawei Watch Ultimate 48mm - Expedition Black</h5>
-        <h4 class="p-price">€798.99</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Huawei Watch Ultimate 48mm - Voyage Blue/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Huawei Watch Ultimate 48mm - Voyage Blue</h5>
-        <h4 class="p-price">€899.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Huawei Watch Ultimate Design 49mm - Gold/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Huawei Watch Ultimate Design 49mm - Gold</h5>
-        <h4 class="p-price">€2999.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Suunto 9 Peak 43mm - All Black Titanium/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Suunto 9 Peak 43mm - All Black Titanium</h5>
-        <h4 class="p-price">€499.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Suunto 9 Peak Pro 43mm - Ocean Blue/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Suunto 9 Peak Pro 43mm - Ocean Blue</h5>
-        <h4 class="p-price">€499.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-        <img class="img-fluid mb-3" src="assets/imgs/products/smartwatches/Smartwatch Suunto Vertical 49mm - Titanium Solar Black/1.png"/>
-        <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-        </div>
-        <h5 class="p-name">Smartwatch Suunto Vertical 49mm - Titanium Solar Black</h5>
-        <h4 class="p-price">€799.00</h4>
-        <button class="buy-btn">Buy Now</button>
-    </div>
-
-
-  </div>
--->
-    <div>
-
-      <!--bar gia allagh selidas -->
-      <nav area-lable="page navigation example">
-        <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-      </nav>
+  <div>
+        <!--bar gia allagh selidas -->
+        <nav class="page-nav" area-lable="page navigation example">
+            <ul class="pagination mt-5">
+                <li class="page-item"><a class="page-link" id="prev_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goPreviousPage()">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=1">1</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li>
+                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=4#" onclick="goNextPage()">Next</a></li>
+            </ul>
+        </nav>
    
-      
     </div>
+
+
+      <!-- Previous and next button functionality-->
+    <script type="text/javascript">
+
+        function goPreviousPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("smartwatches_page");  
+            let pre_page = parseInt(cur_page) - 1;            
+
+            if (pre_page!=0) {
+                let previous = document.getElementById('prev_smartwatch');
+                previous.href = "smartwatches.php?smartwatches_page=" + pre_page.toString();
+                // previous = document.activeElement;
+            }
+        }
+
+        function goNextPage() {
+
+            let params = (new URL(document.location)).searchParams;
+            let cur_page = params.get("smartwatches_page");  
+            let next_page = parseInt(cur_page) + 1;            
+
+            if (next_page<=4) {
+                let next = document.getElementById('next_smartwatch');
+                next.href = "smartwatches.php?smartwatches_page=" + next_page.toString();
+
+            }
+        }
+
+    </script>
 
 </section>
 

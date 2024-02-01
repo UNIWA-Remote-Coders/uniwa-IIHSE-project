@@ -136,6 +136,7 @@
               id="register-email"
               name="email"
               placeholder="Login-email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
               required
             />
           </div>
@@ -160,6 +161,8 @@
               placeholder="Password"
               required
             />
+              <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"> -->
           </div>
           <div class="form-group">
             <label>Confirm Password</label>
@@ -169,6 +172,7 @@
               id="register-confirm-password"
               name="confirm_password"
               placeholder="Confirm Password"
+
               required
             />
           </div>

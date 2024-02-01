@@ -33,12 +33,12 @@
                     </a>
 
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" id="smartphones" href="smartphones.php">Smartphones</a></li>
-                      <li><a class="dropdown-item" id="handsfree" href="handsfree.php">Handsfree</a></li>
-                      <li><a class="dropdown-item" id="tablets" href="tablets.php">Tablets</a></li>
-                      <li><a class="dropdown-item" id="smartwatches" href="smartwatches.php">Smartwatches</a></li>
-                      <!-- <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                      <li><a class="dropdown-item" id="smartphones" href="smartphones.php?smartphones_page=1">Smartphones</a></li>
+                      <li><a class="dropdown-item" id="handsfree" href="handsfree.php?handsfree_page=1">Handsfree</a></li>
+                      <li><a class="dropdown-item" id="tablets" href="tablets.php?tablets_page=1">Tablets</a></li>
+                      <li><a class="dropdown-item" id="smartwatches" href="smartwatches.php?smartwatches_page=1">Smartwatches</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" id="allproducts" href="products.php?products_page=1">All Products</a></li> 
                     </ul>
                   </li>
 
@@ -73,7 +73,7 @@
       const link_id = document.getElementById(menu_id);
       var link_prod;
 
-      if (menu_id=="smartphones" || menu_id=="handsfree" || menu_id=="tablets" || menu_id=="smartwatches") {
+      if (menu_id=="smartphones" || menu_id=="handsfree" || menu_id=="tablets" || menu_id=="smartwatches" || menu_id=="products") {
         link_id.className = "dropdown-item active";
         link_prod = document.getElementById("products");
         link_prod.className = "nav-link dropdown-toggle active";

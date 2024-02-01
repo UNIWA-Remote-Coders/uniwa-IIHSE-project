@@ -699,7 +699,11 @@ th:last-child{
     background-color: #000;
 }
 
-#smartphones .product img{
+#smartphones .product img,
+#handsfree .product img,
+#tablets .product img,
+#smartwatches .product img,
+#allproducts .product img{
     width: 50%;
     height: 50%;
     background-position: center;
@@ -707,29 +711,11 @@ th:last-child{
     background-size: cover;
 }
 
-#handsfree .product img{
-    width: 50%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.page-item a:active{
+    /* background-color: yellow; */
+    font-weight: bold;
 }
 
-#tablets .product img{
-    width: 50%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#smartwatches .product img{
-    width: 50%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /* Global 
 * {
