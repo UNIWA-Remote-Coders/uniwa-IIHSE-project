@@ -29,16 +29,16 @@
         $stmt_sp = $conn->prepare("SELECT * FROM products where product_category = 'Smartphone' AND product_id > ? ORDER BY product_id LIMIT 16");
 //         $stmt_sp = $conn->prepare("SELECT * FROM (SELECT Row_Number() OVER (ORDER BY product_id) AS RowNum, * FROM products) t2 WHERE RowNum > ? LIMIT 16");
 
-//         WITH MyCte AS 
+// WITH MyCte AS 
 // (
-//     SELECT   product_id,
-//              RowNum = row_number() OVER ( order by product_id )
+//     SELECT   *,
+//              ROW_NUMBER() OVER(order by product_id) AS row_num 
 //     FROM     products
 //     ORDER BY product_id
 // )
 // SELECT  *
 // FROM    MyCte
-// WHERE   RowNum > 0
+// WHERE   row_num > 0
 
         $stmt_sp->bind_param('i', $products_id);
         $stmt_sp->execute();
