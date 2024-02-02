@@ -35,10 +35,10 @@
             <ul class="pagination mt-5">
                 <li class="page-item"><a class="page-link" id="prev_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=4#" onclick="goNextPage()">Next</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -51,7 +51,7 @@
     <div class="row mx-auto container-fluid">
 
         <?php
-        while(($row= $smartwatches->fetch_assoc())) { 
+        while(($row= $products->fetch_assoc())) { 
         ?>
 
 
@@ -90,10 +90,10 @@
             <ul class="pagination mt-5">
                 <li class="page-item"><a class="page-link" id="prev_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=4#" onclick="goNextPage()">Next</a></li>
+                <li class="page-item"><a class="page-link" href="smartwatches.php?smartwatches_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_smartwatch" href="smartwatches.php?smartwatches_page=1#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -122,7 +122,7 @@
             let cur_page = params.get("smartwatches_page");  
             let next_page = parseInt(cur_page) + 1;            
 
-            if (next_page<=4) {
+            if (next_page<=1) {
                 let next = document.getElementById('next_smartwatch');
                 next.href = "smartwatches.php?smartwatches_page=" + next_page.toString();
 

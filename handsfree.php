@@ -37,8 +37,8 @@
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=1">1</a></li>
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=4#" onclick="goNextPage()">Next</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=3#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -51,7 +51,7 @@
   <div class="row mx-auto container-fluid">
 
       <?php
-      while(($row= $handsfree->fetch_assoc())) { 
+      while(($row= $products->fetch_assoc())) { 
       ?>
 
 
@@ -84,8 +84,8 @@
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=1">1</a></li>
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=4#" onclick="goNextPage()">Next</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="handsfree.php?handsfree_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_handsfree" href="handsfree.php?handsfree_page=3#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -114,7 +114,7 @@
             let cur_page = params.get("handsfree_page");  
             let next_page = parseInt(cur_page) + 1;            
 
-            if (next_page<=4) {
+            if (next_page<=3) {
                 let next = document.getElementById('next_product');
                 next.href = "handsfree.php?handsfree_page=" + next_page.toString();
 

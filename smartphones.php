@@ -36,9 +36,9 @@
                 <li class="page-item"><a class="page-link" id="prev_smartphone" href="smartphones.php?smartphones_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=1">1</a></li>
                 <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=2">2</a></li>
-                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=4#" onclick="goNextPage()">Next</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=2#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -51,7 +51,7 @@
   <div class="row mx-auto container-fluid">
 
       <?php
-      while(($row= $smartphones->fetch_assoc())) { 
+      while(($row= $products->fetch_assoc())) { 
       ?>
 
 
@@ -82,9 +82,9 @@
                 <li class="page-item"><a class="page-link" id="prev_smartphone" href="smartphones.php?smartphones_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=1">1</a></li>
                 <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=2">2</a></li>
-                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=4#" onclick="goNextPage()">Next</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=3">3</a></li>
+                <li class="page-item"><a class="page-link" href="smartphones.php?smartphones_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_smartphone" href="smartphones.php?smartphones_page=2#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -112,7 +112,7 @@
             let cur_page = params.get("products_page");  
             let next_page = parseInt(cur_page) + 1;            
 
-            if (next_page<=4) {
+            if (next_page<=2) {
                 let next = document.getElementById('next_smartphone');
                 next.href = "smartphones.php?smartphones_page=" + next_page.toString();
 

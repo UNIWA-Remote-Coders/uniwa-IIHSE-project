@@ -35,10 +35,10 @@
             <ul class="pagination mt-5">
                 <li class="page-item"><a class="page-link" id="prev_tablet" href="tablets.php?tablets_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=2">2</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_tablet" href="tablets.php?tablets_page=4#" onclick="goNextPage()">Next</a></li>
+                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_tablet" href="tablets.php?tablets_page=1#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -51,7 +51,7 @@
     <div class="row mx-auto container-fluid">
   
         <?php
-        while(($row= $tablets->fetch_assoc())) { 
+        while(($row= $products->fetch_assoc())) { 
         ?>
   
   
@@ -81,10 +81,10 @@
             <ul class="pagination mt-5">
                 <li class="page-item"><a class="page-link" id="prev_tablet" href="tablets.php?tablets_page=1#" onclick="goPreviousPage()">Previous</a></li>
                 <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=1">1</a></li>
-                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=2">2</a></li>
+                <!-- <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=2">2</a></li>
                 <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=3">3</a></li>
-                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=4">4</a></li>
-                <li class="page-item"><a class="page-link" id="next_tablet" href="tablets.php?tablets_page=4#" onclick="goNextPage()">Next</a></li>
+                <li class="page-item"><a class="page-link" href="tablets.php?tablets_page=4">4</a></li> -->
+                <li class="page-item"><a class="page-link" id="next_tablet" href="tablets.php?tablets_page=1#" onclick="goNextPage()">Next</a></li>
             </ul>
         </nav>
    
@@ -113,7 +113,7 @@
             let cur_page = params.get("tablets_page");  
             let next_page = parseInt(cur_page) + 1;            
 
-            if (next_page<=4) {
+            if (next_page<=1) {
                 let next = document.getElementById('next_tablet');
                 next.href = "tablets.php?tablets_page=" + next_page.toString();
 
