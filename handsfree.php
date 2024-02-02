@@ -102,7 +102,7 @@
             let pre_page = parseInt(cur_page) - 1;            
 
             if (pre_page!=0) {
-                let previous = document.getElementById('prev_product');
+                let previous = document.getElementById('prev_handsfree');
                 previous.href = "handsfree.php?handsfree_page=" + pre_page.toString();
                 // previous = document.activeElement;
             }
@@ -115,7 +115,7 @@
             let next_page = parseInt(cur_page) + 1;            
 
             if (next_page<=3) {
-                let next = document.getElementById('next_product');
+                let next = document.getElementById('next_handsfree');
                 next.href = "handsfree.php?handsfree_page=" + next_page.toString();
 
             }
