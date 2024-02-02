@@ -26,7 +26,7 @@
     <div class="container text-center mt-5 py-5 pb-0">
         <h3>Our Smartwatches</h3>
         <hr class="mx-auto">
-        <p>Here you can check out our featured smartwatches</p>
+        <p>Here you can check out our featured products</p>
     </div>
 
     <div>
