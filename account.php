@@ -20,6 +20,17 @@
     }
   }
 
+  if(isset($_POST['pod_btn'])) {
+    unset($_SESSION['cart']);
+    unset($_SESSION['total']);
+  }
+
+  if(isset($_POST['credit_btn'])) {
+    unset($_SESSION['cart']);
+    unset($_SESSION['total']);
+  }
+
+
   //change the password from user and update users table
   if(isset($_POST['change_password'])) {
     $current_password = $_POST['currentpassword'];

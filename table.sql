@@ -56,42 +56,42 @@ CREATE TABLE IF NOT EXISTS `users`(
 
 
 -- Insert products into DB
-INSERT INTO `products` VALUES (NULL, 'Apple iPhone 15 Pro Max 1TB - Blue Titanium', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Apple iPhone 15 Pro Max 1TB - Blue Titanium', 'Smartphone', 
 'Description: <ul> <li>Model 2023</li> <li>Super Retina XDR OLED 6.7" 120Hz</li> <li>NFC Support</li> <li>New A17 Pro Bionic processor</li> <li>Triple rear camera 48MP/4K 60 FPS</li> <li>4852 mAh battery (50% in 30min)</li> </ul> <br> iPhone, forged from titanium<br> The iPhone 15 Pro Max is the first iPhone to feature a titanium aerospace-grade design, using the same alloy used by spaceships for missions to Mars.<br> Titanium has one of the best strength-to-weight ratios of any metal, making these Pro models the lightest ever. You will notice the difference from the moment you get one of these.<br> The beautiful, slim brushed finish on the titanium bands is achieved through precision processing, polishing, brushing, and sandblasting.<br> The new contoured edges and slimmest margins ever on the iPhone make it even more comfortable to hold in your hand.<br> The titanium band is connected to a new internal aluminum frame through solid-state diffusion. This is a groundbreaking innovation in the industry, using a thermomechanical process that joins these two metals with incredible strength. The internal frame is also made from 100% recycled aluminum, which contributes to overall use of recycled materials and helps us achieve our climate goals for 2030.', 
 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/featured1.png', 
 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/2.png', 
 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/3.png', 
 'assets/imgs/featured/Apple iPhone 15 Pro Max 5G (8GB1TB) Blue Titanium/4.png', 2018.99, 0, 'Blue Titanium');
 
-INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Z Fold5 5G 1TB - Phantom Black', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Samsung Galaxy Z Fold5 5G 1TB - Phantom Black', 'Smartphone', 
 'Description: <ul> <li>Model 2023</li> <li>Screen 7.6"/2176 x 1812/120 Hz</li> <li>NFC Support</li> <li>Snapdragon 8 Gen 2 Processor</li> <li>Triple Rear Camera 50MP/8K 24 fps</li> <li>Battery 4400mAh (50% in 30min)</li> </ul> <br> With an innovative shape factor enhanced by the new Flex Hinge for a balanced design and professional camera capabilities with the unique FlexCam, the Galaxy Z series offers unparalleled experiences in foldable devices.<br> Take the big screen with you Unfold an amazing, immersive 7.6" display redesigned to offer you gaming like never before, cinematic viewing, and enhanced productivity.<br> Keep it bright, even in the sunlight Enjoy a cinematic experience on the bright main screen 7.6" without direct sunlight ruining the view<br> Multiple applications. One screen.<br> Multi-window view takes your multitasking to the next level. Keep three windows open on one screen so you can stream, shop, browse, and play more.<br> The product line can accommodate up to twelve applications simultaneously, allowing you to seamlessly switch between your favorites.<br> Large screen, meet the thinnest S Pen.<br> Precision meets portability with the S Pen capability on the Galaxy Z Fold5. Write directly on the large screen and make your work even easier. Additionally, use Samsung Notes for a canvas that syncs across all Galaxy devices.<br> The S Pen is sold separately, compatible only with the main screen. Requires S Pen Fold Edition or S Pen Pro.<br>', 
 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/featured2.png', 
 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/1.png', 
 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/2.png', 
 'assets/imgs/featured/Samsung Galaxy Z Fold5 5G Dual SIM (12GB1TB) Phantom Black/3.png', 2339.00, 0, 'Phantom Black');
 
-INSERT INTO `products` VALUES (NULL, 'Xiaomi 13 5G 256GB Dual Sim - Black', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Xiaomi 13 5G 256GB Dual Sim - Black', 'Smartphone', 
 'Description: <ul> <li>Model 2023</li> <li>Screen 6.36"/2400 x 1080/120Hz</li> <li>NFC Support</li> <li>Processor Snapdragon 8 Gen 2</li> <li>Triple Rear Camera 50MP</li> <li>Battery 4500mAh/100% in 48 min</li> </ul> <br> Enjoy your next photographic masterpiece, thanks to the Xiaomi 13 series. Behind the masterpiece is a camera system co-designed with Leica, seamlessly tuned to incorporate iconic features such as the Leica 75mm telephoto lens that shapes the classic Leica style and aesthetic.<br> Masterful design<br> Polished flat design<br> Convenient handle<br> Strikingly immersive screen design<br> Convenient handle<br> Activate the screen to enjoy an unparalleled experience. Ultra-thin 1.61mm bezels offer unlimited visuals.<br> Built for unlimited scenarios<br> Water and dust resistance IP68<br> "It s waterproof and water-resistant, thanks to precision manufacturing. Capture special memories anytime, anywhere.<br> Masterpiece camera<br> Leica Professional Camera System<br> Capturing important circumstances as well as extraordinary details<br>.', 
 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/featured3.png', 
 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/1.png', 
 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/2.png', 
 'assets/imgs/featured/Xiaomi 13 5G Dual SIM (8GB256GB)/4.png', 999.99, 0, 'Black');
 
-INSERT INTO `products` VALUES (NULL, 'Huawei Mate X3 512GB Dual Sim - Dark Green', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Huawei Mate X3 512GB Dual Sim - Dark Green', 'Smartphone', 
 'Description: <ul> <li>Model 2023</li> <li>Screen 7.85/2496 x 2224/120 Hz</li> <li>NFC Support</li> <li>Processor Snapdragon 8+ Gen 1 4G</li> <li>Triple Rear Camera 50MP/4Κ 60 FPS</li> <li>Battery 4800 mAh</li> </ul> <br> The worlds first quad-curved foldable smartphone, a future-forward design that ushers in a revolutionary form factor. As sturdy as it is, the phones four edges are soft-rounded for comfortable handling, enhancing an outstanding feel that lasts over time.<br> Slimmed Down, Spruced Up<br> HUAWEI Mate X3s slim and light foldable design takes full advantage of its new-gen multi-dimensional hinge, ensuring compactness when folded and ultra-thinness when unfolded. To further reduce weight, it uses an ultra-slim design around Type-C component, ultra light and strong aluminium and carbon fibre.<br> Two Screens to Savour<br> As the first foldable smartphone to garner two TÜV Rheinland certifications (Colour Accuracy & Precise Colour Projection)⁠, HUAWEI Mate X3 brings true-to-life details right in front of you, supporting 1.07 billion colours and groundbreaking HUAWEI X-True technology. Thanks to its Intelligent Light-Sensitive Display, the screens deliver a consistent viewing experience, whatever the occasion is. The interior screens anti-reflection layer keeps the view clear, even under direct sunlight.<br>', 
 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/featured4.png', 
 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/1.png', 
 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/2.png', 
 'assets/imgs/featured/Huawei Mate X3 Dual SIM (12GB512GB) Dark Green/3.png', 2199.00, 0, 'Dark Green');
 
-INSERT INTO `products` VALUES (NULL, 'Bluetooth Beats Powerbeats Pro - Black', 'Audio Accessories', 
+INSERT INTO `products` VALUES (NULL, 'Bluetooth Beats Powerbeats Pro - Black', 'Handsfree', 
 'Description:<br> The Beats Powerbeats Pro headphones are designed for athletes and demanding users who are looking for headphones with high sound quality and stability during exercise and activities. These headphones feature a revolutionary design that keeps the headphones in your ears while you work out, while also providing sweat and moisture resistance.<br><br> They also offer excellent sound quality, with powerful bass and clear highs. They have a long battery life and are extremely user-friendly, with touch controls on the headphones for easy access to music playback and answering phone calls. The Powerbeats Pro are ideal for athletes and those who want to listen to music during exercise or their activities without worrying about the headphones falling out or being bothered by cables.', 
 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/offer1.png', 
 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/2.png', 
 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/5.png', 
 'assets/imgs/offers/Beats Powerbeats Pro In-ear Bluetooth Handsfree/6.png', 209.30, 0, 'Black');
 
-INSERT INTO `products` VALUES (NULL, 'Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray', 'Wearable Technology', 
+INSERT INTO `products` VALUES (NULL, 'Smartwatch Garmin Fenix 7X Pro Solar Edition 51mm - Slate Gray', 'Smartwatch', 
 'Description: <ul> <li>Model 2022</li> <li>MIP Touchscreen</li> <li>Up to 37 days autonomy</li> <li>NFC, Wi-Fi, Bluetooth, GPS</li> <li>Suitable for swimming</li> </ul>', 
 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/offer2.png', 
 'assets/imgs/offers/Garmin Fenix 7X Solar Stainless Steel 51mm (Slate Grey with Black Band)/2.png', 
@@ -105,7 +105,7 @@ INSERT INTO `products` VALUES (NULL, 'Apple iPad Pro 12.9" 2022 (6th Gen) WiFi -
 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/4.png', 
 'assets/imgs/offers/Apple iPad Pro 2022 12.9 με WiFi & 5G (8GB256GB) Space Gray/2.png', 1133.29, 0, 'Silver Grey');
 
-INSERT INTO `products` VALUES (NULL, 'Smartphone Huawei Mate 50 Pro 256GB - Silver', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Smartphone Huawei Mate 50 Pro 256GB - Silver', 'Smartphone', 
 'Description: <ul> <li>Model 2022</li> <li>Screen 6.74"/2616 x 1212/120 Hz</li> <li>NFC support</li> <li>Processor Snapdragon 8+ Gen 1</li> <li>Triple Rear Camera 50MP/4K 60fps</li> <li>Battery 4700 mAh Fast Charge 66W</li> <ul> <br> A sense of symmetry, a sophisticated Clous de Paris pattern, 6m water resistance and an XMAGE camera with an ultra-wide variable F1.4 aperture.<br> Design that becomes an instant classic<br> Arm yourself with the smartphone that radiates charm in every way, with its iconic symmetrical shape and the intricate Clous de Paris pyramidal pattern that draws you into the sophisticated camera module.<br> Clear as crystal<br> Come for the technology, but stay for the view! The 120Hz curved screen and individually calibrated colours make every frame a sight to behold. And the 1440 Hz PWM brightness reduction, which reduces flicker, gives your eyes the breathing room they deserve.', 
 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/offer4.png', 
 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/2.png', 
@@ -224,7 +224,7 @@ INSERT INTO `products` VALUES (NULL, 'BeyerDynamic Xelento Wireless In-ear Bluet
 'assets/imgs/offers/BeyerDynamic Xelento Wireless In-ear Bluetooth Handsfree/3.png', 
 'assets/imgs/offers/BeyerDynamic Xelento Wireless In-ear Bluetooth Handsfree/4.png', 1100.00, 0, 'White');
 
-INSERT INTO `products` VALUES (NULL, 'Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver', 'Mobile Phones', 
+INSERT INTO `products` VALUES (NULL, 'Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver', 'Smartphone', 
 'Description: <ul> <li>Model 2022</li> <li>Screen 6.74"/2616 x 1212/120 Hz</li> <li>NFC support</li> <li>Processor Snapdragon 8+ Gen 1</li> <li>Triple Rear Camera 50MP/4K 60fps</li> <li>Battery 4700 mAh Fast Charge 66W</li> <ul> <br> A sense of symmetry, a sophisticated Clous de Paris pattern, 6m water resistance and an XMAGE camera with an ultra-wide variable F1.4 aperture.<br> Design that becomes an instant classic<br> Arm yourself with the smartphone that radiates charm in every way, with its iconic symmetrical shape and the intricate Clous de Paris pyramidal pattern that draws you into the sophisticated camera module.<br> Clear as crystal<br> Come for the technology, but stay for the view! The 120Hz curved screen and individually calibrated colours make every frame a sight to behold. And the 1440 Hz PWM brightness reduction, which reduces flicker, gives your eyes the breathing room they deserve.', 
 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/1.png', 
 'assets/imgs/offers/Huawei Mate 50 Pro Dual SIM (8GB256GB) Silver/2.png', 
