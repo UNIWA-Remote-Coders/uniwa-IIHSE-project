@@ -60,7 +60,7 @@
     
     <!--Payment-->
     <section class="my-5 pt-5 pb-0">
-      <div class="container text-center mt-3 pt-5">
+      <div class="container text-center mt-5 pt-5">
         <h2 class="form-weight-bold">Payment</h2>
         <hr class="mx-auto" />
       </div>

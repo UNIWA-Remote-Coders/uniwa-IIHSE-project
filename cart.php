@@ -80,18 +80,27 @@
         $product_id = $_POST['product_id'];
         $product_quantity = $_POST['product_quantity'];
 
-        //get the product array from session
-        $product_array = $_SESSION['cart'][$product_id];
+        if ($product_quantity > 0) {
+          //get the product array from session
+          $product_array = $_SESSION['cart'][$product_id];
 
-        //update product quantity
-        $product_array['product_quantity'] = $product_quantity;
+          //update product quantity
+          $product_array['product_quantity'] = $product_quantity;
 
-        //return array back its place
-        $_SESSION['cart'][$product_id] = $product_array;
+          //return array back its place
+          $_SESSION['cart'][$product_id] = $product_array;
 
-        //calculate total
-        calculateTotalCart();
+          //calculate total
+          calculateTotalCart();
 
+        }
+        else {
+
+          unset($_SESSION['cart'][$product_id]);
+
+          //calculate total
+          calculateTotalCart();
+        }
       }
       else if (!$_SESSION['cart']){
         echo '<script>alert("Empty cart!!");</script>';
