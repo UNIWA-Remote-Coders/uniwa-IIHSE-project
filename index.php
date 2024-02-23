@@ -21,7 +21,7 @@
 
           <!--Home-->
           <section id="home">
-            <div class="container">
+            <div class="container-arrivals">
                 <h5>NEW ARRIVALS</h5>
                 <h1><span>Best Prices</span>This Season</h1>
                 <p>Eshop offers the best products for the most affordable prices</p>
@@ -31,7 +31,7 @@
           <br>
 
           <!--Brand-->
-          <section id="brand" class="container">
+          <section id="brand" class="container-first-page-brands">
             <div class="row m-0">
                 <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand111.jpeg" />
                 <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand2.jpg"  />
