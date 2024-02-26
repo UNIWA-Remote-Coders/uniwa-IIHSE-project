@@ -10,6 +10,22 @@ if (isset($_GET['product_id'])) {
     $stmt->bind_param("i", $product_id);
     $stmt->execute();
     $product = $stmt->get_result();//[]
+
+
+
+    // find if this single product has an offer price
+    $stmt->execute();
+    $get_price = $stmt->get_result();
+    $row = $get_price->fetch_assoc();
+
+    if (isset($_GET['offer'])) {
+      $price = $row['product_price'] * floatval($_GET['offer']);
+    }
+    else {
+      $price = $row['product_price'];
+    }
+    
+
     
     $stmt->execute();
     $p = $stmt->get_result();
@@ -163,13 +179,13 @@ else { //no product id
           
           <h3><?php echo $row['product_name']; ?></h3>
           <!-- <h3 class="py-4"><?php echo $row['product_description']; ?></h3> -->
-          <h2><?php echo $row['product_price']; ?>€</h2>
+          <h2><?php echo $price; ?>€</h2>
 
             <form method="POST" action="cart.php">
               <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>"/>
               <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"/>
               <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"/>
-              <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"/>
+              <input type="hidden" name="product_price" value="<?php echo $price; ?>"/>
               <input type="number" name="product_quantity" value="1" min="1" onkeydown="return event.keyCode !== 8 && event.keyCode !== 46;" />
               <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>
             </form>
