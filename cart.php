@@ -215,6 +215,7 @@
         <table>
           <tr>
             <td>Total</td>
+            <!-- <td id="total-price"><?php if(isset($_SESSION['total'])) { echo $_SESSION['total']; } ?>€</td> -->
             <td id="total-price"><?php if(isset($_SESSION['total'])) { echo $_SESSION['total']; } ?>€</td>
           </tr>
         </table>
@@ -245,6 +246,11 @@
             total += parseFloat($(this).text());
           });
           $('#total-price').text(total.toFixed(2) + "€");
+          
+          <?php echo $_SESSION['total'] ?> =  total; 
+          // sessionStorage.setItem('total', 'total'); 
+          // '<%$_SESSION["total"] = "' + total + '"; %>';
+    
         });
       });
     </script>
