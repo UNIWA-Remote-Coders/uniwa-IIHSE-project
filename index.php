@@ -25,7 +25,11 @@
                 <h5>NEW ARRIVALS</h5>
                 <h1><span>Best Prices</span>This Season</h1>
                 <p>Eshop offers the best products for the most affordable prices</p>
-                <button>Shop Now</button>
+
+                <form action="products.php" method="GET">
+                    <button class="buy-btn" type="submit" name="products_page" value="1">Shop Now</button>
+                </form>   
+
             </div>
           </section>
           <br>
@@ -49,7 +53,11 @@
                     <img class="img-fluid" src="assets/imgs/001.png"/>
                 <div class="details">
                     <h2>New iPhones</h2>
-                    <button class="text-uppercase">Shop Now</button>
+                    <form action="smartphones.php" method="GET">
+                        <input type="hidden" name="search" value="Apple iPhone 15"/>
+                        <button class="buy-btn" type="submit" name="smartphones_page" value="1">SHOP NOW</button>
+                    </form>   
+                    <!-- <button class="text-uppercase">Shop Now</button> -->
                 </div>
             </div>
             
@@ -58,7 +66,11 @@
                 <img class="img-fluid" src="assets/imgs/002.jpeg"/>
                 <div class="details">
                     <h2>Airpods</h2>
-                    <button class="text-uppercase">Shop Now</button>
+                    <form action="handsfree.php" method="GET">
+                        <input type="hidden" name="search" value="Apple AirPods"/>
+                        <button class="buy-btn" type="submit" name="handsfree_page" value="1">SHOP NOW</button>
+                    </form>   
+                    <!-- <button class="text-uppercase">Shop Now</button> -->
                 </div>
             </div>
                
@@ -66,8 +78,12 @@
             <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
                 <img class="img-fluid" src="assets/imgs/03.jpeg"/>
                 <div class="details">
-                    <h2>50% OFF Smart Watches</h2>
-                    <button class="text-uppercase">Shop Now</button>
+                    <!-- <h2>50% OFF Smart Watches</h2> -->
+                    <h2>Smartwatches</h2>
+                    <form action="smartwatches.php" method="GET">
+                        <button class="buy-btn" type="submit" name="smartwatches_page" value="1">SHOP NOW</button>
+                    </form>   
+                    <!-- <button class="text-uppercase">Shop Now</button> -->
                 </div>
             </div>  
             </div>
@@ -76,7 +92,7 @@
           <!--Featured-->
           <section id="featured" class="my-5 pb-5">
             <div class="container text-center mt-5 py-5">
-                <h3>Our Featured</h3>
+                <h3>Our Featured Products</h3>
                 <hr class="mx-auto">
                 <p>Here you can check out our featured products</p>
             </div>
@@ -111,7 +127,7 @@
             </div>
           </section>
 
-          <!--Banner-->
+          <!-- Banner
           <section id="banner" class="my-5 py-5">
             <div class="container">
                 <br><br><br>
@@ -119,14 +135,15 @@
                 <h1>Christmas offers <br> Up to 30% OFF</h1>
                 <button class="text-uppercase">shop now</button>
             </div>
-          </section>
+          </section> -->
 
+          <hr style="width:95%;text-align:center;margin-left:35px">
           <!--Offers-->
           <section id="offers" class="my-5">
             <div class="container text-center mt-5 py-5">
-                <h3>Offers for Christmas Gifts</h3>
+                <h3>Our Offers</h3>
                 <hr class="mx-auto">
-                <p>Check here the gifts for your beloveds</p>
+                <p>Here you can check out our offers</p>
             </div>
             <div class="row mx-auto container-fluid">
 

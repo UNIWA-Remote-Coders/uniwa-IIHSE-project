@@ -35,7 +35,29 @@
             $category = 'Handsfree';
         }
 
-        $stmt = $conn->prepare("
+
+        if (isset($_GET['search'])) {
+            $products_name = $_GET['search'] . "%";
+            $stmt = $conn->prepare("
+            WITH MyCte AS 
+            (
+                SELECT   *,
+                        ROW_NUMBER() OVER(order by product_id) AS row_num 
+                FROM     products
+                WHERE    product_category = ? AND product_name like ?
+            )
+            SELECT  *
+            FROM    MyCte
+            WHERE   row_num > ?
+            LIMIT 12
+            ");
+            $stmt->bind_param('ssi', $category, $products_name, $products_id);
+            $stmt->execute();
+            $products = $stmt->get_result();
+
+        }
+        else {
+            $stmt = $conn->prepare("
             WITH MyCte AS 
             (
                 SELECT   *,
@@ -47,10 +69,12 @@
             FROM    MyCte
             WHERE   row_num > ?
             LIMIT 12
-        ");
-        $stmt->bind_param('si', $category, $products_id);
-        $stmt->execute();
-        $products = $stmt->get_result();
+            ");
+            $stmt->bind_param('si', $category, $products_id);
+            $stmt->execute();
+            $products = $stmt->get_result();
+        }
+
 
     }
 
