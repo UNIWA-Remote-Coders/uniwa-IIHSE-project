@@ -24,13 +24,27 @@
  <!--offers-->
 
  <section id="offers" class="my-5 pb-5">
-  <div class="container text-center mt-5 py-5">
-      <h3>Our Offers</h3>
-      <hr class="mx-auto">
-      <p>Here you can check out our products on offer</p>
-  </div>
+    <div class="container text-center mt-5 py-5">
+        <h3>Our Offers</h3>
+        <hr class="mx-auto">
+        <p>Here you can check out our products on offer</p>
+    </div>
+    <div>
 
- <?php include('server/get_offered_products.php'); ?>
+    <!--bar gia allagh selidas -->
+    <nav class="page-nav" area-lable="page navigation example">
+        <ul class="pagination mt-5">
+            <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage()">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
+            <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage()">Next</a></li>
+        </ul>
+    </nav>
+   
+
+
+    <?php include('server/get_offered_products.php'); ?>
     
     <div class="row mx-auto container-fluid">
 
@@ -64,15 +78,46 @@
 
 
     <!--bar gia allagh selidas -->
-    <nav area-lable="page navigation example">
+    <nav class="page-nav" area-lable="page navigation example">
         <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage()">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
+            <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage()">Next</a></li>
         </ul>
     </nav>
+
+        <!-- Previous and next button functionality-->
+        <script type="text/javascript">
+
+    function goPreviousPage() {
+
+        let params = (new URL(document.location)).searchParams;
+        let cur_page = params.get("offers_page");  
+        let pre_page = parseInt(cur_page) - 1;            
+
+        if (pre_page!=0) {
+            let previous = document.getElementById('prev_product');
+            previous.href = "offers.php?offers_page=" + pre_page.toString();
+            // previous = document.activeElement;
+        }
+    }
+
+    function goNextPage() {
+
+        let params = (new URL(document.location)).searchParams;
+        let cur_page = params.get("offers_page");  
+        let next_page = parseInt(cur_page) + 1;            
+
+        if (next_page<=3) {
+            let next = document.getElementById('next_product');
+            next.href = "offers.php?offers_page=" + next_page.toString();
+
+        }
+    }
+
+</script>
    
     
 </section>

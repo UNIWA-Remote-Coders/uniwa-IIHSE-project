@@ -24,7 +24,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a class="nav-link" id="offers" href="offers.php">Offers</a>
+                    <a class="nav-link" id="offers" href="offers.php?offers_page=1">Offers</a>
                   </li>
 
                   <li class="nav-item dropdown">
