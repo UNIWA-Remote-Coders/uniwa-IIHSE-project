@@ -264,7 +264,7 @@
                     </td>
         
                     <td>
-                      <span><?php echo $row['order_cost'];?>€</span>
+                      <span><?php echo number_format($row['order_cost'], 2);?>€</span>
                     </td>
 
                     <td>
