@@ -68,12 +68,12 @@
 
       <?php if((isset($_SESSION['total']) && $_SESSION['total'] != 0) || (isset($_POST['order_status']) && $_POST['order_status'] == "not paid")) { ?>
         <?php if(isset($_SESSION['total']) && $_SESSION['total'] != 0) { ?>
-          <p>Total Payment: <?php echo $_SESSION['total']; ?>€</p>
+          <p>Total Payment: <?php echo number_format($_SESSION['total'], 2); ?>€</p>
           <!-- <input class="btn btn-primary" value="Pay Now" type="Submit"/> -->
           <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
 
         <?php } else { ?>
-          <p>Total Payment: <?php echo $_POST['order_total_price']; ?>€</p>
+          <p>Total Payment: <?php echo number_format($_POST['order_total_price'], 2); ?>€</p>
           <!-- <input class="btn btn-primary" value="Pay Now" type="Submit"/> -->
           <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
         <?php } ?>
