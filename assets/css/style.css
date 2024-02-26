@@ -568,6 +568,9 @@ th:last-child {
 }
 
 .checkout-container .checkout-btn {
+  margin: 5px 0px;
+  padding: 6px 12px;
+  border-radius: 6px;
   background-color: #000;
   color: #fff;
   border: none;
@@ -582,7 +585,7 @@ th:last-child {
 .orders th {
   padding: 5px 50px;
   color: #fff;
-  background-color: #fb774b;
+  background-color: #000;
   text-align: center;
   justify-content: center;
 }
@@ -597,8 +600,9 @@ th:last-child {
 }
 
 .orders .order-details-btn {
+  margin:5px;
   color: #ddd;
-  background-color: #fb774b;
+  background-color: #000;
 }
 
 .orders td img {
