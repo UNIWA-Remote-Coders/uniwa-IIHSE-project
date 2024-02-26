@@ -1,24 +1,16 @@
 <?php
     session_start();
 
-    /* <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>"/>
-    // <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"/>
-    // <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"/>
-    // <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"/>
-    // <input type="number" name="product_quantity" value="1" />
-    // <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>*/
-
     if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) {
       
       //if user has already added a product to cart
       if(isset($_SESSION['cart'])) {
 
-        $products_array_ids = array_column($_SESSION['cart'], "product_id"); // [2, 3, 4, 10, 15]
-        
-        //if product has not already beed added to cart
+        $products_array_ids = array_column($_SESSION['cart'], "product_id");
+
+        //if product has not already been added to cart
         if( !in_array($_POST['product_id'], $products_array_ids) ) {
 
-          
           $product_id = $_POST['product_id'];
 
           $product_array = array(
@@ -34,8 +26,7 @@
         }
         //product has already been added
         else {
-          echo '<script>alert("Product was already to cart");</script>';
-          //echo '<script>window.location="index.php";</script>';
+          echo '<script>alert("Product was already added to cart");</script>';
         }
       }
       //if this is the first item
@@ -56,7 +47,6 @@
           );
 
           $_SESSION['cart'][$product_id] = $product_array;
-          // [ 2=> [], 3=>[], 5=>[]]
 
         }
       
@@ -104,7 +94,6 @@
       }
       else if (!$_SESSION['cart']){
         echo '<script>alert("Empty cart!!");</script>';
-        //header('location: index.php');
       }
 
       function calculateTotalCart() {
@@ -124,8 +113,6 @@
          $_SESSION['total'] = $total;
 
      }
-
-
 ?>
 
 
@@ -135,6 +122,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+
     <title>Home</title>
 
     <link
@@ -143,12 +131,14 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
       integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <link
       rel="stylesheet"
@@ -164,31 +154,31 @@
   </head>
   <body>
 
-    <!--Navbar-->
+    <!-- Navbar -->
     <div class="topnav" id="cart_bar">
         <?php include('navbar.php'); ?>
     </div>
 
     <br/><br />
 
-    <!--Cart-->
+    <!-- Cart Section -->
     <section class="cart container my-5 py-5">
-      <div class="container mt-5">
-        <h2 class="font-weight-bold">Your Cart</h2>
-        <hr />
-      </div>
-
+      <!-- Cart Table -->
       <table class="mt-5 pt-5">
+        <colgroup>
+          <col style="width: 60%">
+          <col style="width: 20%">
+          <col style="width: 20%">
+        </colgroup>
         <tr>
           <th>Product</th>
           <th>Quantity</th>
           <th>Subtotal</th>
         </tr>
 
-          <?php if(isset($_SESSION['cart'])) { foreach($_SESSION['cart'] as $key => $value) { ?>
-            <!-- <p>HERE IS THE BUG!</p> -->
+        <?php if(isset($_SESSION['cart'])) { foreach($_SESSION['cart'] as $key => $value) { ?>
           <tr>
-
+            <!-- Product Info -->
             <td>
               <div class="product-info">
                 <img src="<?php echo $value['product_image']; ?>" />
@@ -204,29 +194,28 @@
               </div>
             </td>
 
+            <!-- Quantity -->
             <td>
-              <form method="POST" action="cart.php">
-                <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
-                <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" />
-                <input type="submit" class="edit-btn" value="edit" name="edit_quantity"/>
+              <form class="quantity-form">
+                <input type="hidden" class="product-id" value="<?php echo $value['product_id']; ?>" />
+                <input type="number" class="product-quantity" value="<?php echo $value['product_quantity']; ?>" />
               </form>
             </td>
 
+            <!-- Subtotal -->
             <td>
-              <span class="product-price"><?php echo $value['product_quantity'] * $value['product_price']; ?>€</span>
+              <span class="product-subtotal"><?php echo $value['product_quantity'] * $value['product_price']; ?>€</span>
             </td>
-
           </tr>
-
         <?php } } ?>
       </table>
 
+      <!-- Cart Total -->
       <div class="cart-total">
         <table>
           <tr>
             <td>Total</td>
-            <!-- <td><?php if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) { echo $_SESSION['total'];} ?>€</td> -->
-            <td><?php if(isset($_SESSION['total'])) { echo $_SESSION['total']; } ?>€</td>
+            <td id="total-price"><?php if(isset($_SESSION['total'])) { echo $_SESSION['total']; } ?>€</td>
           </tr>
         </table>
       </div>
@@ -237,13 +226,27 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!-- Footer -->
     <?php include('footer.php'); ?>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+    <!-- External JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.quantity-form').on('input', function() {          
+          var productId = $(this).find('.product-id').val();
+          var quantity = $(this).find('.product-quantity').val();
+          var price = <?php echo json_encode($_SESSION['cart']); ?>[productId]['product_price'];
+          var subtotal = quantity * price;
+          $(this).closest('tr').find('.product-subtotal').text(subtotal.toFixed(2) + "€");
+
+          var total = 0;
+          $('.product-subtotal').each(function() {
+            total += parseFloat($(this).text());
+          });
+          $('#total-price').text(total.toFixed(2) + "€");
+        });
+      });
+    </script>
   </body>
 </html>
