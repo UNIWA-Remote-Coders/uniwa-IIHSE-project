@@ -264,7 +264,7 @@
                     </td>
         
                     <td>
-                      <span><?php echo $row['order_cost'];?></span>
+                      <span><?php echo $row['order_cost'];?>€</span>
                     </td>
 
                     <td>

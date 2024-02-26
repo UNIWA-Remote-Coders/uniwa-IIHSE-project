@@ -23,7 +23,7 @@ if(isset($_POST['place_order'])) {
     $stmt = $conn->prepare("INSERT INTO orders (order_cost, order_status, user_id, user_phone, user_city, user_address, order_date) 
                             VALUES (?, ?, ?, ?, ?, ?, ?)");
 
-    $stmt->bind_param('isiisss', $order_cost, $order_status, $user_id, $phone, $city, $address, $order_date);
+    $stmt->bind_param('dsiisss', $order_cost, $order_status, $user_id, $phone, $city, $address, $order_date);
 
     $stmt->execute();
 
@@ -44,7 +44,7 @@ if(isset($_POST['place_order'])) {
         $stmt1 = $conn->prepare("INSERT INTO order_items (order_id, product_id, product_name, product_image, product_price, product_quantity, user_id, order_date) 
                                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
 
-        $stmt1->bind_param('iissiiis', $order_id, $product_id, $product_name, $product_image, $product_price,  $product_quantity, $user_id, $order_date);
+        $stmt1->bind_param('iissdiis', $order_id, $product_id, $product_name, $product_image, $product_price,  $product_quantity, $user_id, $order_date);
 
         $stmt1->execute();
 

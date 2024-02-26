@@ -49,7 +49,7 @@
                 </div>
                 <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                 <p><del><?php echo $row['product_price']; ?>€</del></p>
-                <h4 class="p-price"><?php echo $row['product_price']*70/100; ?>€</h4>
+                <h4 class="p-price"><?php echo number_format($row['product_price']*70/100, 2); ?>€</h4>
 
                 <form action="single_product.php" method="get">
                     <input type="hidden" name="offer" value="0.7"/>
