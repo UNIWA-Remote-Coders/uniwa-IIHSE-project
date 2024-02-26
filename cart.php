@@ -194,7 +194,7 @@
                 <img src="<?php echo $value['product_image']; ?>" />
                 <div>
                   <p><?php echo $value['product_name']; ?></p>
-                  <small><span><?php echo $value['product_price']; ?>€</span></small>  
+                  <small><span><?php echo number_format($value['product_price'], 2); ?>€</span></small>  
                   <br>
                   <form method="POST" action="cart.php">
                     <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
@@ -213,7 +213,7 @@
             </td>
 
             <td>
-              <span class="product-price"><?php echo $value['product_quantity'] * $value['product_price']; ?>€</span>
+              <span class="product-price"><?php echo number_format($value['product_quantity'] * $value['product_price'], 2); ?>€</span>
             </td>
 
           </tr>
@@ -226,7 +226,7 @@
           <tr>
             <td>Total</td>
             <!-- <td><?php if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) { echo $_SESSION['total'];} ?>€</td> -->
-            <td><?php if(isset($_SESSION['total'])) { echo $_SESSION['total']; } ?>€</td>
+            <td><?php if(isset($_SESSION['total'])) { echo number_format($_SESSION['total'], 2); } ?>€</td>
           </tr>
         </table>
       </div>
