@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS `products`(
     `product_image2` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_image3` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_image4` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-    `product_price` double(6,2) NOT NULL,/*9999.99*/
+    `product_price` double(10,2) NOT NULL,/*9999.99*/
     `product_special_offer` integer(2) NOT NULL,
     `product_color` varchar(100) NOT NULL,
     PRIMARY KEY (`product_id`)
@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS `products`(
 -- Create orders table if not exists
 CREATE TABLE IF NOT EXISTS `orders`(
     `order_id` int(11)NOT NULL AUTO_INCREMENT,
-    `order_cost` decimal(6,2) NOT NULL,
+    `order_cost` double(10,2) NOT NULL,
     `order_status` varchar(100) NOT NULL DEFAULT 'on_hold',
     `user_id` int(11) NOT NULL,
     `user_phone` int(11) NOT NULL,
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `order_items`(
     `product_id` varchar(255) NOT NULL,
     `product_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
     `product_image` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NOT NULL,
-    `product_price` double(6,2) NOT NULL,/*9999.99*/
+    `product_price` double(10,2) NOT NULL,/*9999.99*/
     `product_quantity` int(2) NOT NULL,
     `user_id` int(11) NOT NULL,
     `order_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
