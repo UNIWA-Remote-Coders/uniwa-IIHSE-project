@@ -14,9 +14,9 @@
         }
         else {
             $page = $_GET['products_page'];
-            $products_id = (intval($page)-1) * 16;
+            $products_id = (intval($page)-1) * 20;
 
-            $stmt_pr = $conn->prepare("SELECT * FROM products WHERE product_id > ? ORDER BY product_id LIMIT 16");
+            $stmt_pr = $conn->prepare("SELECT * FROM products WHERE product_id > ? ORDER BY product_id LIMIT 20");
             $stmt_pr->bind_param('i', $products_id);
             $stmt_pr->execute();
             $products = $stmt_pr->get_result();

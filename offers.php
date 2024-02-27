@@ -14,117 +14,111 @@
     </head>
     <body>
 
-    <!--Navbar-->
-    <div class="topnav" id="offers_bar">
-        <?php include('navbar.php'); ?>
-    </div>
+        <!--Show Navbar-->
+        <div class="topnav" id="offers_bar">
+            <?php include('navbar.php'); ?>
+        </div>
 
-    <br><br><br>
+        <br><br><br>
 
- <!--offers-->
+        <!--Show offers-->
 
- <section id="offers" class="my-5 pb-5">
-    <div class="container text-center mt-5 py-5">
-        <h3>Our Offers</h3>
-        <hr class="mx-auto">
-        <p>Here you can check out our products on offer</p>
-    </div>
-    <div>
+        <section id="offers" class="my-5 pb-5">
+            <div class="container text-center mt-5 py-5">
+                <h3>Our Offers</h3>
+                <hr class="mx-auto">
+                <p>Here you can check out our products on offer</p>
+            </div>
 
-    <!--bar gia allagh selidas -->
-    <nav class="page-nav" area-lable="page navigation example">
-        <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage()">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
-            <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage()">Next</a></li>
-        </ul>
-    </nav>
+            <div>
+                <!--Change page top navbar-->
+                <nav class="page-nav" area-lable="page navigation example">
+                    <ul class="pagination mt-5">
+                        <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage(this)">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
+                        <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage(this)">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
    
 
-
-    <?php include('server/get_offered_products.php'); ?>
+            <!-- call a query to find all offers from db -->
+            <?php include('server/get_offered_products.php'); ?>
     
-    <div class="row mx-auto container-fluid">
+            <div class="row mx-auto container-fluid">
 
-        <?php
-        while(($row= $offered_products->fetch_assoc())) { 
-        ?>
+                <?php
+                    while(($row= $offered_products->fetch_assoc())) { ?>
 
-            <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                        <div class="product text-center col-lg-3 col-md-4 col-sm-12">
 
-                <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a> <!--OK!-->
-                <div class="star">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                <p><del><?php echo $row['product_price']; ?>€</del></p>
-                <h4 class="p-price"><?php echo number_format($row['product_price']*70/100, 2); ?>€</h4>
+                            <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a> <!--OK!-->
+                            <div class="star">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                            <p><del><?php echo $row['product_price']; ?>€</del></p>
+                            <h4 class="p-price"><?php echo number_format($row['product_price']*70/100, 2); ?>€</h4>
 
-                <form action="single_product.php" method="get">
-                    <input type="hidden" name="offer" value="0.7"/>
-                    <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
-                </form> 
+                            <form action="single_product.php" method="get">
+                                <input type="hidden" name="offer" value="0.7"/>
+                                <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                            </form> 
 
+                        </div>
+                    <?php 
+                    } 
+                ?>
             </div>
-        <?php 
-        } 
-        ?>
-    </div>
 
-
-    <!--bar gia allagh selidas -->
-    <nav class="page-nav" area-lable="page navigation example">
-        <ul class="pagination mt-5">
-            <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage()">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
-            <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
-            <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage()">Next</a></li>
-        </ul>
-    </nav>
+            <div>
+                <!--Change page bottom navbar-->
+                <nav class="page-nav" area-lable="page navigation example">
+                    <ul class="pagination mt-5">
+                        <li class="page-item"><a class="page-link" id="prev_product" href="offers.php?offers_page=1#" onclick="goPreviousPage(this)">Previous</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=1">1</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=2">2</a></li>
+                        <li class="page-item"><a class="page-link" href="offers.php?offers_page=3">3</a></li>
+                        <li class="page-item"><a class="page-link" id="next_product" href="offers.php?offers_page=3#" onclick="goNextPage(this)">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
 
         <!-- Previous and next button functionality-->
         <script type="text/javascript">
 
-    function goPreviousPage() {
+            function goPreviousPage(previous) {
 
-        let params = (new URL(document.location)).searchParams;
-        let cur_page = params.get("offers_page");  
-        let pre_page = parseInt(cur_page) - 1;            
+                let params = (new URL(document.location)).searchParams;
+                let cur_page = params.get("offers_page");  
+                let pre_page = parseInt(cur_page) - 1;            
 
-        if (pre_page!=0) {
-            let previous = document.getElementById('prev_product');
-            previous.href = "offers.php?offers_page=" + pre_page.toString();
-            // previous = document.activeElement;
-        }
-    }
+                if (pre_page!=0) {
+                    previous.href = "offers.php?offers_page=" + pre_page.toString();
+                }
+            }
 
-    function goNextPage() {
+            function goNextPage(next) {
 
-        let params = (new URL(document.location)).searchParams;
-        let cur_page = params.get("offers_page");  
-        let next_page = parseInt(cur_page) + 1;            
+                let params = (new URL(document.location)).searchParams;
+                let cur_page = params.get("offers_page");  
+                let next_page = parseInt(cur_page) + 1;            
 
-        if (next_page<=3) {
-            let next = document.getElementById('next_product');
-            next.href = "offers.php?offers_page=" + next_page.toString();
+                if (next_page<=3) {
+                    next.href = "offers.php?offers_page=" + next_page.toString();
 
-        }
-    }
+                }
+            }
+        </script>
 
-</script>
-   
-    
-</section>
-
-    <!--Footer-->
+        <!--Show Footer-->
         <?php include('footer.php'); ?>
-
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>

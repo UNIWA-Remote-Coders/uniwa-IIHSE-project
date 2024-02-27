@@ -8,16 +8,20 @@
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
 
-<!--Navbar-->
+<!-- Navbar HTML Code-->
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
             <div class="container">
+
               <a href="index.php"><img src="assets/imgs/logo1.png" width="100px" height="100px"></a>
-              <!-- <img src="assets/imgs/logo1.png" width="100px" height="100px"> -->
+
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
+
+              <!-- It builds the navigation bar -->
               <div class="collapse navbar-collapse nav-buttons" id="navbarSupportedContent">
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                   <li class="nav-item">
@@ -28,10 +32,10 @@
                     <a class="nav-link" id="offers" href="offers.php?offers_page=1">Offers</a>
                   </li>
 
+                  <!-- Dropdown menu -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="products" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Products
-                    </a>
+
+                    <a class="nav-link dropdown-toggle" id="products" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
 
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" id="smartphones" href="smartphones.php?smartphones_page=1">Smartphones</a></li>
@@ -41,6 +45,7 @@
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" id="allproducts" href="products.php?products_page=1">All Products</a></li> 
                     </ul>
+
                   </li>
 
                   <li class="nav-item">
@@ -67,7 +72,10 @@
     </body>
 </html>
 
+
+<!-- A script that shows which navigation button is active by setting dark red color -->
 <script type="text/javascript">
+
       const elem = document.getElementsByClassName("topnav");
       const topnav_id = elem[0].id;
       const menu_id = topnav_id.substring(0, topnav_id.indexOf("_"));

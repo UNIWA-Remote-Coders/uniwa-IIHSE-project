@@ -1,25 +1,26 @@
 <?php
+  
   session_start();
-  include('./server/connection.php');
+  include('./server/connection.php');  // connect with db
 
-  if(isset($_SESSION['logged_in'])){
+  if(isset($_SESSION['logged_in'])){   // if already logged in go to account page
     header('location: account.php');
     exit;
   }
 
-  if(isset($_POST['login_btn'])) {
+  if(isset($_POST['login_btn'])) {    // if login button pressed check account
     $email = $_POST['email'];
     $password = $_POST['password'];
     $stmt = $conn->prepare("SELECT user_id, user_name, user_email, user_password FROM users WHERE user_email=? AND user_password=? LIMIT 1");
     $stmt->bind_param('ss', $email, $password);
 
 
-    if($stmt->execute()){
+    if($stmt->execute()){             // if true we get results
 
       $stmt->bind_result($user_id, $user_name, $user_email, $user_password);
       $stmt->store_result();
 
-      if($stmt->num_rows()==1){
+      if($stmt->num_rows()==1){       // if one account fount,  save the account information in a session
 
         $stmt->fetch();
 
@@ -77,13 +78,14 @@
     />
   </head>
   <body>
-    <!--Navbar-->
+    <!--Show Navbar-->
     <div class="topnav" id="account_bar">
         <?php include('navbar.php'); ?>
     </div>
-    <br /><br />
 
-    <!--Login-->
+    <br><br>
+
+    <!-- Show Login fields and buttons-->
     <section class="my-5 py-5">
       <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Login</h2>
@@ -119,7 +121,8 @@
           <div class="form-group">
               <p id="error-msg">
                 <?php 
-                  if(isset($_GET['error'])) { 
+                //Show if there is an error message here
+                  if(isset($_GET['error'])) {        
                     echo $_GET['error']; 
                   } 
                 ?>
@@ -136,7 +139,7 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!-- Show Footer-->
     <?php include('footer.php'); ?>
 
     <script

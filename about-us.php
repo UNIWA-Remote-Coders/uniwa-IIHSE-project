@@ -17,90 +17,69 @@
     
     </head>
     <body>
-    
-    <!--Navbar-->
-    <div class="topnav" id="aboutus_bar">
-        <?php include('navbar.php'); ?>
-    </div>
+        <!-- Show Navbar-->
+        <div class="topnav" id="aboutus_bar">
+            <?php include('navbar.php'); ?>
+        </div>
 
-          <br><br><br>
+        <br><br><br>
 
-          <!--About us/ Contact-->
-          <section id="contact" class="container my-5 py-5">
+        <!--About us Contact Page-->
+        <section id="contact" class="container my-5 py-5">
             <div class="container text-center mt-5">
                 <h1>About Us</h1>
                 <hr class="mx-auto">
-
-          <div class="about-container">
+            <div class="about-container">
             <div class="header">
                 <h3>Our Team</h3>
             </div>
             <div class="sub-container">
-            <!--Hra
-            <div class="teams">
-                <img src="assets/imgs/hra.png"  alt="">
-                <div class="name"> Hra </div>
-                <div class="desig">Developer</div>
-                <div class="about">kati prepei na vro na grapso</div>
-                <div class="social-links">
-                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                <!--Grigorios Dimopoulos-->
+                <div class="teams">
+                    <img src="assets/imgs/greg.png"  alt="">
+                    <div class="name"> Grigorios Dimopoulos </div>
+                    <div class="desig">Manager</div>
+                    <!-- <div class="about">kati prepei na vro na grapso</div> -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/gregory.dimopoulos.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/gregdim88/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/gregdim88"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/gregdim13" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!--Christos Sideris-->
+                <div class="teams">
+                    <img src="assets/imgs/chris.png"  alt="">
+                    <div class="name"> Christos Sideris </div>
+                    <div class="desig">Software Engineer</div>
+                    <!-- <div class="about">kati prepei na vro na grapso</div> -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/xristos.sideris.58" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/chris_sdrs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/ChrisSdrs" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!--Maria Koliou-->
+                <div class="teams">
+                    <img src="assets/imgs/maria.jpg"  alt="">
+                    <div class="name"> Maria Koliou </div>
+                    <div class="desig">Junior Developer </div>
+                    <!-- <div class="about">kati prepei na vro na grapso</div> -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/maria.koliou2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/mariakoliou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/MariaKoliou94" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/kolioumaria" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
                 </div>
             </div>
-        -->
-
-            <!--Gregory-->
-            <div class="teams">
-                <img src="assets/imgs/greg.png"  alt="">
-                <div class="name"> Gregory Dimopoulos </div>
-                <div class="desig">Manager</div>
-                <div class="about">kati prepei na vro na grapso</div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/gregory.dimopoulos.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/gregdim88/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/gregdim88"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/gregdim13" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-            <!--Christos-->
-            <div class="teams">
-                <img src="assets/imgs/chris.png"  alt="">
-                <div class="name"> Christos Sideris </div>
-                <div class="desig">Software Engineer</div>
-                <div class="about">kati prepei na vro na grapso</div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/xristos.sideris.58" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/chris_sdrs/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/ChrisSdrs" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-
-            <!--Maria-->
-            <div class="teams">
-                <img src="assets/imgs/maria.jpg"  alt="">
-                <div class="name"> Maria Koliou </div>
-                <div class="desig">Junior Developer </div>
-                <div class="about">kati prepei na vro na grapso</div>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/maria.koliou2" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/mariakoliou/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://twitter.com/MariaKoliou94" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://github.com/kolioumaria" target="_blank"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            </div>
-
-          </div>
-        
-
-          
-
-
-
+            
+            <!--Contact us Information-->
+            <div>
                 <h1>Contact Us</h1>
                 <hr class="mx-auto">
                 <p class="w-50 mx-auto">
@@ -116,11 +95,11 @@
                         <p>msc-acs@uniwa.gr</p>
                 </p>
             </div>
-          </section>
+        </section>
 
-  <!--Footer-->
-  <?php include('footer.php'); ?>
-
+        <!--Show Footer-->
+        <?php include('footer.php'); ?>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
     </body>
 </html>

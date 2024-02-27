@@ -14,106 +14,99 @@
     </head>
     <body>
 
-    <!--Navbar-->
-    <div class="topnav" id="index_bar">
-        <?php include('navbar.php'); ?>
-    </div>
+        <!-- Show Navbar -->
+        <div class="topnav" id="index_bar">
+            <?php include('navbar.php'); ?>
+        </div>
 
-          <!--Home-->
-          <section id="home">
-            <div class="container-arrivals">
-                <h5>NEW ARRIVALS</h5>
-                <h1><span>Best Prices</span>This Season</h1>
-                <p>Eshop offers the best products for the most affordable prices</p>
+        <!-- All Products Button -->
+        <section id="home">
+        <div class="container-arrivals">
 
-                <form action="products.php" method="GET">
-                    <button class="buy-btn" type="submit" name="products_page" value="1">Shop Now</button>
-                </form>   
+            <h5>NEW ARRIVALS</h5>
+            <h1><span>Best Prices</span>This Season</h1>
+            <p>Eshop offers the best products for the most affordable prices</p>
 
-            </div>
-          </section>
-          <br>
+            <form action="products.php" method="GET">
+                <button class="buy-btn" type="submit" name="products_page" value="1">Shop Now</button>
+            </form>   
 
-          <!--Brand-->
-          <section id="brand" class="container-first-page-brands w-100">
-            <div class="row p-0 m-0">
-                <form action="products.php" method="GET">
-                    <input type="hidden" name="products_page" value="1"/>
-                    <button class="brand-btn" style=" margin-left: 25px; background-image: url('assets/imgs/brand1.png');" type="submit" name="search" value="Apple"></button>
-                    <button class="brand-btn" style="background-image: url('assets/imgs/brand2.png');" type="submit" name="search" value="Huawei"></button>
-                    <button class="brand-btn" style="background-image: url('assets/imgs/brand33.png');" type="submit" name="search" value="Samsung"></button>
-                    <button class="brand-btn" style="background-image: url('assets/imgs/brand44.jpeg');" type="submit" name="search" value="Xiaomi"></button>
-                    <!-- <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" src="assets/imgs/brand2.jpg"  /></button>
-                    <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" src="assets/imgs/brand33.jpeg"  /></button>
-                    <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand44.jpeg"  /></button> -->
-                </form>   
-            </div>
-          </section>
-          <br><br>
+        </div>
+        </section>
+        <br>
 
-          <!--New-->
-          <section id="new" class="w-100">
-            <div class="row p-0 m-0">
-                <!--One-->
-                <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-                    <img class="img-fluid" src="assets/imgs/001.png"/>
-                <div class="details">
-                    <h2>New iPhones</h2>
-                    <form action="smartphones.php" method="GET">
-                        <input type="hidden" name="search" value="Apple iPhone 15"/>
-                        <button class="buy-btn" type="submit" name="smartphones_page" value="1">SHOP NOW</button>
-                    </form>   
-                    <!-- <button class="text-uppercase">Shop Now</button> -->
-                </div>
-            </div>
-            
-            <!--Two-->
-            <div class="one col-lg-4 col-md-12 col-sm-12 p-0"> 
-                <img class="img-fluid" src="assets/imgs/002.jpeg"/>
-                <div class="details">
-                    <h2>Airpods</h2>
-                    <form action="handsfree.php" method="GET">
-                        <input type="hidden" name="search" value="Apple AirPods"/>
-                        <button class="buy-btn" type="submit" name="handsfree_page" value="1">SHOP NOW</button>
-                    </form>   
-                    <!-- <button class="text-uppercase">Shop Now</button> -->
-                </div>
-            </div>
-               
-            <!--Three-->
+        <!-- Mobile Brand Buttons-->
+        <section id="brand" class="container-first-page-brands w-100">
+        <div class="row>
+            <form action="products.php" method="GET">
+                <input type="hidden" name="products_page" value="1"/>
+                <button class="brand-btn" style="background-image: url('assets/imgs/brand1.png');" type="submit" name="search" value="Apple"></button>
+                <button class="brand-btn" style="background-image: url('assets/imgs/brand2.png');" type="submit" name="search" value="Huawei"></button>
+                <button class="brand-btn" style="background-image: url('assets/imgs/brand33.png');" type="submit" name="search" value="Samsung"></button>
+                <button class="brand-btn" style="background-image: url('assets/imgs/brand44.jpeg');" type="submit" name="search" value="Xiaomi"></button>
+            </form>  
+        </div>
+        </section>
+        <br><br>
+
+        <!-- New Products Buttons -->
+        <section id="new" class="w-100">
+        <div class="row p-0 m-0">
+
+            <!--One-->
             <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
-                <img class="img-fluid" src="assets/imgs/03.jpeg"/>
-                <div class="details">
-                    <!-- <h2>50% OFF Smart Watches</h2> -->
-                    <h2>Smartwatches</h2>
-                    <form action="smartwatches.php" method="GET">
-                        <button class="buy-btn" type="submit" name="smartwatches_page" value="1">SHOP NOW</button>
-                    </form>   
-                    <!-- <button class="text-uppercase">Shop Now</button> -->
-                </div>
-            </div>  
+                <img class="img-fluid" src="assets/imgs/001.png"/>
+            <div class="details">
+                <h2>New iPhones</h2>
+                <form action="smartphones.php" method="GET">
+                    <input type="hidden" name="search" value="Apple iPhone 15"/>
+                    <button class="buy-btn" type="submit" name="smartphones_page" value="1">SHOP NOW</button>
+                </form>   
             </div>
-          </section>
-
-          <!--Featured-->
-          <section id="featured" class="my-5 pb-5">
-            <div class="container text-center mt-5 py-5">
-                <h3>Our Featured Products</h3>
-                <hr class="mx-auto">
-                <p>Here you can check out our featured products</p>
+        </div>
+        
+        <!--Two-->
+        <div class="one col-lg-4 col-md-12 col-sm-12 p-0"> 
+            <img class="img-fluid" src="assets/imgs/002.jpeg"/>
+            <div class="details">
+                <h2>Airpods</h2>
+                <form action="handsfree.php" method="GET">
+                    <input type="hidden" name="search" value="Apple AirPods"/>
+                    <button class="buy-btn" type="submit" name="handsfree_page" value="1">SHOP NOW</button>
+                </form>   
             </div>
-            <div class="row mx-auto container-fluid">
+        </div>
+            
+        <!--Three-->
+        <div class="one col-lg-4 col-md-12 col-sm-12 p-0">
+            <img class="img-fluid" src="assets/imgs/03.jpeg"/>
+            <div class="details">
+                <!-- <h2>50% OFF Smart Watches</h2> -->
+                <h2>Smartwatches</h2>
+                <form action="smartwatches.php" method="GET">
+                    <button class="buy-btn" type="submit" name="smartwatches_page" value="1">SHOP NOW</button>
+                </form>   
+            </div>
+        </div>  
+        </div>
+        </section>
 
+        <!-- Featured Products -->
+        <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Our Featured Products</h3>
+            <hr class="mx-auto">
+            <p>Here you can check out our featured products</p>
+        </div>
+        <div class="row mx-auto container-fluid">
 
+            <!-- Call a statement to find 4 featured products -->
             <?php include('server/get_featured_products.php'); ?>
-
 
             <?php while($row= $featured_products->fetch_assoc()) { ?>
 
-
                 <div class="product text-center col-lg-3 col-md-4 col-sm-12">
                     <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a>
-                    <!--<img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>-->
                     <div class="star">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -122,75 +115,71 @@
                     </div>
                     <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
                     <h4 class="p-price"><?php echo $row['product_price']; ?>€</h4>
-                   
                     <form action="single_product.php" method="GET">
                         <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
                     </form>        
                 </div>
                 
 
-                <?php } ?>
-            </div>
-          </section>
+            <?php } ?>
+        </div>
+        </section>
 
-          <!-- Banner
-          <section id="banner" class="my-5 py-5">
-            <div class="container">
-                <br><br><br>
-                <h4>SANTA TIME!</h4>
-                <h1>Christmas offers <br> Up to 30% OFF</h1>
-                <button class="text-uppercase">shop now</button>
-            </div>
-          </section> -->
+        <!-- Banner
+        <section id="banner" class="my-5 py-5">
+        <div class="container">
+            <br><br><br>
+            <h4>SANTA TIME!</h4>
+            <h1>Christmas offers <br> Up to 30% OFF</h1>
+            <button class="text-uppercase">shop now</button>
+        </div>
+        </section> -->
 
-          <hr style="width:95%;text-align:center;margin-left:35px">
-          <!--Offers-->
-          <section id="offers" class="my-5">
-            <div class="container text-center mt-5 py-5">
-                <h3>Our Offers</h3>
-                <hr class="mx-auto">
-                <p>Here you can check out our offers</p>
-            </div>
-            <div class="row mx-auto container-fluid">
 
-            
+        <hr style="width:95%;text-align:center;margin-left:35px">
 
+        <!-- Show 4 Offers -->
+        <section id="offers" class="my-5">
+        <div class="container text-center mt-5 py-5">
+            <h3>Our Offers</h3>
+            <hr class="mx-auto">
+            <p>Here you can check out our offers</p>
+        </div>
+        <div class="row mx-auto container-fluid">
+
+            <!-- Call a statement to find 4 offers -->
             <?php include('server/get_offered_products.php'); ?>
-
             <?php
-            $count = 0;
+                $count = 0;
             
-            while(($row= $offered_products->fetch_assoc()) && $count < 4) { 
-                $count++;
-                ?>
+                while(($row= $offered_products->fetch_assoc()) && $count < 4) { 
+                    $count++;
+                    ?>
 
-
-                <div class="product text-center col-lg-3 col-md-4 col-sm-12">
-                    <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a>
-                    <!--<img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/>-->
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    <div class="product text-center col-lg-3 col-md-4 col-sm-12">
+                        <a href="single_product.php?product_id=<?php echo $row['product_id']; ?>"><img class="img-fluid mb-3" src="<?php echo $row['product_image']; ?>"/></a>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
+                        <p><del>€<?php echo $row['product_price']; ?></del></p>
+                        <h4 class="p-price">€<?php echo number_format($row['product_price'] * 70 / 100, 2); ?></h4>
+                        <form action="single_product.php" method="get">
+                            <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
+                        </form>  
                     </div>
-                    <h5 class="p-name"><?php echo $row['product_name']; ?></h5>
-                    <p><del>€<?php echo $row['product_price']; ?></del></p>
-                    <h4 class="p-price">€<?php echo number_format($row['product_price'] * 70 / 100, 2); ?></h4>
-                    <form action="single_product.php" method="get">
-                        <button class="buy-btn" type="submit" name="product_id" value="<?php echo $row['product_id']; ?>">Buy Now</button>
-                    </form>  
-                    
-                </div>
 
-                <?php } ?>
+            <?php } ?>
 
-            </div>
-          </section>
+        </div>
+        </section>
 
-          <!--Footer-->
-            <?php include('footer.php'); ?>
+        <!-- Show Footer -->
+        <?php include('footer.php'); ?>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>

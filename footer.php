@@ -7,7 +7,7 @@
         <title>Footer</title>
         <link rel="stylesheet" href="assets/css/style.css"/>
     </head>
-    <!--Footer-->
+    <!--Footer HTML Code-->
         <footer>
             <div class="footerContainer">
                 <div class="socialIcons">

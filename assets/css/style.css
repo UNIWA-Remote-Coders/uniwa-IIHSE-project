@@ -356,13 +356,15 @@ footer {
 }
 
 .brand-btn {
-    width: 24%; 
+    width: 25%; 
+    margin: -3px;
     height: 350px; 
-    background-size: 100%; 
+    background-size:contain;
     background-repeat: no-repeat;
     /* background-size: cover; */
     position: relative;
-    background-color:rgb(246, 246, 246);
+    background-position: center;
+    background-color:rgb(237, 237, 237);
 }
 
 /*About Us*/
