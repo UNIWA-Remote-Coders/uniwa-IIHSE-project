@@ -3,13 +3,25 @@
     include('connection.php');
 
     if (isset($_GET['products_page'])) {
-        $page = $_GET['products_page'];
-        $products_id = (intval($page)-1) * 16;
+        
+        if (isset($_GET['search'])) {
+            $products_name = "%". $_GET['search'] . "%";
+            $stmt = $conn->prepare("SELECT * FROM products WHERE product_name like ?");
+            $stmt->bind_param('s', $products_name);
+            $stmt->execute();
+            $products = $stmt->get_result();
 
-        $stmt_pr = $conn->prepare("SELECT * FROM products WHERE product_id > ? ORDER BY product_id LIMIT 16");
-        $stmt_pr->bind_param('i', $products_id);
-        $stmt_pr->execute();
-        $products = $stmt_pr->get_result();
+        }
+        else {
+            $page = $_GET['products_page'];
+            $products_id = (intval($page)-1) * 16;
+
+            $stmt_pr = $conn->prepare("SELECT * FROM products WHERE product_id > ? ORDER BY product_id LIMIT 16");
+            $stmt_pr->bind_param('i', $products_id);
+            $stmt_pr->execute();
+            $products = $stmt_pr->get_result();
+        }
+
     }
 
     if (isset($_GET['smartwatches_page']) || isset($_GET['smartphones_page']) || isset($_GET['tablets_page']) || isset($_GET['handsfree_page'])) {
@@ -37,7 +49,7 @@
 
 
         if (isset($_GET['search'])) {
-            $products_name = $_GET['search'] . "%";
+            $products_name = "%". $_GET['search'] . "%";
             $stmt = $conn->prepare("
             WITH MyCte AS 
             (

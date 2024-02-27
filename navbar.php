@@ -12,7 +12,8 @@
   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
             <div class="container">
-              <img src="assets/imgs/logo1.png" width="100px" height="100px">
+              <a href="index.php"><img src="assets/imgs/logo1.png" width="100px" height="100px"></a>
+              <!-- <img src="assets/imgs/logo1.png" width="100px" height="100px"> -->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>

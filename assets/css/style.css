@@ -355,6 +355,16 @@ footer {
   }
 }
 
+.brand-btn {
+    width: 24%; 
+    height: 350px; 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    position: relative;
+    background-color:rgb(246, 246, 246);
+}
+
 /*About Us*/
 .about-container {
   text-align: center;
@@ -514,7 +524,7 @@ footer {
   margin-right: 10px;
 }
 
-.cart .remove-btn {
+.cc .remove-btn {
   color: black;
   text-decoration: none;
   font-size: 14px;

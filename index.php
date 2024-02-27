@@ -35,12 +35,18 @@
           <br>
 
           <!--Brand-->
-          <section id="brand" class="container-first-page-brands">
-            <div class="row m-0">
-                <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand111.jpeg" />
-                <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand2.jpg"  />
-                <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand33.jpeg"  />
-                <img class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand44.jpeg"  />
+          <section id="brand" class="container-first-page-brands w-100">
+            <div class="row p-0 m-0">
+                <form action="products.php" method="GET">
+                    <input type="hidden" name="products_page" value="1"/>
+                    <button class="brand-btn" style=" margin-left: 25px; background-image: url('assets/imgs/brand1.png');" type="submit" name="search" value="Apple"></button>
+                    <button class="brand-btn" style="background-image: url('assets/imgs/brand2.png');" type="submit" name="search" value="Huawei"></button>
+                    <button class="brand-btn" style="background-image: url('assets/imgs/brand33.png');" type="submit" name="search" value="Samsung"></button>
+                    <button class="brand-btn" style="background-image: url('assets/imgs/brand44.jpeg');" type="submit" name="search" value="Xiaomi"></button>
+                    <!-- <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" src="assets/imgs/brand2.jpg"  /></button>
+                    <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" src="assets/imgs/brand33.jpeg"  /></button>
+                    <button class="buy-btn w-25" type="submit" name="smartphones_page" value="1"><img style="width: 320px; height: 250px;" class="img-fluid col-lg-3 col-md-6 col-sm12" src="assets/imgs/brand44.jpeg"  /></button> -->
+                </form>   
             </div>
           </section>
           <br><br>
