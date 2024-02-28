@@ -1,10 +1,11 @@
 <?php
     session_start();
+    // connect to db
     include('./server/connection.php');
 
-    //$error = "";
-
+    // if user pressed the register button
     if(isset($_POST['register'])) {
+
       $name = $_POST['name'];
       $email = $_POST['email'];
       $address = $_POST['address'];
@@ -12,14 +13,13 @@
       $confirm_password = $_POST['confirm_password'];
 
       if($password !== $confirm_password) {
-        //$error = "Password is not matched!";
         header('location: registration.php?error=Passwords do not match!');
       }
       else if(strlen($password)<6){
-        //$error = "Password must be at least 6 characters!";
         header('location: registration.php?error=Password must be at least 6 characters!');
       }
       else {
+        // run a query in order to find if there is the same e-mail in db
         $stmt1=$conn->prepare("SELECT count(*) FROM users where user_email=?");
         $stmt1->bind_param('s', $email);
         $stmt1->execute();
@@ -28,11 +28,10 @@
         $stmt1->fetch();
 
         if($num_rows!=0) {
-          //$error = "User e-mail is already exists!";
           header('location: registration.php?error=User e-mail is already exists!');
         }
         else {
-          //create a new user
+          //create a new user if there the e-mail doesn't exist in db
           $stmt=$conn->prepare("INSERT INTO users (user_name, user_email, user_address, user_password) VALUES (?, ?, ?, ?)");
           $stmt->bind_param('ssss', $name, $email, $address, $password);
 
@@ -100,13 +99,14 @@
   </head>
   <body>
 
-    <!--Navbar-->
+    <!--Show Navbar-->
     <div class="topnav" id="account_bar">
         <?php include('navbar.php'); ?>
     </div>
 
-    <!--Registration-->
     <br>
+
+    <!--Show Registration Form fields-->
     <section class="my-5 py-5" id="register">
       <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Registration</h2>
@@ -114,7 +114,7 @@
       </div>
       <div class="mx-auto container">
 
-        <!-- start of form tag -->
+        <!-- start of form tags -->
         <form id="register-form" action="./registration.php" method="POST">
 
           <div class="form-group">
@@ -172,7 +172,6 @@
               id="register-confirm-password"
               name="confirm_password"
               placeholder="Confirm Password"
-
               required
             />
           </div>
@@ -185,6 +184,7 @@
               value="Register"
             />
           </div>
+          <!-- catch an error message from php and display it here -->
           <div class="form-group">
               <p id="error-msg">
                 <?php 
@@ -194,12 +194,9 @@
                 ?>
               </p>
           </div>
+          <!-- switch to login page -->
           <div class="form-group">
-            <a class="nav-link" href="login.php"
-              ><i id="loging-url" class="btn"
-                >Do you have an account? Login
-              </i></a
-            >
+            <a class="nav-link" href="login.php"><i id="loging-url" class="btn">Do you have an account? Login</i></a>
           </div>
 
         </form>
@@ -207,13 +204,13 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!--Show Footer-->
     <?php include('footer.php'); ?>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    
   </body>
 </html>

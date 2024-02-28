@@ -1,14 +1,14 @@
 <?php
 
   session_start();
-  //include('./server/connection.php');
 
-
+  // check if order button is pressed and the order status
   if(isset($_POST['order_pay_btn'])) {
     $order_status = $_POST['order_status'];
     $order_total_price = $_POST['order_total_price'];
   }
 
+  // save order id
   if(isset($_GET['order_id'])) {
     $order_id = $_GET['order_id'];
   }
@@ -53,124 +53,126 @@
   </head>
   <body>
 
-    <!--Navbar-->
+    <!--Show Navbar-->
     <div class="topnav" id="cart_bar">
-        <?php include('navbar.php'); ?>
+      <?php include('navbar.php'); ?>
     </div>
     
-    <!--Payment-->
+
     <section class="my-5 pt-5 pb-0">
+
       <div class="container text-center mt-5 pt-5">
         <h2 class="form-weight-bold">Payment</h2>
         <hr class="mx-auto" />
       </div>
+      <!--Show total cost if there is a session total and order_status is not paid-->
       <div class="mx-auto container text-center">
+        <?php if((isset($_SESSION['total']) && $_SESSION['total'] != 0) || (isset($_POST['order_status']) && $_POST['order_status'] == "not paid")) { ?>
+          <?php if(isset($_SESSION['total']) && $_SESSION['total'] != 0) { ?>
+            <p>Total Payment: <?php echo number_format($_SESSION['total'], 2); ?>€</p>
+          <?php } 
+          else { ?>
+            <p>Total Payment: <?php echo number_format($_POST['order_total_price'], 2); ?>€</p>
+          <?php } ?>
+        <?php } 
+        else { ?>
+          <p>You don't have an order</p>
+        <?php }?>
+      </div>
+    </section>
 
-      <?php if((isset($_SESSION['total']) && $_SESSION['total'] != 0) || (isset($_POST['order_status']) && $_POST['order_status'] == "not paid")) { ?>
-        <?php if(isset($_SESSION['total']) && $_SESSION['total'] != 0) { ?>
-          <p>Total Payment: <?php echo number_format($_SESSION['total'], 2); ?>€</p>
-          <!-- <input class="btn btn-primary" value="Pay Now" type="Submit"/> -->
-          <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
+    <form class="credit-card" method="POST" action="account.php">
 
-        <?php } else { ?>
-          <p>Total Payment: <?php echo number_format($_POST['order_total_price'], 2); ?>€</p>
-          <!-- <input class="btn btn-primary" value="Pay Now" type="Submit"/> -->
-          <!-- <div class="container text-center mt-3 pt-5" id="paypal-button"></div> -->
-        <?php } ?>
+      <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
+      
+      <div class="form-header">
+
+        <!-- Show the payment methods radion buttons -->
+        <h4 class="title">Choose a payment method: </h4>
+
+        <input type="radio" id="pod" name="payment_method" value="0">
+        <label for="radio">Pay On Delivery</label>
+        <!-- if radio is on it shows a button to finish order with pod -->
+        <div id="pod-button" class="d-inline-block">
+          <input type="Submit" class="btn btn-primary" name="pod_btn" id="ins_value" value="Finish Order">
+        </div>
+
+        <br>
+
+        <input type="radio" id="credit" name="payment_method" value="0">
+        <label for="css">Credit/Debit Card</label><br>
+
+        <input type="radio" id="paypal" name="payment_method" value="0">
+        <label for="javascript">PayPal</label>
+
+      </div>
+      
+      <!-- Enables the fields of credit payment if radio button is credit/debit card -->
+      <fieldset id="fs-credit" disabled="disabled">
+        <div class="form-credit">
+          <img src="assets\imgs\credit_cards_logo.png" style="width: 100%; margin-bottom: 15px;">
+          <h4 class="title">Credit card details</h4>
+
+          <!-- Card Number -->
+          <input id="ccn" class="card-number" onkeypress="formatCreditCard()" type="tel" inputmode="numeric" pattern="([0-9]{4})+-([0-9]{4})+-([0-9]{4})+-([0-9]{4})" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"  required/>
+      
+          <!-- Date Field -->
+          <div class="date-field">
+            <div class="month">
+              <select name="Month">
+                <option value="january">January</option>
+                <option value="february">February</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="august">August</option>
+                <option value="september">September</option>
+                <option value="october">October</option>
+                <option value="november">November</option>
+                <option value="december">December</option>
+              </select>
+            </div>
+            <div class="year">
+              <select name="Year">
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2026</option>
+                <option value="2028">2026</option>
+                <option value="2029">2026</option>
+              </select>
+            </div>
+          </div>
+      
+          <!-- Card Verification Field -->
+          <div class="card-verification">
+            <div class="cvv-input">
+              <input type="text" placeholder="CVV" maxlength="4" pattern="[0-9]{3,4}" required>
+            </div>
+            <div class="cvv-details">
+              <p>3 or 4 digits usually found <br> on the signature strip</p>
+            </div>
+          </div>
+      
+          <!-- Button if radio btn is on -->
+          <div id="credit-button">
+            <button type="submit" class="proceed-btn" name="credit_btn">Proceed to Checkout</button>
+          </div>
 
         </div>
-      </section>
+      </fieldset>
 
-        <form class="credit-card" method="POST" action="account.php">
+      <!-- show the paypal button if radio btn is on -->
+      <div class="form-credit">
+        <h4 class="title" >Paypal Payment</h4>
+        <div id="paypal-button"></div>
+      </div>
 
-          <input type="hidden" name="order_id" value="<?php echo $order_id; ?>"/>
+    </form>
           
-          <div class="form-header">
-          <h4 class="title">Choose a payment method: </h4>
-          <input type="radio" id="pod" name="payment_method" value="0">
-          <label for="radio">Pay On Delivery</label>
-          <div id="pod-button" class="d-inline-block">
-            <input type="Submit" class="btn btn-primary" name="pod_btn" id="ins_value" value="Finish Order">
-          </div>
-          <br>
-          <input type="radio" id="credit" name="payment_method" value="0">
-          <label for="css">Credit/Debit Card</label><br>
-          <input type="radio" id="paypal" name="payment_method" value="0">
-          <label for="javascript">PayPal</label>
-
-          </div>
-        
-          <fieldset id="fs-credit" disabled="disabled">
-            <div class="form-credit">
-              <img src="assets\imgs\credit_cards_logo.png" style="width: 100%; margin-bottom: 15px;">
-              <h4 class="title">Credit card details</h4>
-              <!-- Card Number -->
-              <input id="ccn" class="card-number" onkeypress="formatCreditCard()" type="tel" inputmode="numeric" pattern="([0-9]{4})+-([0-9]{4})+-([0-9]{4})+-([0-9]{4})" maxlength="19" placeholder="xxxx-xxxx-xxxx-xxxx"  required/>
-          
-              <!-- Date Field -->
-              <div class="date-field">
-                <div class="month">
-                  <select name="Month">
-                    <option value="january">January</option>
-                    <option value="february">February</option>
-                    <option value="march">March</option>
-                    <option value="april">April</option>
-                    <option value="may">May</option>
-                    <option value="june">June</option>
-                    <option value="july">July</option>
-                    <option value="august">August</option>
-                    <option value="september">September</option>
-                    <option value="october">October</option>
-                    <option value="november">November</option>
-                    <option value="december">December</option>
-                  </select>
-                </div>
-                <div class="year">
-                  <select name="Year">
-                    <option value="2024">2024</option>
-                    <option value="2025">2025</option>
-                    <option value="2026">2026</option>
-                    <option value="2027">2026</option>
-                    <option value="2028">2026</option>
-                    <option value="2029">2026</option>
-                  </select>
-                </div>
-              </div>
-          
-              <!-- Card Verification Field -->
-              <div class="card-verification">
-                <div class="cvv-input">
-                  <input type="text" placeholder="CVV" maxlength="4" pattern="[0-9]{3,4}" required>
-                </div>
-                <div class="cvv-details">
-                  <p>3 or 4 digits usually found <br> on the signature strip</p>
-                </div>
-              </div>
-          
-              <!-- Buttons -->
-              <div id="credit-button">
-                <button type="submit" class="proceed-btn" name="credit_btn">Proceed to Checkout</button>
-                <!-- <button type="button" disabled>test</button> -->
-              </div>
-
-            </div>
-          </fieldset>
-
-          <div class="form-credit">
-            <h4 class="title" >Paypal Payment</h4>
-            <!-- <input type="Submit" name="paypal_btn" value="Finish Order"> -->
-            <!-- onclick="document.forms[0].submit();" -->
-            <div id="paypal-button"></div>
-          </div>
-
-        </form>
-          
-      <?php } else { ?>
-        <p>You don't have an order</p>
-      <?php }?>
-
-    
-    <!-- CARD NUMBER FIELD CONTROLLER-->
+    <!-- CARD NUMBER FIELD CONTROLLER - check if the card number is correct -->
     <script type="text/javascript">
 
       function formatCreditCard() {
@@ -183,7 +185,9 @@
 
     </script>
 
+    <!-- RADIO BUTTON FIELD CONTROLLER - every time a radio button is clicked it runs this function and enables the current payment methon on the page -->
     <script type="text/javascript">
+
       const radio = [document.getElementById('pod'), document.getElementById('credit'), document.getElementById('paypal')];
       const div = [document.getElementById('pod-button'), document.getElementById('credit-button'), document.getElementById('paypal-button')];
       var field = document.getElementById('fs-credit');
@@ -196,10 +200,8 @@
           radio[i].addEventListener('click', function(e){
               e = e || window.event;
               var target = e.target || e.srcElement;
-              // text = target.id;   
-              // alert(text);
 
-              if (target.id=='pod' && radio[0].value==0) { //&& radio[r].value==0
+              if (target.id=='pod' && radio[0].value==0) { 
                     radio[0].value = 1;
                     this.checked = true;
                     div[0].style.visibility = 'visible';
@@ -241,6 +243,7 @@
 
     </script>
     
+    <!-- PAYPAL CONTROLLER - it sends you to paypal webpage in order to finish payment -->
     <script src="https://www.paypalobjects.com/api/checkout.js"></script>
 
     <script>
@@ -284,8 +287,9 @@
       }, '#paypal-button');
 
     </script>
-
-
+    <br><br><br>
+    <!--Show Footer-->
+    <?php include('footer.php'); ?>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

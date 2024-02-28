@@ -1,14 +1,13 @@
 <?php
   session_start();
 
-
   if (!empty($_SESSION['cart']) && isset($_POST['checkout'])) {
       //let user in
 
-  }    //send user to user page
+  }    
+  //send user to user page
   else {
       header('location: index.php');
-
   }
 
 ?>
@@ -48,14 +47,14 @@
   </head>
   <body>
     
-    <!--Navbar-->
+    <!--Show Navbar-->
     <div class="topnav" id="cart_bar">
         <?php include('navbar.php'); ?>
     </div>
 
-        <br><br><br>
+    <br><br><br>
 
-    <!--Checkout-->
+    <!--Show Checkout Form fields-->
     <section class="my-5 py-5">
       <div class="container text-center mt-3 pt-5">
         <h2 class="form-weight-bold">Check Out</h2>
@@ -82,6 +81,7 @@
               id="ckeckout-email"
               name="email"
               placeholder="login-email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
               required
             />
           </div>
@@ -132,7 +132,7 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!--Show Footer-->
     <?php include('footer.php'); ?>
 
     <script

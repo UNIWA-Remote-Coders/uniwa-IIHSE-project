@@ -1,14 +1,8 @@
 <?php
     session_start();
 
-    /* <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>"/>
-    // <input type="hidden" name="product_image" value="<?php echo $row['product_image']; ?>"/>
-    // <input type="hidden" name="product_name" value="<?php echo $row['product_name']; ?>"/>
-    // <input type="hidden" name="product_price" value="<?php echo $row['product_price']; ?>"/>
-    // <input type="number" name="product_quantity" value="1" />
-    // <button class="buy-btn" type="submit" name="add_to_cart">Add To Cart</button>*/
-
-    if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) {
+    // if add a product in your cart
+    if(isset($_POST['add_to_cart'])) {
       
       //if user has already added a product to cart
       if(isset($_SESSION['cart'])) {
@@ -18,7 +12,6 @@
         //if product has not already beed added to cart
         if( !in_array($_POST['product_id'], $products_array_ids) ) {
 
-          
           $product_id = $_POST['product_id'];
 
           $product_array = array(
@@ -35,97 +28,93 @@
         //product has already been added
         else {
           echo '<script>alert("Product was already to cart");</script>';
-          //echo '<script>window.location="index.php";</script>';
         }
       }
       //if this is the first item
       else {
 
-          $product_id = $_POST['product_id'];
-          $product_name = $_POST['product_name'];
-          $product_price = $_POST['product_price'];
-          $product_image = $_POST['product_image'];
-          $product_quantity = $_POST['product_quantity'];
-
-          $product_array = array(
-            'product_id' => $product_id,
-            'product_name' => $product_name,
-            'product_price' => $product_price,
-            'product_image' => $product_image,
-            'product_quantity' => $product_quantity
-          );
-
-          $_SESSION['cart'][$product_id] = $product_array;
-          // [ 2=> [], 3=>[], 5=>[]]
-
-        }
-      
-        //calculate total
-        calculateTotalCart();
-
-      }
-      //remove product from cart
-      else if(isset($_POST['remove_product'])) {
-
         $product_id = $_POST['product_id'];
-        unset($_SESSION['cart'][$product_id]);
-
-        //calculate total
-        calculateTotalCart();
-      }
-      //edit product quantity
-      else if (isset($_POST['edit_quantity'])) {
-
-        //we get id and quantity from form
-        $product_id = $_POST['product_id'];
+        $product_name = $_POST['product_name'];
+        $product_price = $_POST['product_price'];
+        $product_image = $_POST['product_image'];
         $product_quantity = $_POST['product_quantity'];
 
-        if ($product_quantity > 0) {
-          //get the product array from session
-          $product_array = $_SESSION['cart'][$product_id];
+        $product_array = array(
+          'product_id' => $product_id,
+          'product_name' => $product_name,
+          'product_price' => $product_price,
+          'product_image' => $product_image,
+          'product_quantity' => $product_quantity
+        );
 
-          //update product quantity
-          $product_array['product_quantity'] = $product_quantity;
+        $_SESSION['cart'][$product_id] = $product_array;
+      }
+      
+      //calculate total
+      calculateTotalCart();
 
-          //return array back its place
-          $_SESSION['cart'][$product_id] = $product_array;
+    }
+    //remove product from cart
+    else if(isset($_POST['remove_product'])) {
 
-          //calculate total
-          calculateTotalCart();
+      $product_id = $_POST['product_id'];
+      unset($_SESSION['cart'][$product_id]);
 
-        }
-        else {
+      //calculate total
+      calculateTotalCart();
+    }
+    //edit product quantity
+    else if (isset($_POST['edit_quantity'])) {
+
+      //we get id and quantity from form
+      $product_id = $_POST['product_id'];
+      $product_quantity = $_POST['product_quantity'];
+
+      if ($product_quantity > 0) {
+        //get the product array from session
+        $product_array = $_SESSION['cart'][$product_id];
+
+        //update product quantity
+        $product_array['product_quantity'] = $product_quantity;
+
+        //return array back its place
+        $_SESSION['cart'][$product_id] = $product_array;
+
+        //calculate total
+        calculateTotalCart();
+      }
+      // remove product if is 0
+      else {
 
           unset($_SESSION['cart'][$product_id]);
 
           //calculate total
           calculateTotalCart();
         }
+    }
+    //Show a message if cart is empty
+    else if (!$_SESSION['cart']){
+      echo '<script>alert("Empty cart!");</script>';
+    }
+
+    // this function calcualtes the total of all session carts
+    function calculateTotalCart() {
+        $total = 0;
+
+        foreach($_SESSION['cart'] as $key => $value) {
+
+          $product = $_SESSION['cart'][$key];
+
+          $price = $product['product_price'];
+          $quantity = $product['product_quantity'];
+
+          $total = $total + ($price * $quantity);
+
       }
-      else if (!$_SESSION['cart']){
-        echo '<script>alert("Empty cart!!");</script>';
-        //header('location: index.php');
-      }
 
-      function calculateTotalCart() {
-         $total = 0;
+        $_SESSION['total'] = $total;
 
-         foreach($_SESSION['cart'] as $key => $value) {
-
-           $product = $_SESSION['cart'][$key];
-
-           $price = $product['product_price'];
-           $quantity = $product['product_quantity'];
-
-           $total = $total + ($price * $quantity);
-
-        }
-
-         $_SESSION['total'] = $total;
-
-     }
-
-
+    }
 ?>
 
 
@@ -164,18 +153,18 @@
   </head>
   <body>
 
-    <!--Navbar-->
+    <!--Show Navbar-->
     <div class="topnav" id="cart_bar">
         <?php include('navbar.php'); ?>
     </div>
 
     <br/><br />
 
-    <!--Cart-->
+    <!--Show Cart-->
     <section class="cart container my-5 py-5">
       <div class="container mt-5">
         <h2 class="font-weight-bold">Your Cart</h2>
-        <hr />
+        <hr>
       </div>
 
       <table class="mt-5 pt-5">
@@ -185,8 +174,8 @@
           <th>Subtotal</th>
         </tr>
 
-          <?php if(isset($_SESSION['cart'])) { foreach($_SESSION['cart'] as $key => $value) { ?>
-            <!-- <p>HERE IS THE BUG!</p> -->
+        <!-- Show User's Products that added in his cart by checking each cart Session -->
+        <?php if(isset($_SESSION['cart'])) { foreach($_SESSION['cart'] as $key => $value) { ?>
           <tr>
 
             <td>
@@ -197,19 +186,21 @@
                   <small><span><?php echo number_format($value['product_price'], 2); ?>€</span></small>  
                   <br>
                   <form method="POST" action="cart.php">
-                    <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
-                    <input type="submit" name="remove_product" class="remove-btn" value="remove" />
+                    <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>"/>
+                    <input type="submit" name="remove_product" class="remove-btn" value="remove"/>
                   </form>
                 </div>
               </div>
             </td>
 
             <td>
-              <form method="POST" action="cart.php">
-                <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
-                <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" />
-                <input type="submit" class="edit-btn" value="edit" name="edit_quantity"/>
-              </form>
+              <div>
+                <form method="POST" action="cart.php">
+                  <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
+                  <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" />
+                  <input type="submit" class="edit-btn" value="edit" name="edit_quantity"/>
+                </form>
+              </div>
             </td>
 
             <td>
@@ -221,11 +212,11 @@
         <?php } } ?>
       </table>
 
+      <!-- Show total cost of the cart and the button checkout -->
       <div class="cart-total">
         <table>
           <tr>
             <td>Total</td>
-            <!-- <td><?php if(isset($_POST['add_to_cart']) || isset($_POST['cart'])) { echo $_SESSION['total'];} ?>€</td> -->
             <td><?php if(isset($_SESSION['total'])) { echo number_format($_SESSION['total'], 2); } ?>€</td>
           </tr>
         </table>
@@ -237,7 +228,7 @@
       </div>
     </section>
 
-    <!--Footer-->
+    <!--Show Footer-->
     <?php include('footer.php'); ?>
 
     <script
