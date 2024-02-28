@@ -22,7 +22,6 @@
         <br><br><br>
 
         <!--Show offers-->
-
         <section id="offers" class="my-5 pb-5">
             <div class="container text-center mt-5 py-5">
                 <h3>Our Offers</h3>

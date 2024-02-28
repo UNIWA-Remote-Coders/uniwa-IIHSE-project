@@ -7,6 +7,8 @@
     session_start();
     include('./server/connection.php');
 
+
+    // if details button is pressed at account page
     if(isset($_POST['order_details_btn']) && isset($_POST['order_id'])) {
             
         $order_id = $_POST['order_id'];
@@ -23,7 +25,7 @@
         header('location: account.php');
     }
 
-
+    // this function calcualtes the total cost of current order
     function calculateTotalOrderPrice($order_details) {
 
       $total = 0;
@@ -38,7 +40,6 @@
       $_SESSION['total'] = $total;
 
       return $total;
-
   }
 
 ?>
@@ -77,14 +78,15 @@
     />
   </head>
   <body>
-    <!--Navbar-->
+    
+    <!--Show Navbar-->
     <div class="topnav" id="account_bar">
         <?php include('navbar.php'); ?>
     </div>
 
     <br/><br/><br/>
 
-    <!-- Order Details -->
+    <!-- Show Order Details - Product name with image + Price + Quantity-->
     <section id="orders" class="orders container my-5 py-3">
         <div class="container mt-5">
           <h2 class="font-weight-bold text-center">Order Details</h2>
@@ -92,13 +94,14 @@
         </div>
         <table class="mt-5 pt-5 mx-auto">
 
-            <tr>
-                <th>Product Name</th>
-                <th>Price</th>
-                <th>Quantity</th>
-            </tr>
+          <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Quantity</th>
+          </tr>
 
-            <?php foreach($order_details as $row) { ?>
+          <!-- display all products of current order in rows and the total price at the last row-->
+          <?php foreach($order_details as $row) { ?>
             <tr>
                 <td>
                     <div class="product-info">
@@ -110,16 +113,24 @@
                 </td>
 
                 <td>
-                  <span><?php echo $row['product_price']; ?>€</span>
+                    <span><?php echo $row['product_quantity']; ?></span>
                 </td>
 
                 <td>
-                    <span><?php echo $row['product_quantity']; ?></span>
+                  <span><?php echo number_format($row['product_price'], 2); ?>€</span>
                 </td>
+
             </tr>
-            <?php } ?>
+          <?php } ?>
+
+          <tr>
+            <td></td>
+            <td style="border-top: 3px solid black; padding-top: 25px;">Total</td>
+            <td style="border-top: 3px solid black; padding-top: 25px;"><?php echo number_format($order_total_price, 2); ?>€</td>
+          </tr>
         </table>
 
+        <!-- display a pay button if the order has the state "notpaid" -->
         <?php if($order_status == "not paid") { ?>
 
             <form style="float: right;" method="POST" action="payment.php">
@@ -132,7 +143,7 @@
         <?php } ?>
     </section>
 
-    <!--Footer-->
+    <!--Show Footer-->
     <?php include('footer.php'); ?>
 
     <script

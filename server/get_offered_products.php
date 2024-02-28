@@ -2,6 +2,7 @@
 
     include('connection.php');
 
+    // if offers button pressed then find all offers and make an extra column in order to sort them
     if (isset($_GET['offers_page'])) {
 
         $page = $_GET['offers_page'];
@@ -25,10 +26,11 @@
         $stmt->execute();
         $offered_products = $stmt->get_result();
     }
+    // find all offers
     else {
         $stmt = $conn->prepare("SELECT * FROM products where product_image like '%offer%'");
         $stmt->execute();
-        $offered_products = $stmt->get_result();//[]
+        $offered_products = $stmt->get_result();
     }
 
 ?>

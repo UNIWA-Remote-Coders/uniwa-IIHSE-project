@@ -1,9 +1,11 @@
 <?php
 
     include('connection.php');
-
+    
+    // products button is pressed
     if (isset($_GET['products_page'])) {
         
+        // it uses this search query at home page buttons
         if (isset($_GET['search'])) {
             $products_name = "%". $_GET['search'] . "%";
             $stmt = $conn->prepare("SELECT * FROM products WHERE product_name like ?");
@@ -12,6 +14,7 @@
             $products = $stmt->get_result();
 
         }
+        // find 20 products each time depending on number of page (GET method)
         else {
             $page = $_GET['products_page'];
             $products_id = (intval($page)-1) * 20;
@@ -21,11 +24,12 @@
             $stmt_pr->execute();
             $products = $stmt_pr->get_result();
         }
-
     }
 
+    // category button is pressed
     if (isset($_GET['smartwatches_page']) || isset($_GET['smartphones_page']) || isset($_GET['tablets_page']) || isset($_GET['handsfree_page'])) {
 
+        // fing category and number of page with get method    
         if (isset($_GET['smartwatches_page'])) {
             $page = $_GET['smartwatches_page'];
             $products_id = (intval($page)-1) * 12;
@@ -47,7 +51,7 @@
             $category = 'Handsfree';
         }
 
-
+        // it uses this search query at home page buttons
         if (isset($_GET['search'])) {
             $products_name = "%". $_GET['search'] . "%";
             $stmt = $conn->prepare("
@@ -68,6 +72,7 @@
             $products = $stmt->get_result();
 
         }
+        // find 12 products each time depending on number of page (get method) and make an extra column in order to sort them
         else {
             $stmt = $conn->prepare("
             WITH MyCte AS 
@@ -86,8 +91,5 @@
             $stmt->execute();
             $products = $stmt->get_result();
         }
-
-
     }
-
 ?>	
