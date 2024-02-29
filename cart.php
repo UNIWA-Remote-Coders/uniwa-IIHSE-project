@@ -197,7 +197,7 @@
               <div>
                 <form method="POST" action="cart.php">
                   <input type="hidden" name="product_id" value="<?php echo $value['product_id']; ?>" />
-                  <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" />
+                  <input type="number" name="product_quantity" value="<?php echo $value['product_quantity']; ?>" min="1" onkeydown="return event.keyCode !== 8 && event.keyCode !== 46;" />
                   <input type="submit" class="edit-btn" value="edit" name="edit_quantity"/>
                 </form>
               </div>
