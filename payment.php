@@ -65,6 +65,7 @@
         <h2 class="form-weight-bold">Payment</h2>
         <hr class="mx-auto" />
       </div>
+      
       <!--Show total cost if there is a session total and order_status is not paid-->
       <div class="mx-auto container text-center">
         <?php if((isset($_SESSION['total']) && $_SESSION['total'] != 0) || (isset($_POST['order_status']) && $_POST['order_status'] == "not paid")) { ?>
@@ -192,6 +193,7 @@
       const div = [document.getElementById('pod-button'), document.getElementById('credit-button'), document.getElementById('paypal-button')];
       var field = document.getElementById('fs-credit');
 
+      // sadly does not work (paypal button->submit functionality)
       div[2].addEventListener('click', function() {
           document.forms[0].submit();
       });
