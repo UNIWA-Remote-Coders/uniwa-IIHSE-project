@@ -35,6 +35,7 @@
         foreach($_SESSION['cart'] as $key => $value) {
 
             $product = $_SESSION['cart'][$key];
+            
             $product_id = $product['product_id'];
             $product_name = $product['product_name'];
             $product_image = $product['product_image'];
