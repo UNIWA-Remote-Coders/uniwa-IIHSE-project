@@ -58,9 +58,6 @@
       header('location: account.php');
       exit;
     }
-    /*else {
-      header('location: registration.php?error=Please fill in the form');
-    }*/
 ?>
 
 
@@ -161,8 +158,6 @@
               placeholder="Password"
               required
             />
-              <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters"> -->
           </div>
           <div class="form-group">
             <label>Confirm Password</label>

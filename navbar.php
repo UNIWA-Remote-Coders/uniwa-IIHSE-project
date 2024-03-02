@@ -56,16 +56,6 @@
 
                 <a class="nav-link" id="cart" href="cart.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a> 
                 <a class="nav-link" id="account" href="login.php"><i class="fas fa-user"></i></a> 
-                    
-                
-
-               <!-- Search
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form> 
-                -->
-
               </div>
             </div>
           </nav>

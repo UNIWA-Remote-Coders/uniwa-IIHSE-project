@@ -123,19 +123,7 @@
 
             <?php } ?>
         </div>
-        </section>
-
-        <!-- Banner
-        <section id="banner" class="my-5 py-5">
-        <div class="container">
-            <br><br><br>
-            <h4>SANTA TIME!</h4>
-            <h1>Christmas offers <br> Up to 30% OFF</h1>
-            <button class="text-uppercase">shop now</button>
-        </div>
-        </section> -->
-
-
+    </section>
         <hr style="width:95%;text-align:center;margin-left:35px">
 
         <!-- Show 4 Offers -->

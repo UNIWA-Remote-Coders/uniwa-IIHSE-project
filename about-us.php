@@ -39,7 +39,7 @@
                 <div class="teams">
                     <img src="assets/imgs/greg.png"  alt="">
                     <div class="name"> Grigorios Dimopoulos </div>
-                    <div class="desig">Manager</div>
+                    <div class="desig">IT Engineer</div>
                     <!-- <div class="about">kati prepei na vro na grapso</div> -->
                     <div class="social-links">
                         <a href="https://www.facebook.com/gregory.dimopoulos.7" target="_blank"><i class="fa-brands fa-facebook"></i></a>
