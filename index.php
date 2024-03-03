@@ -37,7 +37,7 @@
 
         <!-- Mobile Brand Buttons-->
         <section id="brand" class="container-first-page-brands w-100">
-        <div class="row>
+        <div class="row">
             <form action="products.php" method="GET">
                 <input type="hidden" name="products_page" value="1"/>
                 <button class="brand-btn" style="background-image: url('assets/imgs/brand1.png');" type="submit" name="search" value="Apple"></button>
